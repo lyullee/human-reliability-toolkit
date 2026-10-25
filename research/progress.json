@@ -70,7 +70,13 @@
   "dataset_families_acquired_and_audited": 9,
   "human_field_validation": "not_claimed",
   "official_method_system_reproduction": "not_claimed",
-  "github_publication": "ready_for_initial_public_push",
+  "github_publication": {
+    "status": "source_published",
+    "repository": "https://github.com/lyullee/human-reliability-toolkit",
+    "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
+    "visibility": "public",
+    "raw_source_assets_uploaded": false
+  },
   "git_boundary": "this project folder only",
   "remaining_research": [
     "Chemical-process field task-opportunity calibration, exposure records and independent prospective validation",

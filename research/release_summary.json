@@ -8,8 +8,8 @@
     },
     {
       "file": "human_reliability_toolkit-0.2.0.tar.gz",
-      "bytes": 257877,
-      "sha256": "192f3ffd478b01f2cbb64f34d3affde3025b951cb9ec61c11db24f4802e047f3"
+      "bytes": 258099,
+      "sha256": "b6ebea00d72d14fc55e197e629d2d75dba758df0f95f313ca761f882f4fcc9db"
     }
   ],
   "checks": {
@@ -22,5 +22,6 @@
     "source_boundary_passed": true,
     "isolated_core_wheel_install_passed": true
   },
-  "published_to_github": false
+  "published_to_github": true,
+  "repository": "https://github.com/lyullee/human-reliability-toolkit"
 }
