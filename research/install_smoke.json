@@ -1,0 +1,49 @@
+{
+  "wheel": "human_reliability_toolkit-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "2c81571ca8a5f8d80ceb04d9bfe91c2d9961c098a1681afcd55a7480f2b1cb69",
+  "installed": {
+    "version": "0.2.0",
+    "installed_under_environment": true
+  },
+  "optional_libraries": {
+    "pandas": false,
+    "sklearn": false,
+    "lifelines": false,
+    "CoolProp": false,
+    "SALib": false,
+    "dd": false,
+    "rdata": false
+  },
+  "checks": [
+    {
+      "name": "wheel",
+      "exit_code": 0
+    },
+    {
+      "name": "api",
+      "exit_code": 0
+    },
+    {
+      "name": "doctor",
+      "exit_code": 0
+    },
+    {
+      "name": "schema",
+      "exit_code": 0
+    },
+    {
+      "name": "evidence",
+      "exit_code": 0
+    },
+    {
+      "name": "template",
+      "exit_code": 0
+    },
+    {
+      "name": "case",
+      "exit_code": 0
+    }
+  ],
+  "all_passed": true,
+  "environment_kind": "isolated_core_only"
+}

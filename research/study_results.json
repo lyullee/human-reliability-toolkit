@@ -1,0 +1,83 @@
+{
+  "protocol_digest": "c92e03c5035f8427fd54cbcd7065ce41b9057298ce6ad40964a9e71bc8e9888c",
+  "studies": {
+    "hitl": {
+      "features": [
+        "Group",
+        "Scenario"
+      ],
+      "seed": 20261026,
+      "train_groups": 32,
+      "test_groups": 15,
+      "train_rows": 94,
+      "test_rows": 45,
+      "logistic": {
+        "brier": 0.13421640347430286,
+        "log_loss": 0.4415843460296465,
+        "roc_auc": 0.9002100840336135,
+        "observed_rate": 0.37777777777777777,
+        "predicted_rate": 0.4031863595782962,
+        "observations": 45
+      },
+      "prevalence_baseline": {
+        "brier": 0.23587239583333333,
+        "log_loss": 0.6646596696106941,
+        "roc_auc": 0.5,
+        "observed_rate": 0.37777777777777777,
+        "predicted_rate": 0.40625,
+        "observations": 45
+      },
+      "causal_effect_claim": false,
+      "held_out_groups_digest": "9e9a08368492cbc8c0ff9c6db1703c660ad1e6c3c2903449d564e778546320d9"
+    },
+    "cog_pvt": {
+      "status": "withheld_flag_semantics",
+      "hep_calibration_eligible": false,
+      "sessions": 87,
+      "observations": 7830,
+      "identical_positive_flag_positions": true,
+      "positive_positions_zero_based": [
+        8
+      ],
+      "reason": "All released sessions have an identical error-flag pattern; event semantics require source clarification.",
+      "retained_descriptive_flag_diagnostic": {
+        "rate": 0.011111111111111112,
+        "cluster_bootstrap_95_interval": [
+          0.011111111111111112,
+          0.011111111111111112
+        ],
+        "clusters": 29,
+        "observations": 7830,
+        "repeats": 2000,
+        "estimand": "opportunity-weighted rate in the supplied experimental population",
+        "holdout_prevalence_model": {
+          "brier": 0.010987687083044964,
+          "log_loss": 0.06104851308130678,
+          "roc_auc": 0.5,
+          "observed_rate": 0.011111111111111112,
+          "predicted_rate": 0.011292114031840063,
+          "observations": 2430
+        },
+        "train_participants": 20,
+        "test_participants": 9
+      }
+    },
+    "cog_monitoring": {
+      "train_rows": 2141,
+      "test_rows": 966,
+      "native_unit_training_quantiles_p50_p90_p95": [
+        1.9384655802477937,
+        8.291383258925634,
+        11.424778271604737
+      ],
+      "held_out_coverage": [
+        0.4451345755693582,
+        0.8757763975155279,
+        0.9285714285714286
+      ],
+      "unit": "source_native",
+      "missed_alarm_hep_inferred": false,
+      "conditioning": "positive finite observed responses only"
+    }
+  }
+}

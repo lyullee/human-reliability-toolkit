@@ -1,0 +1,34 @@
+include README.md README_KO.md LICENSE THIRD_PARTY_NOTICES.md DATA_LICENSES.md CHANGELOG.md CONTRIBUTING.md CITATION.cff
+include requirements-validated.txt
+include .gitignore .gitattributes
+recursive-include .github *.yml
+recursive-include src *.py *.json py.typed
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include scripts *.py
+recursive-include tests *.py
+include research/datasets.json
+include research/acquisition.json
+include research/data_audit.json
+include research/method_review.json
+include research/capabilities.json
+include research/protocol.json
+include research/protocol_deviations.json
+include research/study_results.json
+include research/process_example.json
+include research/integration_checks.json
+include research/environment.json
+include research/verification_summary.json
+include research/progress.json
+include research/human_evidence_assets.json
+include research/human_evidence_acquisition.json
+include research/human_evidence_audit.json
+include research/human_evidence_review.json
+include research/human_method_profiles.json
+recursive-include research/retained_experiments *.json
+prune research/source_cache
+prune data
+prune artifacts
+prune .venv
+prune .git
+global-exclude *.pyc __pycache__

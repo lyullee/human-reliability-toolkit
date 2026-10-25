@@ -1,0 +1,1711 @@
+{
+  "schema_version": "1",
+  "records": [
+    {
+      "id": "spar_h.diagnosis.available_time.inadequate",
+      "source_id": "spar_h_2005",
+      "kind": "method_rule",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / inadequate",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "terminal_rule",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "inadequate",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.available_time.tight",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / tight",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "tight",
+        "profile": "at_power",
+        "selection_condition": "Approximately two thirds of the nominal diagnostic time."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 10.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.available_time.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.available_time.extra",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / extra",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "extra",
+        "profile": "at_power",
+        "selection_condition": "Between one and two times the nominal time and more than 30 minutes."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.1,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.available_time.ample",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / ample",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "ample",
+        "profile": "at_power",
+        "selection_condition": "More than twice the nominal time and more than 30 minutes."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.01,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.available_time.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / available time / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "available_time",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.stress.extreme",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / stress / extreme",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "stress",
+        "level": "extreme",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.stress.elevated",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / stress / elevated",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "stress",
+        "level": "elevated",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 2.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.stress.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / stress / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "stress",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.stress.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / stress / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "stress",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.complexity.high",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / complexity / high",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "complexity",
+        "level": "high",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.complexity.moderate",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / complexity / moderate",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "complexity",
+        "level": "moderate",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 2.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.complexity.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / complexity / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "complexity",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.complexity.obvious",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / complexity / obvious",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "complexity",
+        "level": "obvious",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.1,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.complexity.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / complexity / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "complexity",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.experience_training.limited",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / experience training / limited",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "experience_training",
+        "level": "limited",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 10.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.experience_training.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / experience training / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "experience_training",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.experience_training.extensive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / experience training / extensive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "experience_training",
+        "level": "extensive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.experience_training.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / experience training / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "experience_training",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.absent",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / absent",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "absent",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 50.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.incomplete",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / incomplete",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "incomplete",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 20.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.weak",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / weak",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "weak",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.diagnostic_support",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / diagnostic support",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "diagnostic_support",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.procedures.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / procedures / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "procedures",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.ergonomics.misleading_or_missing",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / ergonomics / misleading or missing",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "ergonomics",
+        "level": "misleading_or_missing",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 50.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.ergonomics.poor",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / ergonomics / poor",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "ergonomics",
+        "level": "poor",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 10.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.ergonomics.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / ergonomics / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "ergonomics",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.ergonomics.supportive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / ergonomics / supportive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "ergonomics",
+        "level": "supportive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.ergonomics.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / ergonomics / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "ergonomics",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.fitness.unfit",
+      "source_id": "spar_h_2005",
+      "kind": "method_rule",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / fitness / unfit",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "terminal_rule",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "fitness",
+        "level": "unfit",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.fitness.degraded",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / fitness / degraded",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "fitness",
+        "level": "degraded",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.fitness.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / fitness / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "fitness",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.fitness.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / fitness / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "fitness",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.work_processes.weak",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / work processes / weak",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "work_processes",
+        "level": "weak",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 2.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.work_processes.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / work processes / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "work_processes",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.work_processes.supportive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / work processes / supportive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "work_processes",
+        "level": "supportive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.8,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.diagnosis.work_processes.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "diagnosis / work processes / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-3",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "psf": "work_processes",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.nominal.diagnosis",
+      "source_id": "spar_h_2005",
+      "kind": "method_probability",
+      "method": "spar_h",
+      "function": "diagnosis",
+      "label": "SPAR-H diagnosis reference nominal",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-4",
+      "quantity": "probability",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "diagnosis",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.01,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.inadequate",
+      "source_id": "spar_h_2005",
+      "kind": "method_rule",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / inadequate",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "terminal_rule",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "inadequate",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.tight",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / tight",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "tight",
+        "profile": "at_power",
+        "selection_condition": "Available time approximately equals required execution time."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 10.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.fivefold",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / fivefold",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "fivefold",
+        "profile": "at_power",
+        "selection_condition": "Available time at least five times required execution time."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.1,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.fiftyfold",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / fiftyfold",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "fiftyfold",
+        "profile": "at_power",
+        "selection_condition": "Available time at least fifty times required execution time."
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.01,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.available_time.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / available time / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "available_time",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.stress.extreme",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / stress / extreme",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "stress",
+        "level": "extreme",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.stress.elevated",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / stress / elevated",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "stress",
+        "level": "elevated",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 2.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.stress.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / stress / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "stress",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.stress.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / stress / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "stress",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.complexity.high",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / complexity / high",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "complexity",
+        "level": "high",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.complexity.moderate",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / complexity / moderate",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "complexity",
+        "level": "moderate",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 2.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.complexity.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / complexity / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "complexity",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.complexity.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / complexity / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "complexity",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.experience_training.limited",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / experience training / limited",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "experience_training",
+        "level": "limited",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 3.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.experience_training.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / experience training / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "experience_training",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.experience_training.extensive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / experience training / extensive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "experience_training",
+        "level": "extensive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.experience_training.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / experience training / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "experience_training",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.procedures.absent",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / procedures / absent",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "procedures",
+        "level": "absent",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 50.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.procedures.incomplete",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / procedures / incomplete",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "procedures",
+        "level": "incomplete",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 20.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.procedures.weak",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / procedures / weak",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "procedures",
+        "level": "weak",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.procedures.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / procedures / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "procedures",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.procedures.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / procedures / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "procedures",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.ergonomics.misleading_or_missing",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / ergonomics / misleading or missing",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "ergonomics",
+        "level": "misleading_or_missing",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 50.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.ergonomics.poor",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / ergonomics / poor",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "ergonomics",
+        "level": "poor",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 10.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.ergonomics.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / ergonomics / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "ergonomics",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.ergonomics.supportive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / ergonomics / supportive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "ergonomics",
+        "level": "supportive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.ergonomics.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / ergonomics / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "ergonomics",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.fitness.unfit",
+      "source_id": "spar_h_2005",
+      "kind": "method_rule",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / fitness / unfit",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "terminal_rule",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "fitness",
+        "level": "unfit",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.fitness.degraded",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / fitness / degraded",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "fitness",
+        "level": "degraded",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.fitness.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / fitness / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "fitness",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.fitness.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / fitness / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "fitness",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.work_processes.weak",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / work processes / weak",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "work_processes",
+        "level": "weak",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 5.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.work_processes.reference",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / work processes / reference",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "work_processes",
+        "level": "reference",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.work_processes.supportive",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / work processes / supportive",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "work_processes",
+        "level": "supportive",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.5,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.action.work_processes.unknown",
+      "source_id": "spar_h_2005",
+      "kind": "method_multiplier",
+      "method": "spar_h",
+      "function": "action",
+      "label": "action / work processes / unknown",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-5",
+      "quantity": "multiplier",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "psf": "work_processes",
+        "level": "unknown",
+        "profile": "at_power"
+      },
+      "basis": "placeholder",
+      "limitations": [
+        "Insufficient source information maps to 1 in the reference; this is not evidence that conditions are favorable."
+      ],
+      "value": 1.0,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    },
+    {
+      "id": "spar_h.nominal.action",
+      "source_id": "spar_h_2005",
+      "kind": "method_probability",
+      "method": "spar_h",
+      "function": "action",
+      "label": "SPAR-H action reference nominal",
+      "domain": "method_reference",
+      "locator": "NUREG/CR-6883; Appendix A; printed A-6",
+      "quantity": "probability",
+      "opportunity_definition": "One task or cognitive function under the source method's stated definition",
+      "conditions": {
+        "stage": "action",
+        "profile": "at_power"
+      },
+      "basis": "method_reference",
+      "limitations": [],
+      "value": 0.001,
+      "failure_definition": "Source-defined error for the referenced task or cognitive function"
+    }
+  ]
+}

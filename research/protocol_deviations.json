@@ -1,0 +1,12 @@
+{
+  "protocol_version": "1",
+  "changes": [
+    {
+      "study": "cog_pvt",
+      "trigger": "Audit found one positive error_trial value at the same ordinal position in all 87 sessions.",
+      "decision": "Withhold human-error calibration and any interpretation of the flag frequency as HEP.",
+      "retained": "The initial candidate flag calculation is retained as a rejected diagnostic, not qualified validation.",
+      "reentry": "Clarify instrumentation/event semantics against an authoritative source or acquire a corrected release."
+    }
+  ]
+}

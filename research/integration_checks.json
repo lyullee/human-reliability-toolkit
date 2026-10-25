@@ -1,0 +1,169 @@
+{
+  "schema_version": "1",
+  "sources": [
+    {
+      "repository": "prism-dynasense",
+      "commit": "bd46cc46a6791131e414221135a1092f540b87d6",
+      "path": "src/prism_dynasense/__init__.py",
+      "sha256": "52ca6441b3d2576a16333e6462894af2ce4d839632a274a7756bba6a1419dc7c",
+      "url": "https://raw.githubusercontent.com/lyullee/prism-dynasense/bd46cc46a6791131e414221135a1092f540b87d6/src/prism_dynasense/__init__.py"
+    },
+    {
+      "repository": "prism-dynasense",
+      "commit": "bd46cc46a6791131e414221135a1092f540b87d6",
+      "path": "src/prism_dynasense/contracts.py",
+      "sha256": "1065e56694a10a25d0fec11880a8b3488d2732f4fe1e8069a58bebeb08289501",
+      "url": "https://raw.githubusercontent.com/lyullee/prism-dynasense/bd46cc46a6791131e414221135a1092f540b87d6/src/prism_dynasense/contracts.py"
+    },
+    {
+      "repository": "prism-dynasense",
+      "commit": "bd46cc46a6791131e414221135a1092f540b87d6",
+      "path": "src/prism_dynasense/simulation.py",
+      "sha256": "7b5fbbbd92283601212d6592b7190e9689007f7109313eae0dd6f3c179cbaba7",
+      "url": "https://raw.githubusercontent.com/lyullee/prism-dynasense/bd46cc46a6791131e414221135a1092f540b87d6/src/prism_dynasense/simulation.py"
+    },
+    {
+      "repository": "prism-dynasense",
+      "commit": "bd46cc46a6791131e414221135a1092f540b87d6",
+      "path": "src/prism_dynasense/prism_backend.py",
+      "sha256": "b4e92cdda74f0526f2a09aba043cc685d465abbb96eff8d7ee7d9a54e9137017",
+      "url": "https://raw.githubusercontent.com/lyullee/prism-dynasense/bd46cc46a6791131e414221135a1092f540b87d6/src/prism_dynasense/prism_backend.py"
+    },
+    {
+      "repository": "prism-dynasense",
+      "commit": "bd46cc46a6791131e414221135a1092f540b87d6",
+      "path": "src/prism_dynasense/sensitivity.py",
+      "sha256": "7a1c65dc6186731ba6813d6ad45039f4d0f77809920640847eddf71b2845a4da",
+      "url": "https://raw.githubusercontent.com/lyullee/prism-dynasense/bd46cc46a6791131e414221135a1092f540b87d6/src/prism_dynasense/sensitivity.py"
+    },
+    {
+      "repository": "saga-py",
+      "commit": "6eb94e00b146e18392e535d227f0c3e5ce1aca10",
+      "path": "python/saga/schemas.py",
+      "sha256": "4e88b0065b1b5c23c59cd5b0edba283f4a3595d720dc62ee7386b3db4b9a4534",
+      "url": "https://raw.githubusercontent.com/lyullee/saga-py/6eb94e00b146e18392e535d227f0c3e5ce1aca10/python/saga/schemas.py"
+    },
+    {
+      "repository": "process-monitoring-toolkit",
+      "commit": "79b4cf52a0acd0d0cbd3addbe82c3d98d6385e5a",
+      "path": "src/process_monitoring/contracts.py",
+      "sha256": "4f8dfbf4fc6c09b9397d9b40de88307ae4ca13312ae687b5ca530e36c842c0b8",
+      "url": "https://raw.githubusercontent.com/lyullee/process-monitoring-toolkit/79b4cf52a0acd0d0cbd3addbe82c3d98d6385e5a/src/process_monitoring/contracts.py"
+    },
+    {
+      "repository": "qsafety-qae",
+      "commit": "3e7b3e78f3881a87f99d67554c6ad748fd0737e8",
+      "path": "src/qsafety/core.py",
+      "sha256": "514f70af8c4204f80cf6622987c326a59a1014c6dfab0fb1a3c77d8932a2cd9c",
+      "url": "https://raw.githubusercontent.com/lyullee/qsafety-qae/3e7b3e78f3881a87f99d67554c6ad748fd0737e8/src/qsafety/core.py"
+    },
+    {
+      "repository": "hydrogen-station-sim",
+      "commit": "9f8fa941c611abc092a10516a09e31ec2908c1d6",
+      "path": "src/h2station/safety_runtime.py",
+      "sha256": "12857261d7aea777178b3b406a8e4ad457ec5c242e36160f384799a7f899ded8",
+      "url": "https://raw.githubusercontent.com/lyullee/hydrogen-station-sim/9f8fa941c611abc092a10516a09e31ec2908c1d6/src/h2station/safety_runtime.py"
+    },
+    {
+      "repository": "hydrogen-station-sim",
+      "commit": "9f8fa941c611abc092a10516a09e31ec2908c1d6",
+      "path": "src/h2station/protocol.py",
+      "sha256": "2c6b8e89e037ef04246d77459e8ee15eef9323b67565a718c7568e2bda425cf5",
+      "url": "https://raw.githubusercontent.com/lyullee/hydrogen-station-sim/9f8fa941c611abc092a10516a09e31ec2908c1d6/src/h2station/protocol.py"
+    },
+    {
+      "repository": "hydrogen-station-sim",
+      "commit": "9f8fa941c611abc092a10516a09e31ec2908c1d6",
+      "path": "src/h2station/tabulated.py",
+      "sha256": "b6b97b1614721c1ed95922d318157a9ae4ce0a3205187fd71c5ae4d1aaa3fe15",
+      "url": "https://raw.githubusercontent.com/lyullee/hydrogen-station-sim/9f8fa941c611abc092a10516a09e31ec2908c1d6/src/h2station/tabulated.py"
+    },
+    {
+      "repository": "hydrogen-station-sim",
+      "commit": "9f8fa941c611abc092a10516a09e31ec2908c1d6",
+      "path": "src/h2station/thermo_types.py",
+      "sha256": "aeab3b3f2b6407833cd33e32579223ae078b1a1efdc40b8c8e29924e6321d8e4",
+      "url": "https://raw.githubusercontent.com/lyullee/hydrogen-station-sim/9f8fa941c611abc092a10516a09e31ec2908c1d6/src/h2station/thermo_types.py"
+    }
+  ],
+  "input_estimate_digest": "87426d1cf7ece668b5377becb8e5a8ab8c864f429c5ebe91bef834128ada79b4",
+  "checked_objects": [
+    "PRISM DemandFailure",
+    "PRISM EventBranch",
+    "DynaSense Scenario and simulation",
+    "SAGA DigitalTwinHazopRequest",
+    "Monitoring DetectionResult",
+    "QSafety RiskDistribution",
+    "lh2dt ObservationTable",
+    "hydrogen-station-sim SafetyPLC isolated module"
+  ],
+  "dynasense_response_cases": [
+    {
+      "human_physical_completion_s": 5.0,
+      "isolation_input_s": 5.0,
+      "outputs": {
+        "released_mass_kg": 0.09757310055336665,
+        "peak_release_kg_s": 0.012520463965932128,
+        "peak_heat_flux_w_m2": 10631.014170006385,
+        "thermal_dose": 1437793.8519492454,
+        "conditional_harm_probability": 1.8602257495503594e-07,
+        "dose_at_25pct": 1377387.7701092632,
+        "dose_at_50pct": 1437793.8519492454,
+        "dose_at_75pct": 1437793.8519492454
+      }
+    },
+    {
+      "human_physical_completion_s": 10.0,
+      "isolation_input_s": 10.0,
+      "outputs": {
+        "released_mass_kg": 0.15246153963656894,
+        "peak_release_kg_s": 0.012520463965932128,
+        "peak_heat_flux_w_m2": 10631.014170006385,
+        "thermal_dose": 2448219.4015020146,
+        "conditional_harm_probability": 9.954481545032534e-05,
+        "dose_at_25pct": 1958100.4067251412,
+        "dose_at_50pct": 2448063.877234789,
+        "dose_at_75pct": 2448219.4015020146
+      }
+    },
+    {
+      "human_physical_completion_s": 20.0,
+      "isolation_input_s": 20.0,
+      "outputs": {
+        "released_mass_kg": 0.2527527270262666,
+        "peak_release_kg_s": 0.012520463965932128,
+        "peak_heat_flux_w_m2": 10631.014170006385,
+        "thermal_dose": 4239971.932408763,
+        "conditional_harm_probability": 0.01032761082227679,
+        "dose_at_25pct": 1958100.405890984,
+        "dose_at_50pct": 3824739.0177950743,
+        "dose_at_75pct": 4239971.932408763
+      }
+    },
+    {
+      "human_physical_completion_s": null,
+      "isolation_input_s": 80.0,
+      "outputs": {
+        "released_mass_kg": 0.39694132310899155,
+        "peak_release_kg_s": 0.012520463965932128,
+        "peak_heat_flux_w_m2": 10631.014170006385,
+        "thermal_dose": 6764498.966704441,
+        "conditional_harm_probability": 0.13170424699413458,
+        "dose_at_25pct": 1958100.405890984,
+        "dose_at_50pct": 3824739.017470898,
+        "dose_at_75pct": 5413037.119675594
+      }
+    }
+  ],
+  "source_only_protocols": [
+    "PSA cycle trace"
+  ],
+  "live_service_exchange": false,
+  "operator_effectiveness_verified": false,
+  "limitations": [
+    "synthetic bounded gas example",
+    "no annual facility QRA",
+    "conditional harm not an initiating probability",
+    "source pins and package versions must be rechecked after external changes"
+  ]
+}

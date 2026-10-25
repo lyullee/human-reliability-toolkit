@@ -1,0 +1,569 @@
+{
+  "schema_version": "1",
+  "review_date": "2026-10-26",
+  "datasets": [
+    {
+      "id": "hydraulic",
+      "title": "Condition monitoring of hydraulic systems",
+      "source": "https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems",
+      "doi": "10.24432/C5CW21",
+      "creators": [
+        "Nikolai Helwig",
+        "Eliseo Pignanelli",
+        "Andreas Schtze"
+      ],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "measured_process",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/447/condition+monitoring+of+hydraulic+systems.zip",
+          "checksum": "sha256:24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2"
+        }
+      ]
+    },
+    {
+      "id": "metropt3",
+      "title": "MetroPT-3 Dataset",
+      "source": "https://archive.ics.uci.edu/dataset/791/metropt+3+dataset",
+      "doi": "10.24432/C5VW3R",
+      "creators": [
+        "Narjes Davari",
+        "Bruno Veloso",
+        "Rita Ribeiro  ",
+        "Joao Gama"
+      ],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/791/metropt+3+dataset",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "measured_process",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/791/metropt+3+dataset.zip",
+          "checksum": "sha256:aab991a970e58210de853bb8078ce0e63abb4d9412fdc5c79792dae3d8e1721a"
+        }
+      ]
+    },
+    {
+      "id": "gas_turbine",
+      "title": "Gas Turbine CO and NOx Emission Data Set",
+      "source": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "doi": "10.24432/C5WC95",
+      "creators": [],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "measured_process",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/551/gas+turbine+co+and+nox+emission+data+set.zip",
+          "checksum": "sha256:55fdb1acc25f05bd9c77aac285c424e9154ffb0dbf1bbadb56b69a1142231295"
+        }
+      ],
+      "creator_metadata_status": "The reviewed UCI dataset registry provides a title-based institutional citation without named dataset creators; do not infer authorship from a related paper.",
+      "attribution_citation": "Gas Turbine CO and NOx Emission Data Set [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5WC95"
+    },
+    {
+      "id": "water_treatment",
+      "title": "Water Treatment Plant",
+      "source": "https://archive.ics.uci.edu/dataset/106/water+treatment+plant",
+      "doi": "10.24432/C5FS4C",
+      "creators": [
+        "Manel Poch"
+      ],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/106/water+treatment+plant",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "measured_process",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/106/water+treatment+plant.zip",
+          "checksum": "sha256:44e8cc2b294ce8d2d2c7c6a9bbb33dde463591c47add23f85e83ae67a94a0f31"
+        }
+      ]
+    },
+    {
+      "id": "ai4i",
+      "title": "AI4I 2020 Predictive Maintenance Dataset",
+      "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+      "doi": "10.24432/C5HS5C",
+      "creators": [],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "synthetic",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+          "checksum": "sha256:f601f14294bcf190f9d720676b7f0aea46a26cde9ab8ebc7b4f8174d9d26b252"
+        }
+      ],
+      "creator_metadata_status": "The reviewed UCI dataset registry provides a title-based institutional citation without named dataset creators; do not infer authorship from a related paper.",
+      "attribution_citation": "AI4I 2020 Predictive Maintenance Dataset [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5HS5C"
+    },
+    {
+      "id": "secom",
+      "title": "SECOM",
+      "source": "https://archive.ics.uci.edu/dataset/179/secom",
+      "doi": "10.24432/C54305",
+      "creators": [
+        "Michael McCann",
+        "Adrian Johnston"
+      ],
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/179/secom",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "measured_process",
+      "intended_use": "process context and monitoring integration, not HEP calibration",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://archive.ics.uci.edu/static/public/179/secom.zip",
+          "checksum": "sha256:eea568baf3c2229096d7d294cf0b096b5502bd96d92c0b80a65b84714059be8e"
+        }
+      ]
+    },
+    {
+      "id": "hitl",
+      "title": "CISC-LIVE-LAB-3/dataset: Human-in-the-Loop Decision Support in Process Control Room Dataset",
+      "source": "https://zenodo.org/records/13984198",
+      "doi": "10.5281/zenodo.13984198",
+      "creators": [
+        {
+          "name": "Ammar N. Abbas",
+          "affiliation": "Technological University Dublin"
+        },
+        {
+          "name": "Winniewelsh",
+          "affiliation": null
+        }
+      ],
+      "version": "v1.1.2",
+      "license": "CC-BY-4.0",
+      "embedded_license": "MIT; metadata retained separately; no raw redistribution",
+      "license_evidence": "https://zenodo.org/records/13984198",
+      "status": "selected",
+      "human_response_data": true,
+      "origin": "human_in_loop_control_room_experiment",
+      "intended_use": "scenario-level outcomes and descriptive response measures; units and exposure caveats",
+      "assets": [
+        {
+          "filename": "source.zip",
+          "url": "https://zenodo.org/api/records/13984198/files/CISC-LIVE-LAB-3/dataset-v1.1.2.zip/content",
+          "checksum": "md5:22c0303c109ea5f00e4cfe22ca954db0"
+        }
+      ]
+    },
+    {
+      "id": "tep",
+      "title": "Additional Tennessee Eastman Process Simulation Data for Anomaly Detection Evaluation",
+      "source": "https://doi.org/10.7910/DVN/6C3JR1",
+      "doi": "10.7910/DVN/6C3JR1",
+      "license": "custom-public-domain-dedication",
+      "license_evidence": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/6C3JR1",
+      "status": "selected",
+      "human_response_data": false,
+      "origin": "process_simulation",
+      "intended_use": "operating context, fault scenarios and boundary integration only",
+      "assets": [
+        {
+          "filename": "TEP_FaultFree_Testing.RData",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/3031240",
+          "checksum": "md5:38ad9810fc871026157086ae2c2f0ee9"
+        },
+        {
+          "filename": "TEP_FaultFree_Training.RData",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/3031241",
+          "checksum": "md5:ec126484534331f85001d8c4ebce6d17"
+        },
+        {
+          "filename": "TEP_Faulty_Testing.RData",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/3031243",
+          "checksum": "md5:556bdb64c83021bc0c5f92e427753565"
+        },
+        {
+          "filename": "TEP_Faulty_Training.RData",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/3031242",
+          "checksum": "md5:c5f594d54c47e620ff877feb58407fda"
+        }
+      ],
+      "creators": [
+        "Rieth, Cory A.",
+        "Amsel, Ben D.",
+        "Tran, Randy",
+        "Cook, Maia B."
+      ],
+      "version": "1.0",
+      "released_at": "2017-07-06T15:23:33Z",
+      "metadata_snapshot_sha256": "a52a38d8a22932edb1effbce7913d20247e8f2bfc617ac11693e6822a6dc9aa3",
+      "terms_summary": "Source declares public-domain dedication with separate retained patent/trademark and other-person rights, warranty/liability exclusions, no implied endorsement and access-time agreement conditions. Not relabeled CC0.",
+      "terms_of_use_sha256": "7bfbfcde7095092b0622b85d7f188d47b3d1f5ffc323f6f4ef764c897e497c27"
+    },
+    {
+      "id": "cog_bci",
+      "title": "COG-BCI database: A multi-session and multi-task EEG cognitive dataset for passive brain-computer interfaces",
+      "source": "https://zenodo.org/records/7413650",
+      "doi": "10.5281/zenodo.7413650",
+      "creators": [
+        {
+          "name": "Hinss, Marcel F.",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        },
+        {
+          "name": "Jahanpour, Emilie S.",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        },
+        {
+          "name": "Somon, Bertille",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        },
+        {
+          "name": "Pluchon, Lou",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        },
+        {
+          "name": "Dehais, Frédéric",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        },
+        {
+          "name": "Roy, Raphaëlle N.",
+          "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+        }
+      ],
+      "version": "4",
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://zenodo.org/records/7413650",
+      "status": "selected",
+      "human_response_data": true,
+      "origin": "human_multitask_experiment",
+      "intended_use": "task-level correctness and monitoring reaction times; transfer to process plants requires new evidence",
+      "assets": [],
+      "remote_archives": [
+        {
+          "id": "e53ef3bc-b2fd-485f-b83f-6eaf8086d918",
+          "key": "sub-11.zip",
+          "size": 1126840983,
+          "checksum": "md5:c63aab36869315fa7303c76c4bfaa0e6",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-11.zip/content"
+          }
+        },
+        {
+          "id": "ccc083ad-3d45-4df7-b388-78c7a1c9e874",
+          "key": "sub-01.zip",
+          "size": 1096627416,
+          "checksum": "md5:23f1f74cced86b40a0a956c67bba74fb",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-01.zip/content"
+          }
+        },
+        {
+          "id": "b5a76570-fdda-47f3-9faa-e14467281fdf",
+          "key": "sub-02.zip",
+          "size": 1077561911,
+          "checksum": "md5:f3f0b80c9752494c7e0eaba2b5cba63b",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-02.zip/content"
+          }
+        },
+        {
+          "id": "0f345fb4-27af-4256-8ab2-f4c440753ff7",
+          "key": "sub-03.zip",
+          "size": 1091918375,
+          "checksum": "md5:3120766d0e2d65ef0299980381f4aa3e",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-03.zip/content"
+          }
+        },
+        {
+          "id": "adfad946-0a10-4bae-b745-43164db21f4e",
+          "key": "sub-04.zip",
+          "size": 1061048048,
+          "checksum": "md5:613ae1a3937261ba07ff239f80f6ebf9",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-04.zip/content"
+          }
+        },
+        {
+          "id": "7ef76dd0-9420-419b-b66b-dcfed9e5f1de",
+          "key": "sub-05.zip",
+          "size": 1028766446,
+          "checksum": "md5:9395a89068a247dc1f28bee677a2522d",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-05.zip/content"
+          }
+        },
+        {
+          "id": "13841c03-f6e6-4a21-ba27-e0526722269f",
+          "key": "sub-06.zip",
+          "size": 1047170742,
+          "checksum": "md5:da029812690e0e352d7b4a3f2f3231f3",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-06.zip/content"
+          }
+        },
+        {
+          "id": "6cb06657-9353-4e6b-a4ad-e25dcc3b0b85",
+          "key": "sub-07.zip",
+          "size": 1038697112,
+          "checksum": "md5:1c7778dd78b514108d20c39bd13f83b0",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-07.zip/content"
+          }
+        },
+        {
+          "id": "399e4515-fde5-40fe-a248-6e9fce24d715",
+          "key": "sub-08.zip",
+          "size": 1075163598,
+          "checksum": "md5:3ddf5876b2ed252d7210be6bb5c54b79",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-08.zip/content"
+          }
+        },
+        {
+          "id": "65d43035-427c-4098-b480-87ed09499efb",
+          "key": "sub-09.zip",
+          "size": 1068933020,
+          "checksum": "md5:84e52f812865cc500f3c8d39b82a3d5f",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-09.zip/content"
+          }
+        },
+        {
+          "id": "43f91e0b-552d-4bc6-91db-319b430f615b",
+          "key": "sub-10.zip",
+          "size": 1077684921,
+          "checksum": "md5:3470c8890aa6ae5bd684c2a4127554f8",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-10.zip/content"
+          }
+        },
+        {
+          "id": "00c1cf11-26d4-440c-bad5-71c739c2a781",
+          "key": "sub-12.zip",
+          "size": 1121359309,
+          "checksum": "md5:7fda5b987eb6374a257b142b839fcd28",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-12.zip/content"
+          }
+        },
+        {
+          "id": "53bee871-b43f-47f9-9682-3bcd708c4f9e",
+          "key": "sub-13.zip",
+          "size": 1083674913,
+          "checksum": "md5:f0b00c46f9f2c6088e4d9a8b0affea81",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-13.zip/content"
+          }
+        },
+        {
+          "id": "5424be68-ed1a-443b-b196-0b5a305cfd72",
+          "key": "sub-14.zip",
+          "size": 1092417518,
+          "checksum": "md5:03e164e277d89070c30fa59424cd78c4",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-14.zip/content"
+          }
+        },
+        {
+          "id": "ce5d5352-1542-42eb-a033-f448ed4afb5b",
+          "key": "sub-15.zip",
+          "size": 1109991868,
+          "checksum": "md5:1fd226373725dc3783d33a8c62ed06d6",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-15.zip/content"
+          }
+        },
+        {
+          "id": "b91df1e5-9253-48b0-8ee8-9765dfab5ff1",
+          "key": "sub-16.zip",
+          "size": 1090030460,
+          "checksum": "md5:0dbab52411a3d8c2a07f7b2d749039c9",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-16.zip/content"
+          }
+        },
+        {
+          "id": "71b98703-4a6a-4425-960a-a38a1fecdcfd",
+          "key": "sub-17.zip",
+          "size": 1090536096,
+          "checksum": "md5:1c81adb20356f3f1429df7d0dd7bb914",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-17.zip/content"
+          }
+        },
+        {
+          "id": "fe5f35d6-af9f-4efb-bcdc-93a7f7d9efa2",
+          "key": "sub-18.zip",
+          "size": 1109262532,
+          "checksum": "md5:76999fc70c7fd2d9ddbd9138deb14f8d",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-18.zip/content"
+          }
+        },
+        {
+          "id": "10661c8d-4357-4c39-9550-32f2f885bf2b",
+          "key": "sub-29.zip",
+          "size": 1091533809,
+          "checksum": "md5:cfee23041f75b86b9e7d6f671c633287",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-29.zip/content"
+          }
+        },
+        {
+          "id": "80b82515-727f-4f0e-9c97-6e9e7ce9cff8",
+          "key": "sub-28.zip",
+          "size": 1111741947,
+          "checksum": "md5:4d3862026ba6775f29b68a0c2b32e5f7",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-28.zip/content"
+          }
+        },
+        {
+          "id": "37e60267-3648-4489-8a45-a4f7cc4f263d",
+          "key": "sub-27.zip",
+          "size": 1090533893,
+          "checksum": "md5:0751c82f0cbeb2ee07e8ecec66d2797c",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-27.zip/content"
+          }
+        },
+        {
+          "id": "bc81ad46-31d5-479d-9183-b4aa149ced7b",
+          "key": "sub-26.zip",
+          "size": 1121018183,
+          "checksum": "md5:e650edc8edcbbb295f3fa49f0bc9c62d",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-26.zip/content"
+          }
+        },
+        {
+          "id": "b9d73fe3-4a95-48a5-a4ff-ada0166b96f5",
+          "key": "sub-25.zip",
+          "size": 1089821633,
+          "checksum": "md5:bbe75eb0758ff331f0807b242ee3119c",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-25.zip/content"
+          }
+        },
+        {
+          "id": "8509d31d-2493-4178-86a5-f0afb12e0d76",
+          "key": "sub-24.zip",
+          "size": 1121684870,
+          "checksum": "md5:b3af9f114daa6f8a6022db580e9e012c",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-24.zip/content"
+          }
+        },
+        {
+          "id": "2e7934de-7c38-4982-8da8-aa178e7a5903",
+          "key": "sub-23.zip",
+          "size": 1079124591,
+          "checksum": "md5:e2cdcf884ca801b10951a2ede52d53cb",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-23.zip/content"
+          }
+        },
+        {
+          "id": "a2190e63-ab71-425d-abdc-33ffe81ac6e2",
+          "key": "sub-22.zip",
+          "size": 1144512791,
+          "checksum": "md5:4cfd73876a2de9b87a381260d750900d",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-22.zip/content"
+          }
+        },
+        {
+          "id": "d8f3f71f-e107-4e20-9c0c-9cad17b45dd7",
+          "key": "sub-21.zip",
+          "size": 1116697785,
+          "checksum": "md5:34a1bb2d9f95e5c7664c0fd6c2f00333",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-21.zip/content"
+          }
+        },
+        {
+          "id": "13bea404-a558-4b2c-9ed5-ba9bb605b79c",
+          "key": "sub-20.zip",
+          "size": 1116043019,
+          "checksum": "md5:6db83600139c2d075e96593d1a692ff1",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-20.zip/content"
+          }
+        },
+        {
+          "id": "1c13dbad-f7b4-4560-9bf3-84ee92a93087",
+          "key": "sub-19.zip",
+          "size": 1117484516,
+          "checksum": "md5:fe9b49a82ce7c4b0fadb2b9e7900bb65",
+          "links": {
+            "self": "https://zenodo.org/api/records/7413650/files/sub-19.zip/content"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tep_dtu_large",
+      "title": "Tennessee Eastman six-mode reference",
+      "source": "https://data.dtu.dk/articles/dataset/13385936",
+      "license": "CC0-1.0",
+      "status": "catalogued",
+      "reason": "About 143 GB; selected Harvard TEP already covers initial scenarios."
+    },
+    {
+      "id": "skab",
+      "title": "Skoltech Anomaly Benchmark",
+      "source": "https://github.com/waico/SKAB",
+      "license": "GPL-3.0 repository",
+      "status": "deferred",
+      "reason": "Prefer separately licensed data assets for permissive core; no external code incorporated."
+    },
+    {
+      "id": "hai",
+      "title": "HAI ICS Security Dataset",
+      "source": "https://github.com/icsdataset/hai",
+      "license": "not resolved for selected data version",
+      "status": "deferred",
+      "reason": "Repository access alone does not establish data reuse conditions."
+    },
+    {
+      "id": "swat",
+      "title": "SWaT",
+      "source": "https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/",
+      "status": "deferred",
+      "reason": "Registration and access terms; not acquired."
+    },
+    {
+      "id": "sacada",
+      "title": "SACADA human performance database",
+      "source": "https://www.nrc.gov/documents-reports/nrc-data",
+      "status": "acquired_in_human_evidence_extension",
+      "reason": "Public April-2019 five-function counts acquired; see research/human_evidence_assets.json and human_evidence_audit.json. Earlier deferred availability assessment superseded."
+    },
+    {
+      "id": "cog_eeg_competition",
+      "title": "Cross-session workload EEG competition",
+      "source": "https://zenodo.org/records/5055046",
+      "license": "CC-BY-SA-4.0",
+      "status": "deferred",
+      "reason": "Selected COG-BCI behavioral members provide direct outcomes without adding EEG processing."
+    }
+  ]
+}

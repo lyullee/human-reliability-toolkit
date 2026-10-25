@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the software version and the underlying data/method sources used in your study."
+title: "Human Reliability Toolkit"
+type: software
+version: 0.2.0
+date-released: 2026-10-26
+license: MIT
+authors:
+  - family-names: Lee
+    given-names: Ugwiyeon
+abstract: "Composable, evidence-qualified human reliability and process-risk research components."

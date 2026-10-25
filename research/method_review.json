@@ -1,0 +1,73 @@
+{
+  "schema_version": "1",
+  "review_date": "2026-10-26",
+  "selection_rule": "Prefer evidence, explicit conditioning, maintained computation and reproducible checks over novelty alone.",
+  "decisions": [
+    {
+      "method": "IDHEAS-ECA",
+      "source": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-staff/sr2256",
+      "decision": "Include independently labeled numeric Appendix B references and a limited single-function kernel; preserve placeholder and elicitation limits; no complete official system claim.",
+      "implementation": "methods.cognitive_chain, reference_methods.idheas_cfm_probability, evidence_catalog"
+    },
+    {
+      "method": "Dynamic HRA / HUNTER",
+      "source": "https://lwrs.inl.gov/risa-reports/",
+      "decision": "Expose human timeline and plant-simulator boundaries; do not claim HUNTER reproduction.",
+      "implementation": "simulation and adapters"
+    },
+    {
+      "method": "Censor-aware context models",
+      "source": "https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html",
+      "decision": "Offer KM, Weibull AFT and Cox in preference to a universal fixed response-time default.",
+      "implementation": "timing.CensoredRegression"
+    },
+    {
+      "method": "Repeated-event exact FTA",
+      "source": "https://github.com/tulip-control/dd",
+      "decision": "Use shared identities and optional BDD instead of independent cut-set addition.",
+      "implementation": "fault_tree"
+    },
+    {
+      "method": "Sobol sensitivity",
+      "source": "https://salib.readthedocs.io/en/latest/api.html",
+      "decision": "Use maintained optional backend and explicit independence; withhold universal convergence claims.",
+      "implementation": "uncertainty.sobol_sensitivity"
+    },
+    {
+      "method": "SPAR-H / conditional dependency",
+      "source": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-contractors/cr6883",
+      "decision": "Retain transparent arithmetic, at-power numeric reference profiles and explicit conditioning/application review.",
+      "implementation": "methods, dependency, reference_methods.spar_h_profile_probability"
+    },
+    {
+      "method": "Thermophysical properties",
+      "source": "https://coolprop.org/coolprop/HighLevelAPI.html",
+      "decision": "Use optional CoolProp SI interface and explicit backend instead of embedding property tables.",
+      "implementation": "thermo.CoolPropState"
+    },
+    {
+      "method": "RData ingestion",
+      "source": "https://rdata.readthedocs.io/en/stable/usage.html",
+      "decision": "Use MIT rdata Python parser; do not bundle a copyleft reader or R runtime.",
+      "implementation": "datasets.tep_rdata"
+    },
+    {
+      "method": "Human evidence selection, 2026 review",
+      "source": "https://doi.org/10.1016/j.net.2026.104300",
+      "decision": "Review recent HuREX/EMBRACE research as metadata only; raw access and redistribution were not established. Select auditable licensed/attributed older numeric evidence rather than treating novelty as calibration.",
+      "implementation": "research/human_evidence_review.json"
+    },
+    {
+      "method": "HEART and CREAM case references",
+      "source": "https://doi.org/10.1371/journal.pone.0253827",
+      "decision": "Bundle permitted numeric method references and case outputs separately from observed counts; do not claim superior accuracy or universal calibration.",
+      "implementation": "evidence_catalog, reference_methods.heart_profile_probability"
+    }
+  ],
+  "further_research": [
+    "Hierarchical operator/task models when sufficient task-level outcomes are available",
+    "Closed-loop human/plant coupling with prospective validation",
+    "Dependent-input sensitivity when a justified joint model is available"
+  ],
+  "absolute_accuracy_superiority_claim": false
+}

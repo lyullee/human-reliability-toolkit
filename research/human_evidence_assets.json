@@ -1,0 +1,110 @@
+{
+  "schema_version": "1",
+  "review_date": "2026-10-26",
+  "assets": [
+    {
+      "path": "data/raw/hra_evidence/methods/cr6883.pdf",
+      "source_id": "spar_h_2005",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/reading-rm/doc-collections/nuregs/contract/cr6883/cr6883.pdf",
+      "bytes": 1351715,
+      "sha256": "4e13b0c445ae9dc87a860cb77b4c0d307ba6d023e92769236ad31a683366d17a",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/methods/cream_xml.xml",
+      "source_id": "plos_cream_2024",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0302511&type=manuscript",
+      "bytes": 125486,
+      "sha256": "b6bae23551ed6c48cd110938e36e832b4f71357ff8defa06ebbd0023e45525d3",
+      "acquired_via": "https"
+    },
+    {
+      "path": "data/raw/hra_evidence/methods/flight_heart_xml.xml",
+      "source_id": "plos_flight_2020",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0231391&type=manuscript",
+      "bytes": 129486,
+      "sha256": "5d4cb956792f00c4e88b2eda00668218f78cc7c0e93dda1ddca1a21269db971d",
+      "acquired_via": "https"
+    },
+    {
+      "path": "data/raw/hra_evidence/methods/ML22300A117.pdf",
+      "source_id": "idheas_eca_2022",
+      "url": "https://www.nrc.gov/docs/ML2230/ML22300A117.pdf",
+      "bytes": 1706813,
+      "sha256": "7f71483b4867adc7b99fdc11dac041c31e23386c6edfeb6e6dc969bf0a75c0a3",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/methods/powerline_xml.xml",
+      "source_id": "plos_powerline_2021",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0253827&type=manuscript",
+      "bytes": 164615,
+      "sha256": "daa861be433123da69aaae424cf2196e123a2514f27ff8e0d6a482d8e272867f",
+      "acquired_via": "https"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/hra-datadictionary.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/hra-datadictionary.xls",
+      "bytes": 49664,
+      "sha256": "8aa22aea9c7e615eec41d5af7ef0cdb9fb66885858bc350614ab8229fdd9b115",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/hra-readme.pdf",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/hra-readme.pdf",
+      "bytes": 89001,
+      "sha256": "88e48019397535750bc3d3903a1108e5016a30949c620c564f856ad95741d3d4",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/sacada-actionpsfs-201904.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/sacada-actionpsfs-201904.xls",
+      "bytes": 50688,
+      "sha256": "388e1d6129138d81157efa3ab1ff73cdbf79cd5c5e8b926fb7e75a4d1bdc93c1",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/sacada-alarmspsfs-201904.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/sacada-alarmspsfs-201904.xls",
+      "bytes": 33280,
+      "sha256": "4b8f128f3fd9a0afb04828b1dd3da96371430b62a6e59474957a22c3008d3caa",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/sacada-decidingpsfs-201904.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/sacada-decidingpsfs-201904.xls",
+      "bytes": 44032,
+      "sha256": "584db88e4ee050be04862f3576e145b6983f112c3952218a9cf89db3a2cb81b5",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/sacada-indicatorpsfs-201904.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/sacada-indicatorpsfs-201904.xls",
+      "bytes": 38912,
+      "sha256": "dd75d6a00f419e35a4f6c0e1c87f7ef79386c4e3c75ba0e259a52b5309f1b92f",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/sacada/sacada-understandingpsfs-201904.xls",
+      "source_id": "sacada_2019",
+      "url": "https://www.nrc.gov/sites/default/files/doc_library/cdn/legacy/data/sacada-understandingpsfs-201904.xls",
+      "bytes": 45056,
+      "sha256": "682e7f4e65ade0d2bf4b48a251949a5c89d33273dc6486987aa8704d831af59c",
+      "acquired_via": "browser_public_download"
+    },
+    {
+      "path": "data/raw/hra_evidence/methods/jmse-10-00333.pdf",
+      "source_id": "mdpi_lng_2022",
+      "url": "https://www.mdpi.com/2077-1312/10/3/333/pdf",
+      "bytes": 3244803,
+      "sha256": "c987b544e27d2b5ee304bdeeb1e2bf9f7b2f4ae66301aeb391a76820e296f7fd",
+      "acquired_via": "browser_public_download"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "metropt3",
+  "source_rows": 1516948,
+  "stride": 60,
+  "calibration_month": 3,
+  "operation_months": "April onward",
+  "channel": "Motor_current",
+  "unit": "A",
+  "threshold": 5.9925,
+  "monitoring_samples": 17861,
+  "activation_count": 1,
+  "maximum_activations_in_hour": 1,
+  "human_error_probability_inferred": false,
+  "meaning": "causal alarm-context integration demonstration; not a detector-performance benchmark"
+}

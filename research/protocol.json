@@ -1,0 +1,16 @@
+{
+  "version": "1",
+  "date": "2026-10-26",
+  "schema_inspected_before_protocol": true,
+  "parameter_fitting_before_protocol": false,
+  "seed": 20261026,
+  "test_fraction": 0.3,
+  "split_unit": "participant",
+  "studies": {
+    "hitl": {"target": "source Overall Performance equals Poor", "features": ["Group", "Scenario"], "models": ["training prevalence with Beta(1,1) smoothing", "one-hot categorical logistic C=1"], "primary_metric": "Brier score", "excluded_predictors": ["participant identity", "demographics", "response and recovery summaries", "consequences", "accuracy", "post-task questionnaires"], "scope": "experimental scenario label prediction; not plant HEP"},
+    "cog_pvt": {"outcome": "source error_trial flag", "uncertainty": "participant-cluster bootstrap 2000 replicates", "holdout": "participant-level prevalence comparison", "scope": "vigilance-task error flags, not industrial error probability"},
+    "cog_monitoring": {"population": "positive finite observed SYSMON responses", "model": "training-only empirical distribution", "evaluation": "held-out empirical quantile coverage", "time_units": "source-native; no physical deadline binding", "scope": "distribution conditional on observed response; missing-opportunity denominator not inferred"},
+    "process_context": {"scope": "real/simulated signal ingestion and causal alarm context; human probabilities stay explicitly assumed", "leakage": "fault labels and future measurements excluded from context input"}
+  },
+  "publication": "aggregate results and source metadata only; no participant rows or fitted person-specific models"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "1",
+  "review_date": "2026-10-26",
+  "candidates": [
+    {
+      "id": "sacada_2019",
+      "url": "https://www.nrc.gov/documents-reports/nrc-data",
+      "decision": "included_numeric_catalog",
+      "reason": "Observed simulator UNSAT/opportunity counts, five functions; context aggregation only."
+    },
+    {
+      "id": "idheas_eca_2022",
+      "url": "https://www.nrc.gov/docs/ML2230/ML22300A117.pdf",
+      "decision": "included_numeric_catalog",
+      "reason": "Numeric components, modifiers, explicit placeholders and function floors; official staff source."
+    },
+    {
+      "id": "spar_h_2005",
+      "url": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-contractors/cr6883",
+      "decision": "included_numeric_catalog",
+      "reason": "At-power numerical facts with original labels; no complete contractor report redistribution."
+    },
+    {
+      "id": "plos_powerline_2021",
+      "url": "https://doi.org/10.1371/journal.pone.0253827",
+      "decision": "included_numeric_catalog",
+      "reason": "CC BY method references and expert-derived electrical-isolation outputs; reversed interval withheld."
+    },
+    {
+      "id": "plos_flight_2020",
+      "url": "https://doi.org/10.1371/journal.pone.0231391",
+      "decision": "included_numeric_catalog",
+      "reason": "CC BY HEART and IAHP-HEART case outputs; not empirical failure observations."
+    },
+    {
+      "id": "plos_cream_2024",
+      "url": "https://doi.org/10.1371/journal.pone.0302511",
+      "decision": "included_numeric_catalog",
+      "reason": "CC BY nominal references and aviation CREAM case outputs; not universal calibrations."
+    },
+    {
+      "id": "mdpi_lng_2022",
+      "url": "https://doi.org/10.3390/jmse10030333",
+      "decision": "included_numeric_catalog",
+      "reason": "CC BY control-mode intervals and one questionnaire-informed LNG prior; equal-task/time-invariance assumptions retained."
+    },
+    {
+      "id": "hurex_embrace_2026",
+      "url": "https://doi.org/10.1016/j.net.2026.104300",
+      "decision": "metadata_only",
+      "license_status": "Publisher indicates all rights reserved; unrestricted raw database not acquired.",
+      "reason": "Recent plant-specific pipeline is relevant, but reported task counts are not a publicly acquired raw dataset and PSF factors include elicitation."
+    },
+    {
+      "id": "hurex_sacada_2022_comparison",
+      "url": "https://doi.org/10.1016/j.net.2021.09.003",
+      "decision": "metadata_only",
+      "license_status": "Unrestricted raw HuREX reuse not verified.",
+      "reason": "Distinguish a published comparison from access to its full task/opportunity database."
+    },
+    {
+      "id": "hera_overview",
+      "url": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-contractors/cr6903",
+      "decision": "metadata_only",
+      "reason": "An overview of a repository is not a verified downloadable denominator-bearing task dataset."
+    },
+    {
+      "id": "hammlab_benchmark",
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/nuregs/agreement/ia0216/v3/index",
+      "decision": "metadata_only",
+      "reason": "Benchmark report references simulator outcomes and method predictions; individual trial data and raw-data reuse boundary not verified for this release."
+    },
+    {
+      "id": "core_data_offshore",
+      "url": "https://doi.org/10.1016/S0951-8320(97)00064-1",
+      "decision": "metadata_only",
+      "reason": "Published offshore collection study; unrestricted complete raw database and reuse terms not verified."
+    },
+    {
+      "id": "mining_heart_bwm_2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9482046/",
+      "decision": "excluded_restrictive_terms",
+      "license_status": "CC-BY-NC-ND-4.0",
+      "reason": "Do not incorporate its case table into an adapted catalog intended for broad reuse. It contains method estimates, not observed trials."
+    },
+    {
+      "id": "industreal",
+      "url": "https://github.com/TimSchoonbeek/IndustReal",
+      "doi": "10.4121/b008dd74-020d-4ea4-a8ba-7bb60769d224.v2",
+      "decision": "not_selected_for_hep_calibration",
+      "license_status": "Apache-2.0 stated by the source repository and institutional dataset record.",
+      "reason": "Protocol includes deliberately erroneous instructions as well as spontaneous errors. Overall error prevalence is engineered, not a natural field HEP. The full 77 GB video collection is unnecessary for the numeric catalog.",
+      "source_pin": "ad86a35d4b5125739e24af677e5d7b55c74af945"
+    },
+    {
+      "id": "organizational_bn_simulation_2024",
+      "url": "https://data.mendeley.com/datasets/g4tr59b84p/1",
+      "decision": "metadata_only_synthetic",
+      "license_status": "CC-BY-4.0",
+      "reason": "Generated human-error inputs from a PERT distribution and Bayesian model; cannot relabel as measured failure counts. No asset acquired."
+    },
+    {
+      "id": "nasa_space_hra_project",
+      "url": "https://data.nasa.gov/dataset/space-mission-human-reliability-analysis-hra-project",
+      "decision": "metadata_only",
+      "reason": "Project metadata and publications do not establish a downloadable situation-specific error/opportunity series."
+    },
+    {
+      "id": "hitl_control_room_existing",
+      "url": "https://zenodo.org/records/13984198",
+      "decision": "retained_context_outcomes_not_hep",
+      "license_status": "CC-BY-4.0 metadata; MIT file separately retained.",
+      "reason": "Already acquired simulator summaries lack individual task opportunities and verified time semantics."
+    },
+    {
+      "id": "cog_bci_existing",
+      "url": "https://zenodo.org/records/7413650",
+      "decision": "withheld_for_hep",
+      "license_status": "CC-BY-4.0",
+      "reason": "Already acquired responses lack missed-opportunity denominators; identical PVT error-flag positions are unresolved."
+    }
+  ],
+  "candidate_count": 18,
+  "included_sources": 7,
+  "selection_criteria": [
+    "Primary source or explicitly licensed published dataset",
+    "Defined outcome and denominator for empirical HEP",
+    "Numeric quantity and method semantics recorded separately",
+    "Source rights and redistribution boundary reviewed",
+    "No silent domain transfer or calendar exposure invention"
+  ],
+  "coverage_gaps": [
+    "No acquired chemical-plant field task/error exposure series",
+    "No observed situation-specific annual human-error frequency series",
+    "No unrestricted complete HuREX, CORE-DATA or HERA raw release verified"
+  ],
+  "important_correction": "The previous process-data review deferred SACADA. This review located and acquired the NRC April-2019 public release. It supersedes the earlier availability conclusion, not the limits on field transfer."
+}

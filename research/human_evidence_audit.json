@@ -1,0 +1,1402 @@
+{
+  "schema_version": "1",
+  "version": "0.2.0",
+  "source_count": 7,
+  "record_count": 1334,
+  "by_kind": {
+    "observed_count": 578,
+    "method_component": 96,
+    "method_multiplier": 476,
+    "method_probability": 176,
+    "method_rule": 4,
+    "method_interval": 4
+  },
+  "by_method": {
+    "observed_counts": 578,
+    "idheas_eca": 468,
+    "heart": 82,
+    "z_heart": 26,
+    "fuzzy_heart": 26,
+    "iahp_heart": 34,
+    "cream_extended_nominal": 13,
+    "cream_case_study": 26,
+    "spar_h": 76,
+    "cream_control_mode": 4,
+    "fuzzy_bn_cream_case_study": 1
+  },
+  "sacada_functions": {
+    "detect_alarm": {
+      "contexts": 61,
+      "unsatisfactory": 13,
+      "opportunities": 2099,
+      "minimum_context_opportunities": 2
+    },
+    "read_indicator": {
+      "contexts": 95,
+      "unsatisfactory": 17,
+      "opportunities": 2198,
+      "minimum_context_opportunities": 2
+    },
+    "understanding": {
+      "contexts": 116,
+      "unsatisfactory": 28,
+      "opportunities": 2613,
+      "minimum_context_opportunities": 2
+    },
+    "decision": {
+      "contexts": 147,
+      "unsatisfactory": 32,
+      "opportunities": 6019,
+      "minimum_context_opportunities": 2
+    },
+    "action": {
+      "contexts": 159,
+      "unsatisfactory": 59,
+      "opportunities": 5167,
+      "minimum_context_opportunities": 2
+    }
+  },
+  "source_anomalies": [
+    {
+      "source_id": "plos_powerline_2021",
+      "locator": "Table 1 / E",
+      "issue": "Published interval is reversed or does not contain its nominal; bounds withheld, not silently corrected.",
+      "source_bounds": [
+        0.07,
+        0.045
+      ],
+      "nominal": 0.02
+    }
+  ],
+  "excluded_cells": [
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF3; variant 2",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF3; variant 3",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF4; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF4; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-1; printed B-2; source SF4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 2",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 2",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 2",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 3",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 3",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-3; source Inf1; variant 3",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 2",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 2",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 2",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 3",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 3",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 3",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 4",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 4",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-2; printed B-4; source Inf2; variant 4",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV1; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV1; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV1; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV2; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV2; variant 2",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV5; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV6; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV6; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV6; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV8; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV8; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV8; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV8; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV9; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV9; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV9; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV9; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV10; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV10; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV10; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV10; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV11; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV11; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV11; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV11; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV12; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV12; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV12; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV12; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV13; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV13; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV13; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-4; printed B-10; source ENV13; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC0; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC3; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC3; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC4; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC4; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-5; printed B-11; source SIC4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI1; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI1; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI1; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI2; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI2; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI2; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI3; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI4; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI5; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI5; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI6; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI6; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI6; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI6; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI7; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI7; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI7; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI7; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI8; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI8; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI8; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI8; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI9; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI9; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI9; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI9; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI10; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI10; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI10; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI10; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI11; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI11; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI11; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI11; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI12; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI12; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI12; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI12; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI13; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI13; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI13; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI13; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI14; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI14; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI14; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI14; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI15; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI15; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI15; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-6; printed B-12; source HSI15; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP1; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP1; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP2; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP2; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP3; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP5; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP6; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP6; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-7; printed B-13; source TP6; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-9; printed B-14; source PG6; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-9; printed B-14; source PG6; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-9; printed B-14; source PG7; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-9; printed B-14; source PG7; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-15; source TE3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-15; source TE4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-15; source TE5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE6; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE7; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE7; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE7; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE7; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE8; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE8; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE8; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE8; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE9; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE9; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE9; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE10; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE10; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE10; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE10; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE11; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE11; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE11; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE11; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE12; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE12; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE12; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE12; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE13; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE13; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE13; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-10; printed B-16; source TE13; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF3; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF3; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF3; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF4; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF4; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF5; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF5; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-11; printed B-17; source TF5; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT3; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT3; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT4; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT5; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT5; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT6; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT6; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT6; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT6; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT7; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT7; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT7; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT7; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT8; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT8; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT8; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT8; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT9; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT9; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT9; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT9; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT10; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT10; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT10; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-13; printed B-19; source MT10; variant 1",
+      "function": "action",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF4; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF6; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-14; printed B-20; source MF7; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD0; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD0; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD0; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD0; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD1; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD1; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD1; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD1; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD2; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD2; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD2; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD2; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD3; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD3; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD3; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD3; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD4; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD4; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD4; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD4; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD5; variant 1",
+      "function": "detection",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD5; variant 1",
+      "function": "understanding",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD5; variant 1",
+      "function": "decision",
+      "reason": "not_applicable_or_blank"
+    },
+    {
+      "locator": "NUREG-2256; Table B-15; printed B-21; source PD5; variant 1",
+      "function": "coordination",
+      "reason": "not_applicable_or_blank"
+    }
+  ],
+  "raw_asset_count": 13,
+  "independent_field_trials_claim": false,
+  "observed_annual_frequency_records": 0,
+  "catalog_sha256": "c6bc92774584637a9ed94e5ed016732ffe8e9b251a6a93273bdc1572160c46a0"
+}

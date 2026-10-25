@@ -1,0 +1,24 @@
+{
+  "schema_version": "1",
+  "task": {
+    "id": "manual-isolation-demo",
+    "title": "Illustrative manual isolation response",
+    "procedure_version": "project-demo-1",
+    "evidence": [
+      {"id": "demo", "reference": "Project-authored software example", "origin": "assumed", "applicability": "Demonstration only; no plant calibration"}
+    ],
+    "steps": [
+      {"id": "recognize", "action": "recognize the presented alarm", "kind": "observe", "target": "alarm display", "actor": "operator", "cue": "displayed alarm", "completion": "alarm identified", "processing_mode": "rule"},
+      {"id": "decide", "action": "select the required response", "kind": "decide", "target": "response procedure", "actor": "operator", "cue": "identified alarm", "completion": "response selected", "predecessors": ["recognize"], "processing_mode": "knowledge"},
+      {"id": "command", "action": "issue the manual stop request", "kind": "manipulate", "target": "stop interface", "actor": "operator", "cue": "selected response", "completion": "request registered", "predecessors": ["decide"], "deadline_s": 20.0},
+      {"id": "verify", "action": "verify physical isolation", "kind": "verify", "target": "valve feedback", "actor": "operator", "cue": "stop request registered", "completion": "flow and position meet declared limits", "predecessors": ["command"], "latent_hazards": ["command accepted without valve movement"]}
+    ]
+  },
+  "context": {"id": "demo-context", "operating_mode": "transfer", "scenario_id": "declared-leak"},
+  "events": [
+    {"id": "manual-response-failure", "task_id": "manual-isolation-demo", "step_ids": ["recognize", "decide", "command"], "role": "response", "failure_definition": "wrong or absent response before applying a separate timing model", "opportunity_definition": "one presented alarm requiring manual response", "conditioning": "given a presented alarm and unavailable automatic isolation"}
+  ],
+  "models": {
+    "manual-response-failure": {"method": "cognitive_chain", "evidence_ids": ["demo"], "parameters": {"conditional_failures": {"detection": 0.02, "understanding": 0.03, "decision": 0.01, "action": 0.01, "coordination": 0.005}}}
+  }
+}

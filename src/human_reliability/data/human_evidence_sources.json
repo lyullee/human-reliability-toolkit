@@ -1,0 +1,169 @@
+{
+  "schema_version": "1",
+  "sources": [
+    {
+      "id": "sacada_2019",
+      "title": "NRC SACADA public human-performance context counts",
+      "authors": [
+        "U.S. Nuclear Regulatory Commission"
+      ],
+      "url": "https://www.nrc.gov/documents-reports/nrc-data",
+      "version": "April 2019 release; observations through March 2019",
+      "reviewed_on": "2026-10-26",
+      "setting": "Licensed operators in nuclear training simulators",
+      "rights": {
+        "license_id": "US-government-public-use",
+        "reference": "https://www.nrc.gov/about-nrc/site-disclaimer",
+        "numeric_reuse": "government_public_use",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Training-objective UNSAT counts are not chemical-plant field HEPs.",
+        "Functions may share crews and episodes; do not pool across function files.",
+        "No calendar exposure or participant-level clustering information is released."
+      ]
+    },
+    {
+      "id": "idheas_eca_2022",
+      "title": "NRC NUREG-2256 IDHEAS-ECA numeric references",
+      "authors": [
+        "J. Xing",
+        "Y.J. Chang",
+        "J. DeJesus Segarra"
+      ],
+      "url": "https://www.nrc.gov/docs/ML2230/ML22300A117.pdf",
+      "version": "NUREG-2256, October 2022",
+      "reviewed_on": "2026-10-26",
+      "setting": "Generalized method evidence for cognitive functions",
+      "rights": {
+        "license_id": "US-government-public-use",
+        "reference": "https://www.nrc.gov/about-nrc/site-disclaimer",
+        "numeric_reuse": "government_public_use",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Components and modifiers are not complete HEPs.",
+        "The values 1.1 and 1.2 are source placeholders, not quantitatively measured multipliers.",
+        "Source boundaries at 11 signals and 15 messages overlap as printed; analyst selection must resolve the ambiguity.",
+        "No complete official IDHEAS-ECA workflow implementation is claimed."
+      ]
+    },
+    {
+      "id": "spar_h_2005",
+      "title": "NRC NUREG/CR-6883 SPAR-H numerical profile",
+      "authors": [
+        "D.I. Gertman",
+        "H.S. Blackman",
+        "J.L. Marble",
+        "J.C. Byers",
+        "C.L. Smith"
+      ],
+      "url": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-contractors/cr6883",
+      "version": "NUREG/CR-6883, August 2005",
+      "reviewed_on": "2026-10-26",
+      "setting": "Nuclear HRA method reference",
+      "rights": {
+        "license_id": "NRC-publication-numeric-facts",
+        "reference": "https://www.nrc.gov/about-nrc/site-disclaimer",
+        "numeric_reuse": "numeric_facts_only",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Numeric parameters with independently authored labels only; no report prose or worksheet is redistributed.",
+        "NRC site policy excludes separately copyrighted third-party material; no blanket relicensing of external works.",
+        "PSF selection, context transfer, uncertainty and dependency require analyst review."
+      ]
+    },
+    {
+      "id": "plos_powerline_2021",
+      "title": "Human reliability analysis in de-energization of power line using HEART in the context of Z-numbers",
+      "authors": [
+        "Hamed Aghaei",
+        "Mostafa Mirzaei Aliabadi",
+        "Farzaneh Mollabahrami",
+        "Kamran Najafi"
+      ],
+      "url": "https://doi.org/10.1371/journal.pone.0253827",
+      "version": "Published article XML",
+      "reviewed_on": "2026-10-26",
+      "setting": "Expert-assessed electrical isolation case study",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "reference": "https://creativecommons.org/licenses/by/4.0/",
+        "numeric_reuse": "permitted_with_attribution",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Published method numbers are not observed error/opportunity counts.",
+        "Use the source task, elicitation and domain conditions; no universal transfer or superiority claim."
+      ]
+    },
+    {
+      "id": "plos_flight_2020",
+      "title": "Flight safety assessment based on an integrated human reliability quantification approach",
+      "authors": [
+        "Yundong Guo",
+        "Youchao Sun"
+      ],
+      "url": "https://doi.org/10.1371/journal.pone.0231391",
+      "version": "Published article XML",
+      "reviewed_on": "2026-10-26",
+      "setting": "Expert-assessed flight phase case study",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "reference": "https://creativecommons.org/licenses/by/4.0/",
+        "numeric_reuse": "permitted_with_attribution",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Published method numbers are not observed error/opportunity counts.",
+        "Use the source task, elicitation and domain conditions; no universal transfer or superiority claim."
+      ]
+    },
+    {
+      "id": "plos_cream_2024",
+      "title": "Flight safety assessment based on a modified human error risk quantification approach",
+      "authors": [
+        "Yundong Guo",
+        "Xinshi Suo"
+      ],
+      "url": "https://doi.org/10.1371/journal.pone.0302511",
+      "version": "Published article XML",
+      "reviewed_on": "2026-10-26",
+      "setting": "Method reference and low-visibility approach case study",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "reference": "https://creativecommons.org/licenses/by/4.0/",
+        "numeric_reuse": "permitted_with_attribution",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "Published method numbers are not observed error/opportunity counts.",
+        "Use the source task, elicitation and domain conditions; no universal transfer or superiority claim."
+      ]
+    },
+    {
+      "id": "mdpi_lng_2022",
+      "title": "Human Error Probability Assessment for LNG Bunkering Based on Fuzzy Bayesian Network-CREAM Model",
+      "authors": [
+        "Hongjun Fan",
+        "Hossein Enshaei",
+        "Shantha Gamini Jayasinghe"
+      ],
+      "url": "https://doi.org/10.3390/jmse10030333",
+      "version": "Published 27 February 2022",
+      "reviewed_on": "2026-10-26",
+      "setting": "Questionnaire-informed LNG bunkering model",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "reference": "https://creativecommons.org/licenses/by/4.0/",
+        "numeric_reuse": "permitted_with_attribution",
+        "notice": "Retain source credit and this license; project labels are independently authored. External works and third-party exclusions retain their own terms."
+      },
+      "limitations": [
+        "The published HEP is a model result; the questionnaire is not an observed error/opportunity series.",
+        "The complete fuzzy Bayesian network and 19,683-row CPT are not reproduced by this catalog."
+      ]
+    }
+  ]
+}

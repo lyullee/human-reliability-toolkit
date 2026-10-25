@@ -1,0 +1,1204 @@
+{
+  "schema_version": "1",
+  "functions": {
+    "detect_alarm": {
+      "alarm_status_tile": {
+        "source_column": "Alarm-StatusTile",
+        "observed_codes": [
+          1,
+          2
+        ],
+        "missing_codes": [],
+        "codes": {
+          "1": "Alarm indication",
+          "2": "Status indication"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "detection_mode": {
+        "source_column": "DetectionMode",
+        "observed_codes": [
+          1,
+          2,
+          4
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Self-revealing cue",
+          "2": "Procedure prompts a check",
+          "3": "Procedure prompts monitoring",
+          "4": "Awareness or inspection"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "alarm_board_status": {
+        "source_column": "AlarmBoardStatus",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Dark alarm board",
+          "2": "Busy alarm board",
+          "3": "Overloaded alarm board"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "expectation": {
+        "source_column": "Expectation",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Expected cue",
+          "2": "Unexpected cue",
+          "3": "Not applicable"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "workload": {
+        "source_column": "Workload",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference workload",
+          "2": "A concurrent demand",
+          "3": "Several concurrent demands"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "time_criticality": {
+        "source_column": "TimeCriticality",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Large time margin",
+          "2": "Reference time margin",
+          "3": "Small time margin"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "extent_of_communication": {
+        "source_column": "ExtendOfCommunication",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference exchange",
+          "2": "Extensive exchange on site",
+          "3": "Extensive exchange in control room"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "non_standard": {
+        "source_column": "NonStandard",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "noisy_background": {
+        "source_column": "NoisyBackground",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "coordination": {
+        "source_column": "Coordination",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "communicator_unavailable": {
+        "source_column": "CommunicatorUnavailable",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "multiple_demand": {
+        "source_column": "MultipleDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "memory_demand": {
+        "source_column": "MemoryDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      }
+    },
+    "read_indicator": {
+      "meter_type": {
+        "source_column": "Meter Type",
+        "observed_codes": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "missing_codes": [],
+        "codes": {
+          "3": "Meter",
+          "4": "Indicator lamp",
+          "5": "Flag",
+          "6": "Computer display",
+          "7": "Other source"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "detection_mode": {
+        "source_column": "DetectionMode",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "missing_codes": [],
+        "codes": {
+          "1": "Procedure prompts a check",
+          "2": "Source combined knowledge-monitoring/self-revealing category",
+          "3": "Procedure prompts monitoring",
+          "4": "Awareness or inspection"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "change_degree": {
+        "source_column": "ChangeDegree",
+        "observed_codes": [
+          1,
+          2
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Small change",
+          "2": "Clear change"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "no_mimics": {
+        "source_column": "No Mimics",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "small_indication": {
+        "source_column": "Small Indication",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "similar_display": {
+        "source_column": "Similar Display",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "workload": {
+        "source_column": "Workload",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference workload",
+          "2": "A concurrent demand",
+          "3": "Several concurrent demands"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "time_criticality": {
+        "source_column": "TimeCriticality",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Large time margin",
+          "2": "Reference time margin",
+          "3": "Small time margin"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "extent_of_communication": {
+        "source_column": "ExtendOfCommunication",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference exchange",
+          "2": "Extensive exchange on site",
+          "3": "Extensive exchange in control room"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "non_standard": {
+        "source_column": "NonStandard",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "noisy_background": {
+        "source_column": "NoisyBackground",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "coordination": {
+        "source_column": "Coordination",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "communicator_unavailable": {
+        "source_column": "CommunicatorUnavailable",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "multiple_demand": {
+        "source_column": "MultipleDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "memory_demand": {
+        "source_column": "MemoryDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      }
+    },
+    "understanding": {
+      "diagnosis_basis": {
+        "source_column": "DiagnosisBasis",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Procedure-guided interpretation",
+          "2": "Skill-guided interpretation",
+          "3": "Knowledge-guided interpretation"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "diagnosis_familiarity": {
+        "source_column": "DiagnosisFamiliarity",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Standard context",
+          "2": "Novel context",
+          "3": "Anomalous context"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "diagnosis_outcome": {
+        "source_column": "DiagnosisOutcome",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Procedure-guided behavior",
+          "2": "Skill-guided behavior",
+          "3": "Knowledge-guided behavior"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "poor_information_timing": {
+        "source_column": "PoorInfomrationTiming",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "ambiguous_information": {
+        "source_column": "AmbiguousInformation",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "integration_required": {
+        "source_column": "IntegrationRequired",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "information_specificity": {
+        "source_column": "Information Specificity",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Specific information",
+          "2": "Nonspecific information",
+          "3": "Not applicable"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "missing_information": {
+        "source_column": "MissingInformation",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "misleading_information": {
+        "source_column": "MisleadingInformation",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "conflicting_information": {
+        "source_column": "ConflictingInformation",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "workload": {
+        "source_column": "Workload",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference workload",
+          "2": "A concurrent demand",
+          "3": "Several concurrent demands"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "time_criticality": {
+        "source_column": "TimeCriticality",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Large time margin",
+          "2": "Reference time margin",
+          "3": "Small time margin"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "extent_of_communication": {
+        "source_column": "ExtendOfCommunication",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference exchange",
+          "2": "Extensive exchange on site",
+          "3": "Extensive exchange in control room"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "non_standard": {
+        "source_column": "NonStandard",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "noisy_background": {
+        "source_column": "NoisyBackground",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "coordination": {
+        "source_column": "Coordination",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "communicator_unavailable": {
+        "source_column": "CommunicatorUnavailable",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "multiple_demand": {
+        "source_column": "MultipleDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "memory_demand": {
+        "source_column": "MemoryDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      }
+    },
+    "decision": {
+      "decision_basis": {
+        "source_column": "DecisionBasis",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Standard context",
+          "2": "Adaptation needed",
+          "3": "Anomalous context"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "decision_familiarity": {
+        "source_column": "DecisionFamiliarity",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Clear choice",
+          "2": "Uncertain choice",
+          "3": "Competing priorities",
+          "4": "Conflicting guidance"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "decision_uncertainty": {
+        "source_column": "DecisionUncertainty",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Procedure-guided behavior",
+          "2": "Skill-guided behavior",
+          "3": "Knowledge-guided behavior"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "decision_outcome": {
+        "source_column": "DecisionOutcome",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Discrete outcome",
+          "2": "Ordered outcome",
+          "3": "Maintaining a condition"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "workload": {
+        "source_column": "Workload",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference workload",
+          "2": "A concurrent demand",
+          "3": "Several concurrent demands"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "time_criticality": {
+        "source_column": "TimeCriticality",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Large time margin",
+          "2": "Reference time margin",
+          "3": "Small time margin"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "extent_of_communication": {
+        "source_column": "ExtendOfCommunication",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference exchange",
+          "2": "Extensive exchange on site",
+          "3": "Extensive exchange in control room"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "non_standard": {
+        "source_column": "NonStandard",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "noisy_background": {
+        "source_column": "NoisyBackground",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "coordination": {
+        "source_column": "Coordination",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "communicator_unavailable": {
+        "source_column": "CommunicatorUnavailable",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "multiple_demand": {
+        "source_column": "MultipleDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "memory_demand": {
+        "source_column": "MemoryDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      }
+    },
+    "action": {
+      "action_type": {
+        "source_column": "ActionType",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Discrete action",
+          "2": "Ordered actions",
+          "3": "Maintaining a condition"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "action_location": {
+        "source_column": "ActionLocation",
+        "observed_codes": [
+          1,
+          2
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Main/auxiliary board",
+          "2": "Rear control panel"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "action_guidance": {
+        "source_column": "ActionGuidance",
+        "observed_codes": [
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Procedural guidance",
+          "2": "Craft skill with intact equipment",
+          "3": "STAR with faulted equipment"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "action_recoverability": {
+        "source_column": "ActionRecoverability",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Readily recoverable",
+          "2": "Recovery needs substantial effort",
+          "3": "No recovery available"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "unintuitive_plant_response": {
+        "source_column": "UnintuitivePlantResponse",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "unintuitive_controls": {
+        "source_column": "UnintuitiveControls",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "additional_mental_effort_required": {
+        "source_column": "AditionalMentalEffortRequired",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "inadequate_feedback": {
+        "source_column": "InadequateFeedback",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "similar_controls": {
+        "source_column": "SimilarControls",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "workload": {
+        "source_column": "Workload",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference workload",
+          "2": "A concurrent demand",
+          "3": "Several concurrent demands"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "time_criticality": {
+        "source_column": "TimeCriticality",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Large time margin",
+          "2": "Reference time margin",
+          "3": "Small time margin"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "extent_of_communication": {
+        "source_column": "ExtendOfCommunication",
+        "observed_codes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "missing_codes": [
+          0
+        ],
+        "codes": {
+          "0": "Unspecified",
+          "1": "Reference exchange",
+          "2": "Extensive exchange on site",
+          "3": "Extensive exchange in control room"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "non_standard": {
+        "source_column": "NonStandard",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "noisy_background": {
+        "source_column": "NoisyBackground",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "coordination": {
+        "source_column": "Coordination",
+        "observed_codes": [
+          0
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "communicator_unavailable": {
+        "source_column": "CommunicatorUnavailable",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "multiple_demand": {
+        "source_column": "MultipleDemands",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      },
+      "memory_demand": {
+        "source_column": "MemoryDemand",
+        "observed_codes": [
+          0,
+          1
+        ],
+        "missing_codes": [],
+        "codes": {
+          "0": "Condition absent",
+          "1": "Condition present"
+        },
+        "interpretation": "Categorical source code; 0 is missing only when listed in missing_codes."
+      }
+    }
+  }
+}

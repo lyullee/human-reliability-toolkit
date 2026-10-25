@@ -1,0 +1,225 @@
+{
+  "schema_version": "1",
+  "version": "0.2.0",
+  "review_date": "2026-10-26",
+  "official_named_system_reproduction_claim": false,
+  "capabilities": [
+    {
+      "id": "task_model",
+      "module": "contracts",
+      "status": "implemented",
+      "behavior": "Typed task DAG, roles, deadlines, operating mode and latent hazards",
+      "qualification": "Task boundary and opportunity definition are caller-owned"
+    },
+    {
+      "id": "deviation_analysis",
+      "module": "qualitative",
+      "status": "implemented_qualitative",
+      "behavior": "18 original configurable prompts, exclusions and organizational/design/procedure/collaboration review",
+      "qualification": "Prompts generate candidates; no automatic HEP"
+    },
+    {
+      "id": "empirical_hep",
+      "module": "probability",
+      "status": "implemented",
+      "behavior": "Beta-Bernoulli posterior and intervals",
+      "qualification": "Valid error/opportunity counts, transfer and dependence review required"
+    },
+    {
+      "id": "declared_and_custom_hep",
+      "module": "methods,assessment",
+      "status": "implemented",
+      "behavior": "Evidence-linked declared values and per-case parameterized plugins",
+      "qualification": "Provided values remain assumptions until supported"
+    },
+    {
+      "id": "cognitive_stages",
+      "module": "methods",
+      "status": "research_extension",
+      "behavior": "Ordered conditional first-failure decomposition",
+      "qualification": "Not official IDHEAS quantification"
+    },
+    {
+      "id": "spar_h",
+      "module": "methods,reference_methods",
+      "status": "numeric_profile_adapter",
+      "behavior": "Diagnosis/action arithmetic and independently labeled at-power reference levels",
+      "qualification": "All eight factor selections and task/domain qualification remain explicit; no full official system claim"
+    },
+    {
+      "id": "heart",
+      "module": "methods,reference_methods",
+      "status": "numeric_profile_adapter",
+      "behavior": "Numeric generic-task/EPC profiles and caller-assessed effects",
+      "qualification": "One secondary-source interval is withheld as inconsistent; effect proportions and transfer review remain caller-owned"
+    },
+    {
+      "id": "recovery_dependency",
+      "module": "dependency",
+      "status": "implemented",
+      "behavior": "Conditional dependence levels, initial error and conditional recovery",
+      "qualification": "No double counting; dependency selection needs evidence"
+    },
+    {
+      "id": "response_time",
+      "module": "timing",
+      "status": "implemented",
+      "behavior": "Lognormal, Weibull, Kaplan-Meier, censor-aware fitting, deadlines and bins",
+      "qualification": "Censor semantics and physical seconds must be established"
+    },
+    {
+      "id": "censored_regression",
+      "module": "timing",
+      "status": "optional_implemented",
+      "behavior": "lifelines Weibull AFT and Cox",
+      "qualification": "Proportional hazards, covariate effects and extrapolation require qualification"
+    },
+    {
+      "id": "fta",
+      "module": "fault_tree",
+      "status": "implemented",
+      "behavior": "Shared-event AND/OR/NOT/VOTE, enumeration and optional BDD",
+      "qualification": "Enumeration/state budgets enforced; static logic only"
+    },
+    {
+      "id": "dependent_fta",
+      "module": "fault_tree,bayes",
+      "status": "implemented",
+      "behavior": "Declared joint-state evaluation and small exact Bayesian networks",
+      "qualification": "Complete joint/CPT assumptions required; no causal identification"
+    },
+    {
+      "id": "cutsets_importance",
+      "module": "fault_tree",
+      "status": "implemented",
+      "behavior": "Monotone minimal cut sets and Birnbaum importance",
+      "qualification": "Bounded state space; independent primitive events for standard importance"
+    },
+    {
+      "id": "eta_risk",
+      "module": "event_tree",
+      "status": "implemented",
+      "behavior": "Conditional exclusive branches, annual rates, individual risk and FN ledger",
+      "qualification": "Consequence probabilities/exposure remain caller inputs"
+    },
+    {
+      "id": "lopa",
+      "module": "barriers",
+      "status": "screening",
+      "behavior": "Withhold multiplication when independence or response feasibility is unresolved",
+      "qualification": "Not protection-layer certification"
+    },
+    {
+      "id": "hazop_fmeca_risk_matrix",
+      "module": "registers",
+      "status": "implemented_qualitative",
+      "behavior": "Register export, failure modes and ordinal matrix",
+      "qualification": "Ordinal scores do not become probabilities"
+    },
+    {
+      "id": "task_simulation",
+      "module": "simulation",
+      "status": "research_extension",
+      "behavior": "Resource-constrained task DAG and causal completion timeline",
+      "qualification": "Open-loop episodes; no closed-loop human/plant feedback model"
+    },
+    {
+      "id": "workflow_formal_checks",
+      "module": "workflow",
+      "status": "implemented_bounded",
+      "behavior": "Petri-net reachable unsafe states and deadlocks",
+      "qualification": "State cap produces incomplete result; not unlimited formal verification"
+    },
+    {
+      "id": "attention",
+      "module": "attention",
+      "status": "research_extension",
+      "behavior": "SLSQP caller-defined attention cost/budget optimization",
+      "qualification": "No universal workload-to-HEP mapping or global optimum claim"
+    },
+    {
+      "id": "safety_case",
+      "module": "safety_case",
+      "status": "implemented",
+      "behavior": "Evidence-version links, claim DAG and change impact",
+      "qualification": "Claim validity requires substantive review"
+    },
+    {
+      "id": "alarm_context",
+      "module": "monitoring",
+      "status": "implemented",
+      "behavior": "Causal hold/persistence/reset/gap/validity and alarm burden",
+      "qualification": "Anomaly or alarm score is not HEP"
+    },
+    {
+      "id": "thermodynamics",
+      "module": "thermo",
+      "status": "optional_implemented",
+      "behavior": "CoolProp SI properties, mass/energy residuals",
+      "qualification": "REFPROP not default; property domain and process model review required"
+    },
+    {
+      "id": "uncertainty",
+      "module": "uncertainty",
+      "status": "implemented",
+      "behavior": "Four marginal families, Monte Carlo and Gaussian latent copula",
+      "qualification": "Latent correlations are not marginal Pearson correlations"
+    },
+    {
+      "id": "sobol",
+      "module": "uncertainty",
+      "status": "optional_implemented",
+      "behavior": "SALib first/total order indices and intervals",
+      "qualification": "Explicit independent uniform inputs; convergence not automatically qualified"
+    },
+    {
+      "id": "data_readers",
+      "module": "datasets",
+      "status": "implemented_bounded",
+      "behavior": "Nine acquired dataset families including behavioral subsets",
+      "qualification": "Opaque MATLAB table objects remain unsupported"
+    },
+    {
+      "id": "empirical_studies",
+      "module": "studies",
+      "status": "implemented",
+      "behavior": "Participant holdout, cluster bootstrap and probability metrics",
+      "qualification": "Retained PVT anomaly withheld; no field calibration claim"
+    },
+    {
+      "id": "existing_projects",
+      "module": "adapters",
+      "status": "implemented_bounded",
+      "behavior": "PRISM, DynaSense, station, monitoring, LH2, SAGA, QSafety and PSA protocols",
+      "qualification": "Actual tested objects listed separately; full receiving workflows not all tested"
+    },
+    {
+      "id": "cli_configuration",
+      "module": "assessment,cli",
+      "status": "implemented",
+      "behavior": "Versioned JSON cases/schema, custom rules and registry",
+      "qualification": "Template uses assumed values"
+    },
+    {
+      "id": "human_evidence_catalog",
+      "module": "evidence_catalog",
+      "status": "implemented",
+      "behavior": "Seven sources, 1334 records, typed queries, source conditions, rights and provenance; 578 observed simulator count records",
+      "qualification": "No acquired chemical-plant field HEP or observed annual frequency; cross-domain transfer requires review and remains research"
+    },
+    {
+      "id": "idheas_function_kernel",
+      "module": "reference_methods",
+      "status": "limited_numeric_kernel",
+      "behavior": "Three-base union, function floor, additive modifier increments and declared recovery divisor",
+      "qualification": "Not full IDHEAS-ECA HFE analysis; placeholders cannot be used as calibrated modifiers"
+    },
+    {
+      "id": "evidence_risk_binding",
+      "module": "assessment,evidence_catalog",
+      "status": "implemented",
+      "behavior": "Explicit-prior count binding, qualified method-value binding and target-exposure annual conversion",
+      "qualification": "Method coefficients are rejected as HEPs; intervals need explicit point selection; no automatic independent pooling"
+    }
+  ]
+}

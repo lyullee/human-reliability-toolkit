@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+artifacts/
+data/raw/
+data/processed/
+research/source_cache/
+*.pdf
+.env
+.env.*
+!.env.example

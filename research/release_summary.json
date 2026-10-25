@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "artifacts": [
+    {
+      "file": "human_reliability_toolkit-0.2.0-py3-none-any.whl",
+      "bytes": 104849,
+      "sha256": "2c81571ca8a5f8d80ceb04d9bfe91c2d9961c098a1681afcd55a7480f2b1cb69"
+    },
+    {
+      "file": "human_reliability_toolkit-0.2.0.tar.gz",
+      "bytes": 257877,
+      "sha256": "192f3ffd478b01f2cbb64f34d3affde3025b951cb9ec61c11db24f4802e047f3"
+    }
+  ],
+  "checks": {
+    "tests_passed": 63,
+    "tests_skipped": 0,
+    "data_families_audited": 9,
+    "human_evidence_sources": 7,
+    "human_evidence_records": 1334,
+    "observed_count_records": 578,
+    "source_boundary_passed": true,
+    "isolated_core_wheel_install_passed": true
+  },
+  "published_to_github": false
+}
