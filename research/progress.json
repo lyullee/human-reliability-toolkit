@@ -71,18 +71,20 @@
   "human_field_validation": "not_claimed",
   "official_method_system_reproduction": "not_claimed",
   "github_publication": {
-    "status": "v0.5.0_implementation_in_progress_v0.4.0_remains_published",
+    "status": "source_and_release_published",
     "repository": "https://github.com/lyullee/human-reliability-toolkit",
     "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
     "visibility": "public",
     "raw_source_assets_uploaded": false,
     "release_status": "published_and_asset_hashes_verified",
-    "version": "0.4.0",
-    "release_tag": "v0.4.0",
-    "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0",
-    "implementation_commit": "6f9c584ad13d8264b92f8af057eb173c1918477b",
-    "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40278274070",
-    "ci_conclusion": "success"
+    "version": "0.5.0",
+    "release_tag": "v0.5.0",
+    "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.5.0",
+    "implementation_commit": "0045cf1d307e9861cefd454fc545b4081f241e42",
+    "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40284370762",
+    "ci_conclusion": "success",
+    "tag_ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40284683439",
+    "tag_ci_conclusion": "success"
   },
   "git_boundary": "this project folder only",
   "remaining_research": [
@@ -174,6 +176,8 @@
     "isolated_core_install_passed": true,
     "isolated_core_install_checks": 18,
     "source_boundary_passed": true,
-    "publication_status": "locally_verified_preparing_publication"
+    "publication_status": "published_and_asset_hashes_verified",
+    "publication_record": "research/github_publication.json",
+    "linux_ci_passed": true
   }
 }

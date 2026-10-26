@@ -8,8 +8,8 @@
     },
     {
       "file": "human_reliability_toolkit-0.5.0.tar.gz",
-      "bytes": 436508,
-      "sha256": "5a0dda7bfbdcb2a8609b84f2f5d313ebc7c43cb866c82e3872a0df8253d9508f"
+      "bytes": 436991,
+      "sha256": "a668f32a3e6a2c4f6e5c2a4ddf46bf6f3c7456d4cfff005daa157bbae2b09fff"
     }
   ],
   "checks": {
@@ -22,8 +22,14 @@
     "retained_prior_empirical_studies": 6,
     "new_public_aggregate_studies": 1,
     "new_industrial_adjudicated_hep_sources": 0,
-    "human_field_hep_validated": false
+    "human_field_hep_validated": false,
+    "linux_tag_ci_passed": true
   },
-  "published_to_github": false,
-  "repository": "https://github.com/lyullee/human-reliability-toolkit"
+  "published_to_github": true,
+  "repository": "https://github.com/lyullee/human-reliability-toolkit",
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.5.0",
+  "implementation_commit": "0045cf1d307e9861cefd454fc545b4081f241e42",
+  "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40284370762",
+  "github_asset_hashes_verified": true,
+  "tag_ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40284683439"
 }

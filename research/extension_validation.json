@@ -2,7 +2,7 @@
   "schema_version": "1",
   "version": "0.5.0",
   "all_passed": true,
-  "verification_sha256": "b31a8c444c9831a7c2b028c0783696c33d5e01925f1a7f32baa103b5580789b2",
+  "verification_sha256": "649008860bc24bf332f2b33cd7ad66dc15b3a91e3b0ffb497285744347e86e82",
   "pytest": {
     "tests": 165,
     "failures": 0,
