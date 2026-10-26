@@ -76,14 +76,13 @@
     "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
     "visibility": "public",
     "raw_source_assets_uploaded": false,
-    "release_status": "verified_v0.4.0_prepared_for_publication",
-    "version": "0.3.0",
-    "release_tag": "v0.3.0",
-    "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
-    "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
-    "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851",
-    "ci_conclusion": "success",
-    "pending_release": "v0.4.0"
+    "release_status": "published_and_asset_hashes_verified",
+    "version": "0.4.0",
+    "release_tag": "v0.4.0",
+    "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0",
+    "implementation_commit": "6f9c584ad13d8264b92f8af057eb173c1918477b",
+    "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40278274070",
+    "ci_conclusion": "success"
   },
   "git_boundary": "this project folder only",
   "remaining_research": [
@@ -144,7 +143,8 @@
     "verification_checks": 20,
     "new_candidate_reviews": 10,
     "isolated_core_install_passed": true,
-    "raw_assets_excluded_from_publication": true
+    "raw_assets_excluded_from_publication": true,
+    "publication_record": "research/github_publication.json"
   },
   "dataset_family_counter_scope": "15 reviewed families describes the original collection; acquired/audited total includes its nine families plus three new field/process source families. Additional source decisions are recorded separately."
 }

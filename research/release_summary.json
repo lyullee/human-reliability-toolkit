@@ -25,7 +25,10 @@
     "retained_empirical_record_current": true,
     "human_field_hep_validated": false
   },
-  "published_to_github": false,
+  "published_to_github": true,
   "repository": "https://github.com/lyullee/human-reliability-toolkit",
-  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0"
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0",
+  "implementation_commit": "6f9c584ad13d8264b92f8af057eb173c1918477b",
+  "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40278274070",
+  "github_asset_hashes_verified": true
 }

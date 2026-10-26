@@ -1,41 +1,44 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": "https://github.com/lyullee/human-reliability-toolkit",
-  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
-  "tag": "v0.3.0",
-  "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0",
+  "tag": "v0.4.0",
+  "implementation_commit": "6f9c584ad13d8264b92f8af057eb173c1918477b",
   "visibility": "public",
   "remote_source_tree_matched": true,
-  "tracked_source_files": 130,
+  "tracked_source_files": 151,
   "release_assets_verified_against_local_sha256": true,
   "assets": [
     {
-      "file": "human_reliability_toolkit-0.3.0-py3-none-any.whl",
-      "bytes": 150112,
-      "sha256": "713abb310ae98fa661d75e69fefea2335db80a997d795e045b57f6758341f4e1",
-      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.3.0/human_reliability_toolkit-0.3.0-py3-none-any.whl"
+      "file": "human_reliability_toolkit-0.4.0-py3-none-any.whl",
+      "bytes": 168260,
+      "sha256": "4d74c61a370470570d2c6bdcf5ecaa01195b0ef687169a4d20f413a7c82d332f",
+      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.4.0/human_reliability_toolkit-0.4.0-py3-none-any.whl"
     },
     {
-      "file": "human_reliability_toolkit-0.3.0.tar.gz",
-      "bytes": 344048,
-      "sha256": "353984238c77ad4ca32d6e87059f582dbbc7586bc40e6198362ccdcd320e5f57",
-      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.3.0/human_reliability_toolkit-0.3.0.tar.gz"
+      "file": "human_reliability_toolkit-0.4.0.tar.gz",
+      "bytes": 401455,
+      "sha256": "aa89bb0d0beb73ee514d9f4f0a4ddb4f6fb247023fc6cf0f3a20e99d510858ec",
+      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.4.0/human_reliability_toolkit-0.4.0.tar.gz"
     },
     {
       "file": "SHA256SUMS",
-      "bytes": 222,
-      "sha256": "235c96c3e45311e832c252810fc144325d362639e057c587daecd9c4cbc150bd",
-      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.3.0/SHA256SUMS"
+      "bytes": 220,
+      "sha256": "ce0996b5ad41f3d3d440dadfd573a2d0bf77e8f327418dd371c4657f0095fff2",
+      "url": "https://github.com/lyullee/human-reliability-toolkit/releases/download/v0.4.0/SHA256SUMS"
     }
   ],
   "ci": {
     "conclusion": "success",
-    "headSha": "8cee01871170d136a16a56b9d54867441101d6e1",
+    "headSha": "6f9c584ad13d8264b92f8af057eb173c1918477b",
     "status": "completed",
-    "url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851"
+    "url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40278274070"
   },
-  "private_source_documents_uploaded": false,
+  "source_publications_uploaded": false,
   "raw_external_datasets_uploaded": false,
+  "empirical_studies_executed": 6,
+  "new_source_families_acquired": 3,
+  "human_field_hep_validated": false,
   "dependency_and_evidence_terms": [
     "DATA_LICENSES.md",
     "THIRD_PARTY_NOTICES.md"
