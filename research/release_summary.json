@@ -1,34 +1,29 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "artifacts": [
     {
-      "file": "human_reliability_toolkit-0.4.0-py3-none-any.whl",
-      "bytes": 168260,
-      "sha256": "4d74c61a370470570d2c6bdcf5ecaa01195b0ef687169a4d20f413a7c82d332f"
+      "file": "human_reliability_toolkit-0.5.0-py3-none-any.whl",
+      "bytes": 178757,
+      "sha256": "b7755d839612f01acdac51be344cdf25c888d6e632febd3e6f37b0bee981aaad"
     },
     {
-      "file": "human_reliability_toolkit-0.4.0.tar.gz",
-      "bytes": 401455,
-      "sha256": "aa89bb0d0beb73ee514d9f4f0a4ddb4f6fb247023fc6cf0f3a20e99d510858ec"
+      "file": "human_reliability_toolkit-0.5.0.tar.gz",
+      "bytes": 436508,
+      "sha256": "5a0dda7bfbdcb2a8609b84f2f5d313ebc7c43cb866c82e3872a0df8253d9508f"
     }
   ],
   "checks": {
-    "tests_passed": 133,
+    "tests_passed": 165,
     "tests_skipped": 0,
-    "verification_checks": 20,
-    "isolated_core_install_checks": 16,
-    "empirical_studies_executed": 6,
-    "new_source_families_acquired": 3,
-    "process_incident_source_entries": 4,
+    "verification_checks": 23,
+    "isolated_core_install_checks": 18,
     "source_boundary_passed": true,
     "isolated_core_wheel_install_passed": true,
-    "retained_empirical_record_current": true,
+    "retained_prior_empirical_studies": 6,
+    "new_public_aggregate_studies": 1,
+    "new_industrial_adjudicated_hep_sources": 0,
     "human_field_hep_validated": false
   },
-  "published_to_github": true,
-  "repository": "https://github.com/lyullee/human-reliability-toolkit",
-  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0",
-  "implementation_commit": "6f9c584ad13d8264b92f8af057eb173c1918477b",
-  "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40278274070",
-  "github_asset_hashes_verified": true
+  "published_to_github": false,
+  "repository": "https://github.com/lyullee/human-reliability-toolkit"
 }

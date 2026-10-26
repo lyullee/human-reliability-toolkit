@@ -46,12 +46,16 @@ def main():
     run("evidence_example", [sys.executable, "examples/evidence_to_risk.py"])
     run("operational_example", [sys.executable, "examples/operational_research.py"])
     run("field_example", [sys.executable, "examples/field_evidence.py"])
+    run("collection_example", [sys.executable, "examples/field_collection.py"])
+    run("opportunity_benchmarks_cli", [sys.executable, "-m", "human_reliability", "opportunity-benchmarks"])
     run("field_sources_cli", [sys.executable, "-m", "human_reliability", "field-sources"])
     run("field_empirical_record", [sys.executable, "scripts/check_field_record.py"])
     run("evidence_cli", [sys.executable, "-m", "human_reliability", "evidence", "summary"])
     run("documentation", [sys.executable, "scripts/check_documentation.py"])
     with tempfile.TemporaryDirectory(dir=artifact) as directory:
         destination = Path(directory)
+        run("collection_template_cli", [sys.executable, "-m", "human_reliability", "collection-template",
+                                        str(destination / "collection")])
         run(
             "cli_template",
             [sys.executable, "-m", "human_reliability", "template", str(destination / "case.json")],

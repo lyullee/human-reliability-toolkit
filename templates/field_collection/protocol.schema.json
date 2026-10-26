@@ -1,0 +1,156 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Id",
+      "type": "string"
+    },
+    "version": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Version",
+      "type": "string"
+    },
+    "source_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "domain": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Domain",
+      "type": "string"
+    },
+    "task_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Task Id",
+      "type": "string"
+    },
+    "event_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Event Id",
+      "type": "string"
+    },
+    "failure_definition": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Failure Definition",
+      "type": "string"
+    },
+    "opportunity_definition": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Opportunity Definition",
+      "type": "string"
+    },
+    "conditioning": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Conditioning",
+      "type": "string"
+    },
+    "setting": {
+      "enum": [
+        "natural_field",
+        "simulator",
+        "induced",
+        "synthetic"
+      ],
+      "title": "Setting",
+      "type": "string"
+    },
+    "sampling": {
+      "const": "window_census",
+      "title": "Sampling",
+      "type": "string"
+    },
+    "clock_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Clock Id",
+      "type": "string"
+    },
+    "clock_origin_and_unit": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Clock Origin And Unit",
+      "type": "string"
+    },
+    "frozen_at_s": {
+      "minimum": 0,
+      "title": "Frozen At S",
+      "type": "number"
+    },
+    "coverage_review": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Coverage Review",
+      "type": "string"
+    },
+    "registry_review": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Registry Review",
+      "type": "string"
+    },
+    "adjudication_rule": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Adjudication Rule",
+      "type": "string"
+    },
+    "collection_authorization": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Collection Authorization",
+      "type": "string"
+    },
+    "data_license": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Data License",
+      "type": "string"
+    },
+    "license_evidence": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "License Evidence",
+      "type": "string"
+    },
+    "public_release_authorization": {
+      "default": "",
+      "title": "Public Release Authorization",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "source_id",
+    "domain",
+    "task_id",
+    "event_id",
+    "failure_definition",
+    "opportunity_definition",
+    "conditioning",
+    "setting",
+    "sampling",
+    "clock_id",
+    "clock_origin_and_unit",
+    "frozen_at_s",
+    "coverage_review",
+    "registry_review",
+    "adjudication_rule",
+    "collection_authorization",
+    "data_license",
+    "license_evidence"
+  ],
+  "title": "CollectionProtocol",
+  "type": "object"
+}

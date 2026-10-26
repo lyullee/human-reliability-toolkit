@@ -73,6 +73,12 @@ print(json.dumps({"version": human_reliability.__version__, "installed_under_env
     assert len(source_metadata) == 4 and not any(
         source["human_opportunity_counts"] for source in source_metadata.values()
     )
+    benchmark = json.loads(run("opportunity_benchmarks", ["-m", "human_reliability", "opportunity-benchmarks"]))
+    assert len(benchmark["sources"]) == 1
+    assert not benchmark["sources"][0]["human_error_attribution_adjudicated"]
+    run("collection_template", ["-m", "human_reliability", "collection-template", "field-forms"])
+    assert (target / "field-forms/demands.csv").exists()
+    assert (target / "field-forms/validation-plan.schema.json").exists()
     run("template", ["-m", "human_reliability", "template", "case.json"])
     run("case", ["-m", "human_reliability", "run", "case.json", "--out", "result.json"])
     result = json.loads((target / "result.json").read_text(encoding="utf-8"))

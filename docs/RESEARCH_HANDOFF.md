@@ -98,6 +98,15 @@ matched-condition cases. It does not resolve the field task-opportunity gate bel
 
 ## Next research gates
 
+Version 0.5 provides the original collection and validation infrastructure for
+the first gate: [FIELD_COLLECTION.md](FIELD_COLLECTION.md),
+[blank forms](../templates/field_collection), source/rights screening in
+`research/opportunity_source_review.json`, and the restricted endpoint benchmark
+in [DENOMINATOR_VALIDATION.md](DENOMINATOR_VALIDATION.md). Its temporal result is
+unfavorable and retained. It does not replace the missing industrial human-task
+observations. `research/denominator_protocol.json` is explicitly retrospective
+exploratory; do not describe it as preregistered.
+
 1. Obtain task-level opportunities, completed/wrong/missed responses, participant
    identities, cue onset and time-unit definitions under appropriate data rights.
 2. Resolve COG flag semantics and response denominators with authoritative source

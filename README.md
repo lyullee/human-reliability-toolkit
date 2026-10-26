@@ -2,11 +2,18 @@
 
 **Composable Python models for human error, task performance and process-risk analysis.**
 
-Version **0.4.0** adds licensed measurement/incident source metadata, three newly
-acquired source families and six executed retrospective studies. The
-[field validation record](docs/FIELD_VALIDATION.md) includes favorable, unfavorable
-and withheld results. Process prediction accuracy and incident-case composition
-remain separate from human error probability validation.
+Version **0.5.0** adds an original field collection kit, independent task-register
+reconciliation and configurable HEP prediction evaluation. It also retains a new
+public success/failure aggregate benchmark with explicit endpoint limits and an
+unfavorable temporal calibration result. Start with the
+[field collection manual](docs/FIELD_COLLECTION.md),
+[blank forms](templates/field_collection) and
+[denominator validation record](docs/DENOMINATOR_VALIDATION.md).
+
+The six earlier measured-process, simulator and incident studies remain in the
+[field validation record](docs/FIELD_VALIDATION.md). Process accuracy, workflow
+nonconformance and incident-case composition remain separate from adjudicated
+industrial human error probability validation.
 
 The operational layer includes twelve connected modeling capabilities:
 executable actions, causal graphs, risk orchestration, communication/permits,
@@ -38,6 +45,7 @@ uses the optional SimPy extra.
 | Dynamics | Closed-loop process interface, role-visible decisions, preemption, explicit retries, finite progress/deadline checks, optional SimPy and CoolProp |
 | Operational research | Message/readback and work-permit states, opportunity/recovery ledgers, interventions, finite-grid partial pooling, elicitation and assurance snapshots |
 | Empirical evaluation | Cross-year turbine estimates, rolling steel-energy forecasts, matched-condition distillation monitoring, CoolProp water checks, coded incident cases and simulator-context holdouts |
+| Field collection | Blank original forms, complete demand-register checks, unknown outcomes, initial/final HEP scope, frozen forecasts, group leakage checks, calibration and dependence-sensitive uncertainty |
 | Integration | PRISM, DynaSense, station safety logic, monitoring, LH2DT, SAGA, QSafety and PSA trace boundaries |
 
 The catalog is **not 1,334 independent measurements or complete HEPs**:
@@ -54,6 +62,12 @@ The catalog is **not 1,334 independent measurements or complete HEPs**:
 There are **no acquired situation-specific observed annual human-error frequency
 series and no chemical-plant field HEP calibration**. Calendar frequency requires
 documented, compatible exposure supplied by the application.
+
+The additional **5,617 measured clinical specimen opportunities** (4,971 recorded
+successes, 646 nonconformances) are a separate aggregate benchmark. They are not
+added to the 1,334-record HEP catalog: individual human attribution and industrial
+transfer are unqualified. Source terms and negative validation results are
+[documented](docs/DENOMINATOR_VALIDATION.md).
 
 ## Install and run
 
@@ -80,6 +94,8 @@ python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dynami
 human-reliability doctor
 human-reliability evidence summary
 human-reliability field-sources
+human-reliability opportunity-benchmarks
+human-reliability collection-template data/raw/site_study
 human-reliability evidence search --kind observed_count --function action --condition workload=2 --limit 3
 human-reliability evidence show sacada.action.r0003
 human-reliability template case.json

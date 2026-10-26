@@ -1,7 +1,7 @@
 {
   "schema_version": "1",
   "date": "2026-10-26",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "phases": {
     "P0": {
       "status": "complete",
@@ -61,7 +61,7 @@
     }
   },
   "software_tests": {
-    "passed": 133,
+    "passed": 165,
     "failed": 0,
     "skipped": 0,
     "warnings_policy": "error"
@@ -71,7 +71,7 @@
   "human_field_validation": "not_claimed",
   "official_method_system_reproduction": "not_claimed",
   "github_publication": {
-    "status": "source_and_release_published",
+    "status": "v0.5.0_implementation_in_progress_v0.4.0_remains_published",
     "repository": "https://github.com/lyullee/human-reliability-toolkit",
     "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
     "visibility": "public",
@@ -107,7 +107,7 @@
       "docs/HUMAN_ERROR_DATA.md",
       "DATA_LICENSES.md"
     ],
-    "software_checks": "133 tests, executable documentation, CLI families, examples, retained field record and actual integration checks passed; see current verification and clean-install reports"
+    "software_checks": "165 tests, executable documentation, CLI families, original collection forms, retained empirical records and actual integration checks passed; see verification and installation reports"
   },
   "operational_extensions": {
     "status": "complete_at_documented_implemented_scopes",
@@ -119,7 +119,7 @@
       "docs/EXTENSION_VALIDATION.md"
     ],
     "field_calibration_claim": false,
-    "passing_tests": 133,
+    "passing_tests": 165,
     "isolated_core_install_passed": true,
     "package_audit": "research/release_audit.json",
     "publication_record": "research/github_publication.json"
@@ -139,12 +139,41 @@
       "docs/FIELD_VALIDATION.md"
     ],
     "human_field_hep_validated": false,
-    "software_tests_passed": 133,
-    "verification_checks": 20,
+    "software_tests_passed": 165,
+    "verification_checks": 23,
     "new_candidate_reviews": 10,
     "isolated_core_install_passed": true,
     "raw_assets_excluded_from_publication": true,
     "publication_record": "research/github_publication.json"
   },
-  "dataset_family_counter_scope": "15 reviewed families describes the original collection; acquired/audited total includes its nine families plus three new field/process source families. Additional source decisions are recorded separately."
+  "dataset_family_counter_scope": "15 reviewed families describes the original collection; acquired/audited total includes its nine families plus three new field/process source families. Additional source decisions are recorded separately. The additional clinical aggregate publication is recorded separately under opportunity_collection, not as an acquired raw industrial dataset.",
+  "opportunity_collection": {
+    "status": "implemented_with_public_data_limitations",
+    "source_candidates_screened": 12,
+    "new_adjudicated_industrial_human_denominator_sources": 0,
+    "new_adjacent_domain_aggregate_sources": 1,
+    "observed_aggregate_opportunities": 5617,
+    "recorded_successes": 4971,
+    "recorded_nonconformances": 646,
+    "new_public_aggregate_evaluations": 1,
+    "human_field_hep_validated": false,
+    "evidence": [
+      "research/opportunity_source_review.json",
+      "research/opportunity_acquisition.json",
+      "research/denominator_protocol.json",
+      "research/denominator_validation_results.json",
+      "docs/FIELD_COLLECTION.md",
+      "docs/DENOMINATOR_VALIDATION.md",
+      "templates/field_collection"
+    ],
+    "software_tests_passed": 165,
+    "new_collection_acceptance_tests": 32,
+    "verification_checks": 23,
+    "blank_form_tables": 5,
+    "synthetic_fixture_distinguished_from_field_data": true,
+    "isolated_core_install_passed": true,
+    "isolated_core_install_checks": 18,
+    "source_boundary_passed": true,
+    "publication_status": "locally_verified_preparing_publication"
+  }
 }

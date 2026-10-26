@@ -114,3 +114,26 @@ investigation reports whose redistribution is restricted. Only the derivative CS
 and readme were acquired locally. Newly reviewed production welding judgments carry
 CC BY-NC-ND 4.0 and are not incorporated into adapted public data or probabilities.
 An article license does not override its dataset's license.
+
+## Version 0.5 opportunity benchmark and original collection forms
+
+The separate `data/opportunity_benchmarks.json` contains selected published
+monthly numeric aggregates attributed to Tabatabaee, S. S., Ghavami, V., Kalhor,
+R., et al. (2023), Patient Safety in Surgery 17:8,
+[article and rights notice](https://doi.org/10.1186/s13037-023-00360-1).
+The publisher licenses the article under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and states
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/) for article data unless
+otherwise credited. We retain attribution and CC BY terms conservatively. Changes:
+selection of monthly success/failure facts, original machine labels and typed
+JSON organization. No source prose, checklist, table layout or patient-level
+records are redistributed. This workflow endpoint is not adjudicated individual
+human-error truth and is not inserted into the reusable HEP catalog.
+
+`templates/field_collection/`, the generator and synthetic collection examples
+are original repository material under MIT. Blank forms contain no field data.
+User observations are not covered by the software license: the starter protocol
+defaults to `internal_only`, and collection authority is distinct from public
+release authority. Source links and licenses in the candidate review do not
+grant rights to excluded raw datasets. Rights checks reduce reuse uncertainty;
+the repository does not claim universal legal clearance for every future use.

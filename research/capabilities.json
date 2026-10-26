@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "review_date": "2026-10-26",
   "official_named_system_reproduction_claim": false,
   "capabilities": [
@@ -311,6 +311,20 @@
       "status": "implemented_with_retained_empirical_limits",
       "behavior": "Four source metadata entries, three new acquired datasets, native measured observations and six frozen-protocol retrospective evaluations",
       "qualification": "Poor or unmatched results retained; process/incident sources have no human task denominators; no chemical-plant field HEP or safety-function qualification"
+    },
+    {
+      "id": "field_collection",
+      "module": "collection",
+      "status": "implemented",
+      "behavior": "Original census forms, strict CSV, independent register reconciliation, adjudicated initial/final outcomes, missingness bounds and ObservationLedger adapter",
+      "qualification": "Declared coverage and authorizations need actual source evidence; no new industrial field HEP truth acquired"
+    },
+    {
+      "id": "opportunity_validation",
+      "module": "opportunity_validation",
+      "status": "implemented_with_explicit_statistical_scope",
+      "behavior": "Frozen forecast and training/group checks, proper scores, calibration, optional group bootstrap, exact binomial intervals and zero-error planning",
+      "qualification": "Dependence, missingness, external training lineage and applicability require review; aggregate clinical endpoint remains separate"
     }
   ]
 }

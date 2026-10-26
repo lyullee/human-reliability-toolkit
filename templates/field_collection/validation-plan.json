@@ -1,0 +1,11 @@
+{
+  "id": "",
+  "model_id": "",
+  "estimand": "final",
+  "evaluation_window_ids": [],
+  "training_demand_ids": [],
+  "training_group_ids": [],
+  "frozen_at_s": 0,
+  "training_manifest_digest": "",
+  "external_training_review": ""
+}

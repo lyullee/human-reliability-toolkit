@@ -1,6 +1,6 @@
 # 인적신뢰도·인적오류 평가 툴킷
 
-> Version 0.4: the current English documentation is README.md, docs/USER_GUIDE.md and docs/HUMAN_ERROR_DATA.md. This Korean walkthrough retains the initial implementation scope.
+> Version 0.5: current English documentation is README.md and docs/FIELD_COLLECTION.md, with the denominator validation record in docs/DENOMINATOR_VALIDATION.md. This Korean walkthrough retains the initial implementation scope.
 
 
 작업 분석부터 인적실패확률, 응답시간, 복구, 종속성, FTA·ETA 연결까지

@@ -1,5 +1,14 @@
 # Verification and empirical evaluation
 
+## Version 0.5 opportunity-denominator evaluation
+
+The [denominator validation record](DENOMINATOR_VALIDATION.md) reports the new
+public aggregate benchmark, rights decisions and unfavorable temporal result.
+The [collection manual](FIELD_COLLECTION.md) defines the original field forms,
+independent register reconciliation, typed context, unknown outcomes, frozen
+predictions, dependence review and prospective validation procedure. No new
+adjudicated industrial human-error calibration is claimed.
+
 ## Version 0.4 public measurement evaluation
 
 [Field validation](FIELD_VALIDATION.md) records six executed retrospective studies

@@ -1,0 +1,82 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Id",
+      "type": "string"
+    },
+    "model_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Model Id",
+      "type": "string"
+    },
+    "estimand": {
+      "enum": [
+        "initial",
+        "final"
+      ],
+      "title": "Estimand",
+      "type": "string"
+    },
+    "evaluation_window_ids": {
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "title": "Evaluation Window Ids",
+      "type": "array"
+    },
+    "training_demand_ids": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "title": "Training Demand Ids",
+      "type": "array"
+    },
+    "training_group_ids": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "title": "Training Group Ids",
+      "type": "array"
+    },
+    "frozen_at_s": {
+      "minimum": 0,
+      "title": "Frozen At S",
+      "type": "number"
+    },
+    "training_manifest_digest": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "Training Manifest Digest",
+      "type": "string"
+    },
+    "external_training_review": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "title": "External Training Review",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "model_id",
+    "estimand",
+    "evaluation_window_ids",
+    "frozen_at_s",
+    "training_manifest_digest",
+    "external_training_review"
+  ],
+  "title": "ValidationPlan",
+  "type": "object"
+}

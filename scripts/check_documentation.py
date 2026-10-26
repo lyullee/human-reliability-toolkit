@@ -31,7 +31,7 @@ def main():
         for index, code in enumerate(examples):
             exec(compile(code, f"README example {index + 1}", "exec"), namespace)
         standalone = []
-        for name in ("OPERATIONAL_EXTENSIONS.md", "FIELD_VALIDATION.md"):
+        for name in ("OPERATIONAL_EXTENSIONS.md", "FIELD_VALIDATION.md", "FIELD_COLLECTION.md"):
             guide = ROOT / "docs" / name
             codes = [
                 code

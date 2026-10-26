@@ -12,6 +12,7 @@ def input_files(root: Path):
     paths.add(root / "MANIFEST.in")
     paths.update(root.glob("*.md"))
     paths.update((root / "docs").glob("*.md"))
+    paths.update(p for p in (root / "templates").rglob("*") if p.is_file())
     paths.add(root / "CITATION.cff")
     paths.add(root / ".gitignore")
     paths.update((root / ".github").rglob("*.yml"))
@@ -21,6 +22,10 @@ def input_files(root: Path):
         "field_assets.json",
         "field_protocol.json",
         "field_protocol_deviations.json",
+        "opportunity_source_review.json",
+        "opportunity_acquisition.json",
+        "denominator_protocol.json",
+        "denominator_validation_results.json",
     ):
         paths.add(root / "research" / name)
     return sorted(paths)

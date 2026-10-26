@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "version": "1",
+  "source_id": "",
+  "domain": "",
+  "task_id": "",
+  "event_id": "",
+  "failure_definition": "",
+  "opportunity_definition": "",
+  "conditioning": "",
+  "setting": "natural_field",
+  "sampling": "window_census",
+  "clock_id": "",
+  "clock_origin_and_unit": "",
+  "frozen_at_s": 0,
+  "coverage_review": "",
+  "registry_review": "",
+  "adjudication_rule": "",
+  "collection_authorization": "",
+  "data_license": "internal_only",
+  "license_evidence": "",
+  "public_release_authorization": ""
+}

@@ -39,9 +39,17 @@ from .risk import RiskCase, RiskEngine
 from .dynamics import CoupledCase, RuntimeJob, StateProcess, run_coupled_case, run_coupled_episode
 from .method_workflows import MethodWorkflowCase, run_method_workflow
 from .field_data import FieldSource, field_sources
+from .collection import CollectionBundle, CollectionProtocol, load_collection, write_collection_kit
+from .opportunity_validation import ValidationPlan, validate_collection
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 __all__ = [
+    "CollectionBundle",
+    "CollectionProtocol",
+    "load_collection",
+    "write_collection_kit",
+    "ValidationPlan",
+    "validate_collection",
     "FieldSource",
     "field_sources",
     "Context",

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "id": "denominator-evaluation-2026-10-26-v1",
+  "date": "2026-10-26",
+  "registration_status": "retrospective_exploratory; source monthly counts were visible before this rule was recorded",
+  "source_id": "pathology_2023_monthly",
+  "endpoint": "recorded specimen workflow nonconformance; not adjudicated human HEP",
+  "train_periods": ["2021-04", "2021-05", "2021-06"],
+  "evaluation_periods": ["2021-07", "2021-08", "2021-09"],
+  "predictor": "constant posterior mean from training counts, Beta(1,1) original explicit prior",
+  "metrics": ["denominator reconciliation", "Brier", "log loss", "observed/predicted rates", "monthly calibration"],
+  "uncertainty": "descriptive only; no independent-crew confidence interval claimed",
+  "microdata_reconstruction": false,
+  "industrial_transfer_qualified": false,
+  "interpretation": "Evaluate the count-based validation path and temporal transport limitation. Do not tune a replacement on this holdout or convert this composite endpoint into a plant HEP."
+}

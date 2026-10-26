@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-26",
+  "source_id": "pathology_2023_monthly",
+  "acquisition": "Selected published numeric facts manually transcribed and reconciled; no individual records acquired",
+  "aggregate_counts": {
+    "successes": 4971,
+    "failures": 646,
+    "opportunities": 5617,
+    "disjoint_months": 6
+  },
+  "source_pages_checked": [
+    {
+      "url": "https://link.springer.com/article/10.1186/s13037-023-00360-1",
+      "bytes": 346786,
+      "local_response_sha256": "9335c5e49ff9e5de5c807a65f6789df9558b024f91bca80090910520866ce28f",
+      "purpose": "Results totals, methods, data availability, Rights and permissions"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s13037-023-00360-1/tables/3",
+      "local_response_sha256": "5ca3be62623a7ef89b1f6fefd37976c8238098dc0d006c71c6e3007a1e420120",
+      "purpose": "Monthly success and failure counts; all six row totals and grand totals reconciled",
+      "bytes": 209490
+    }
+  ],
+  "hash_meaning": "Local retrieval fingerprint only; dynamic publisher HTML may change and is not an upstream immutable release digest",
+  "publisher_pages_in_public_repository": false,
+  "individual_microdata_reconstructed": false,
+  "source_prose_or_table_layout_reproduced": false,
+  "public_numeric_artifact": "src/human_reliability/data/opportunity_benchmarks.json",
+  "license": "CC-BY-4.0 attribution retained; publisher additionally states CC0 for article data absent contrary credit",
+  "license_evidence": "https://link.springer.com/article/10.1186/s13037-023-00360-1#rightslink",
+  "industrial_hep_truth": false
+}

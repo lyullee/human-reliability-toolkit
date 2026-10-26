@@ -1,0 +1,325 @@
+{
+  "windows.csv": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Id",
+        "type": "string"
+      },
+      "start_s": {
+        "minimum": 0,
+        "title": "Start S",
+        "type": "number"
+      },
+      "end_s": {
+        "minimum": 0,
+        "title": "End S",
+        "type": "number"
+      },
+      "coverage_complete": {
+        "title": "Coverage Complete",
+        "type": "boolean"
+      },
+      "expected_register_rows": {
+        "title": "Expected Register Rows",
+        "type": "integer"
+      },
+      "reconciliation_evidence": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Reconciliation Evidence",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "start_s",
+      "end_s",
+      "coverage_complete",
+      "expected_register_rows",
+      "reconciliation_evidence"
+    ],
+    "title": "CoverageWindow",
+    "type": "object"
+  },
+  "demands.csv": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Id",
+        "type": "string"
+      },
+      "source_event_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Source Event Id",
+        "type": "string"
+      },
+      "window_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Window Id",
+        "type": "string"
+      },
+      "start_s": {
+        "minimum": 0,
+        "title": "Start S",
+        "type": "number"
+      },
+      "end_s": {
+        "minimum": 0,
+        "title": "End S",
+        "type": "number"
+      },
+      "deadline_s": {
+        "anyOf": [
+          {
+            "minimum": 0,
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Deadline S"
+      },
+      "group_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Group Id",
+        "type": "string"
+      },
+      "disposition": {
+        "enum": [
+          "eligible",
+          "withdrawn_before_trigger",
+          "duplicate_record"
+        ],
+        "title": "Disposition",
+        "type": "string"
+      },
+      "disposition_evidence": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Disposition Evidence",
+        "type": "string"
+      },
+      "duplicate_of": {
+        "default": "",
+        "title": "Duplicate Of",
+        "type": "string"
+      },
+      "withdrawn_at_s": {
+        "anyOf": [
+          {
+            "minimum": 0,
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Withdrawn At S"
+      },
+      "context": {
+        "additionalProperties": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "default": {},
+        "title": "Context",
+        "type": "object"
+      },
+      "context_evidence": {
+        "default": "",
+        "title": "Context Evidence",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "source_event_id",
+      "window_id",
+      "start_s",
+      "end_s",
+      "deadline_s",
+      "group_id",
+      "disposition",
+      "disposition_evidence"
+    ],
+    "title": "RegisteredDemand",
+    "type": "object"
+  },
+  "outcomes.csv": {
+    "additionalProperties": false,
+    "properties": {
+      "demand_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Demand Id",
+        "type": "string"
+      },
+      "initial_error": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Initial Error"
+      },
+      "final_failure": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Final Failure"
+      },
+      "followup_complete": {
+        "title": "Followup Complete",
+        "type": "boolean"
+      },
+      "endpoint_adjudicated": {
+        "title": "Endpoint Adjudicated",
+        "type": "boolean"
+      },
+      "coder_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Coder Id",
+        "type": "string"
+      },
+      "adjudicator_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Adjudicator Id",
+        "type": "string"
+      },
+      "evidence": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Evidence",
+        "type": "string"
+      }
+    },
+    "required": [
+      "demand_id",
+      "initial_error",
+      "final_failure",
+      "followup_complete",
+      "endpoint_adjudicated",
+      "coder_id",
+      "adjudicator_id",
+      "evidence"
+    ],
+    "title": "CodedOutcome",
+    "type": "object"
+  },
+  "recoveries.csv": {
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Id",
+        "type": "string"
+      },
+      "opportunity_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Opportunity Id",
+        "type": "string"
+      },
+      "time_s": {
+        "minimum": 0,
+        "title": "Time S",
+        "type": "number"
+      },
+      "successful": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Successful"
+      },
+      "evidence": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Evidence",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "opportunity_id",
+      "time_s",
+      "successful",
+      "evidence"
+    ],
+    "title": "RecoveryAttempt",
+    "type": "object"
+  },
+  "predictions.csv": {
+    "additionalProperties": false,
+    "properties": {
+      "demand_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Demand Id",
+        "type": "string"
+      },
+      "model_id": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "title": "Model Id",
+        "type": "string"
+      },
+      "probability": {
+        "maximum": 1,
+        "minimum": 0,
+        "title": "Probability",
+        "type": "number"
+      },
+      "issued_s": {
+        "minimum": 0,
+        "title": "Issued S",
+        "type": "number"
+      }
+    },
+    "required": [
+      "demand_id",
+      "model_id",
+      "probability",
+      "issued_s"
+    ],
+    "title": "Prediction",
+    "type": "object"
+  }
+}

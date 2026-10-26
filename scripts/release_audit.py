@@ -10,7 +10,7 @@ import zipfile
 import tomllib
 
 ROOT = Path(__file__).resolve().parents[1]
-FORBIDDEN_PARTS = {"source_cache", "raw", "processed", ".venv", "artifacts", ".git", "__pycache__"}
+FORBIDDEN_PARTS = {"source_cache", "raw", "processed", "field_records", ".venv", "artifacts", ".git", "__pycache__"}
 FORBIDDEN_SUFFIXES = {".pdf", ".xls", ".xlsx", ".xlsb", ".rdata", ".mat", ".npz", ".pkl", ".pickle"}
 
 

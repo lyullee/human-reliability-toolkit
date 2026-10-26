@@ -1,0 +1,83 @@
+{
+  "schema_version": "1",
+  "source_id": "pathology_2023_monthly",
+  "protocol_digest": "ae5c35767bf3a7032d7bb487608a453f0730d5f538a7fa6590b623437adb1901",
+  "input_sha256_lf": {
+    "research/denominator_protocol.json": "c78500ad561d2e57e11dd877f11fccecb830cececc3deeb34caddbeac2884e70",
+    "scripts/run_denominator_study.py": "bfaf678848c408708f0235070cda07d3f264a372a5ef36b8ba9683a97cceab8b",
+    "src/human_reliability/opportunity_validation.py": "044e71664c59b5047906667d25055f4756794a3391d959b5f06e4f7e270d84d0",
+    "src/human_reliability/field_validation.py": "3a2574900b0d8d9996db3a02557c11713fb3518390e07ba0a7c0189b4623f1d1",
+    "src/human_reliability/data/opportunity_benchmarks.json": "0d1dc81fd753ce38240a7d5648b1422dfc24fccc6154b5b1c734519a0862935f"
+  },
+  "count_audit": {
+    "successes": 4971,
+    "failures": 646,
+    "opportunities": 5617
+  },
+  "training": {
+    "failures": 486,
+    "opportunities": 3189,
+    "prior_alpha": 1,
+    "prior_beta": 1,
+    "posterior_mean_prediction": 0.15261673456596678
+  },
+  "evaluation": {
+    "contexts": 3,
+    "opportunities": 2428,
+    "failures": 160,
+    "brier": 0.0690754940859258,
+    "log_loss": 0.2785658341948131,
+    "impossible_prediction": false,
+    "observed_rate": 0.06589785831960461,
+    "predicted_rate": 0.15261673456596678,
+    "independent_crew_validation": false
+  },
+  "monthly_calibration": [
+    {
+      "period": "2021-07",
+      "successes": 1165,
+      "failures": 110,
+      "opportunities": 1275,
+      "prediction": 0.15261673456596678,
+      "observed_fraction": 0.08627450980392157
+    },
+    {
+      "period": "2021-08",
+      "successes": 500,
+      "failures": 22,
+      "opportunities": 522,
+      "prediction": 0.15261673456596678,
+      "observed_fraction": 0.0421455938697318
+    },
+    {
+      "period": "2021-09",
+      "successes": 603,
+      "failures": 28,
+      "opportunities": 631,
+      "prediction": 0.15261673456596678,
+      "observed_fraction": 0.044374009508716325
+    }
+  ],
+  "zero_error_planning": [
+    {
+      "independent_opportunities_required": 2995,
+      "target_one_sided_upper": 0.001,
+      "confidence": 0.95,
+      "assumes_zero_failures": true,
+      "independence_review": "Planning assumption only; effective independent trials must be justified.",
+      "upper_at_n": 0.0009997444209011422
+    },
+    {
+      "independent_opportunities_required": 29956,
+      "target_one_sided_upper": 0.0001,
+      "confidence": 0.95,
+      "assumes_zero_failures": true,
+      "independence_review": "Planning assumption only; effective independent trials must be justified.",
+      "upper_at_n": 9.99994153197872e-05
+    }
+  ],
+  "finding": "Training-period prediction overstates the later observed composite rate; temporal calibration is not established.",
+  "industrial_hep_validated": false,
+  "adjudicated_human_field_hep_validated": false,
+  "simulated_data_used_in_this_benchmark": false
+}

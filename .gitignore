@@ -11,6 +11,7 @@ artifacts/
 data/raw/
 data/processed/
 research/source_cache/
+field_records/
 *.pdf
 .env
 .env.*

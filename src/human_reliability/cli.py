@@ -13,6 +13,16 @@ from .assessment import AssessmentCase, AssessmentEngine
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     actions = parser.add_subparsers(dest="action", required=True)
+    collection_template = actions.add_parser("collection-template", help="Create blank original CSV field forms")
+    collection_template.add_argument("directory", type=Path)
+    collection_audit = actions.add_parser("collection-audit", help="Reconcile a local field collection")
+    collection_audit.add_argument("directory", type=Path)
+    collection_audit.add_argument("--out", type=Path, required=True)
+    collection_validate = actions.add_parser("collection-validate", help="Evaluate frozen local HEP predictions")
+    collection_validate.add_argument("directory", type=Path)
+    collection_validate.add_argument("plan", type=Path)
+    collection_validate.add_argument("--out", type=Path, required=True)
+    actions.add_parser("opportunity-benchmarks", help="Inspect qualified aggregate endpoint benchmarks")
     template = actions.add_parser("template", help="Write an original illustrative input case")
     template.add_argument("path", type=Path)
     for name in ("risk-template", "coupled-template", "workflow-template"):
@@ -42,6 +52,29 @@ def main():
     evidence.add_argument("--limit", type=int, default=10)
     evidence.add_argument("--out", type=Path)
     args = parser.parse_args()
+    if args.action in {"collection-template", "collection-audit", "collection-validate", "opportunity-benchmarks"}:
+        from .collection import load_collection, write_collection_kit
+        from .opportunity_validation import ValidationPlan, opportunity_benchmarks, validate_collection
+
+        if args.action == "collection-template":
+            write_collection_kit(args.directory)
+            print("Created blank forms: " + str(args.directory))
+            return
+        if args.action == "opportunity-benchmarks":
+            print(json.dumps(opportunity_benchmarks(), indent=2))
+            return
+        bundle = load_collection(args.directory)
+        if args.action == "collection-validate":
+            plan = ValidationPlan.model_validate_json(args.plan.read_text(encoding="utf-8"))
+            result = validate_collection(bundle, plan)
+        else:
+            result = bundle.audit()
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
+        print("Saved local collection result: " + str(args.out))
+        if args.action == "collection-audit" and not result["denominator_reconciled"]:
+            raise SystemExit(2)
+        return
     if args.action == "field-sources":
         from .field_data import field_sources
 

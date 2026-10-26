@@ -5,6 +5,7 @@ recursive-include .github *.yml
 recursive-include src *.py *.json py.typed
 recursive-include docs *.md
 recursive-include examples *.py
+recursive-include templates *.csv *.json *.txt
 recursive-include scripts *.py
 recursive-include tests *.py
 include research/datasets.json
@@ -33,6 +34,10 @@ include research/field_protocol.json
 include research/field_protocol_deviations.json
 include research/field_source_review.json
 include research/field_validation_results.json
+include research/opportunity_source_review.json
+include research/opportunity_acquisition.json
+include research/denominator_protocol.json
+include research/denominator_validation_results.json
 recursive-include research/retained_experiments *.json
 prune research/source_cache
 prune data

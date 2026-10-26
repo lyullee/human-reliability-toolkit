@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "sources": [
+    {
+      "id": "pathology_2023_monthly",
+      "attribution": "Tabatabaee, S. S., Ghavami, V., Kalhor, R., et al. (2023). Evaluation of errors related to surgical pathology specimens of different hospital departments with a patient safety approach: a case study in Iran. Patient Safety in Surgery 17, 8.",
+      "doi": "10.1186/s13037-023-00360-1",
+      "url": "https://link.springer.com/article/10.1186/s13037-023-00360-1",
+      "locator": "Table 3; totals cross-checked against Results",
+      "table_url": "https://link.springer.com/article/10.1186/s13037-023-00360-1/tables/3",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Publisher Rights and permissions: article CC BY 4.0; CC0 applies to article data unless otherwise credited. Attribution is retained conservatively.",
+      "accessed": "2026-10-26",
+      "origin": "observed_field_aggregate",
+      "domain": "clinical_specimen_workflow",
+      "endpoint": "specimen with a recorded preanalytical nonconformance",
+      "opportunity": "specimen assessed in the published six-month hospital census",
+      "setting": "One teaching hospital, Iran, April-September 2021",
+      "human_error_attribution_adjudicated": false,
+      "industrial_transfer_qualified": false,
+      "raw_individual_records_acquired": false,
+      "modifications": "Selected monthly success/failure counts, original machine labels, typed JSON; no prose or source table layout reproduced.",
+      "limitations": [
+        "Composite workflow endpoint; do not interpret all nonconformances as an individual human error.",
+        "Only monthly aggregates are available publicly; individual records require author access and were not acquired.",
+        "No operator/crew dependence, patient mix, recovery pairing or individual prediction timing can be verified.",
+        "Monthly, department and category tables describe the same population and must not be pooled as independent trials.",
+        "Success means no recorded nonconformance under the source checks, not proof that every underlying action was correct."
+      ],
+      "rows": [
+        {"period": "2021-04", "successes": 775, "failures": 141, "opportunities": 916},
+        {"period": "2021-05", "successes": 847, "failures": 141, "opportunities": 988},
+        {"period": "2021-06", "successes": 1081, "failures": 204, "opportunities": 1285},
+        {"period": "2021-07", "successes": 1165, "failures": 110, "opportunities": 1275},
+        {"period": "2021-08", "successes": 500, "failures": 22, "opportunities": 522},
+        {"period": "2021-09", "successes": 603, "failures": 28, "opportunities": 631}
+      ]
+    }
+  ]
+}

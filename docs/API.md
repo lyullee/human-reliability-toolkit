@@ -1,5 +1,23 @@
 # Python API and extension guide
 
+## Version 0.5 field collection API
+
+`human_reliability.collection` exposes `CollectionProtocol`, `CoverageWindow`,
+`RegisteredDemand`, `CodedOutcome`, `Prediction`, `CollectionBundle`,
+`load_collection(path)` and `write_collection_kit(path)`. The bundle adapts to
+the existing `ObservationLedger`; `audit`, `require_reconciled` and `hep` preserve
+eligible/known/missing denominator distinctions. `hep` returns the shared
+`Estimate` and accepts an explicit prior and reviewed dependence/missingness.
+
+`human_reliability.opportunity_validation` exposes `ValidationPlan`,
+`validate_collection(bundle, plan, bin_edges=..., bootstrap_replicates=0,
+seed=1729)`, `exact_binomial_interval`, `zero_error_plan` and
+`opportunity_benchmarks`. Models reject unknown fields and nonfinite/coerced
+values. CSV booleans have explicit lexical rules. Collection and validation
+commands work with the core installation and perform no uploads. Complete field
+dictionary, customization, CLI and prospective procedure:
+[FIELD_COLLECTION.md](FIELD_COLLECTION.md).
+
 ## Measured evidence and validation in version 0.4
 
 `field_data.FieldSource` and `field_sources()` provide offline origin, conditions,

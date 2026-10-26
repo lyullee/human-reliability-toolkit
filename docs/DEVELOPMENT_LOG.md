@@ -147,3 +147,46 @@ User, API, method, data, integration, verification, licensing and handoff docume
 were written alongside the implementation. Source-only build and distribution
 inspection scripts prevent raw external data, source caches, workstation paths and
 credential-like literals from entering the inspected packages.
+
+## Version 0.5: success-inclusive task opportunities
+
+The next evidence search focused on denominators containing successful work,
+including maintenance, nuclear operation, protection-system reports and adjacent
+clinical workflows. Twelve candidate decisions are recorded with review levels
+and source terms. No new adjudicated industrial field task census was acquired.
+Incident composition, estimated operations, simulator errors and unclear data
+rights were not substituted for that missing evidence.
+
+A published monthly specimen-workflow table was acquired as selected aggregate
+facts under verified article/data terms. Row totals and source grand totals were
+reconciled, and retrieval fingerprints retained outside source-page publication.
+The endpoint was kept outside the human HEP catalog because individual human
+attribution and industrial transfer were not established. The temporal rule was
+recorded after reading the table but before computation and is explicitly
+exploratory. Its later-period calibration was unfavorable; no replacement model
+was tuned on those months.
+
+Original field forms and strict Python contracts were then implemented around
+the existing observation/recovery ledger. The independent task register includes
+eligible demands even when no outcome exists. Unknown final outcomes cannot
+activate the ledger's optional inference behavior. Duplicate reconciliation and
+pretrigger exclusions preserve audit rows while preventing exposure inflation.
+Typed task context and provenance support subsequent condition-specific research.
+
+Evaluation records include a frozen model/training manifest, complete eligible
+prediction coverage, issuance times and group exclusions. Proper scoring,
+prespecified bins, missingness bounds, optional whole-group bootstrap and
+conditional binomial planning remain separate from source qualification. A
+synthetic CSV example exercises the existing posterior and repeated-event FTA
+without claiming observations. Core CLI commands create blank forms and analyze
+local records; they do not upload user data.
+
+Acceptance tests cover unknown/absent outcomes, strict CSV tokens, source-count
+reconciliation, exclusion timing, duplicate demands, human attribution, distinct
+review identities, incomplete coverage, forecast timing, training/group leakage,
+typed context, untouched blank templates and retained-result reproducibility.
+The full warnings-as-errors suite and actual integration checks are run before
+distribution inspection. Final executed counts are in
+`research/verification_summary.json`; build and isolated installation results
+are recorded independently. English manuals preserve the remaining industrial
+empirical gate and the site-owned prospective validation procedure.

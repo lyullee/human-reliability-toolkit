@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.5.0 — Task opportunity collection and validation
+
+- Add original blank field forms and schemas, strict CSV import, complete-register
+  reconciliation and an adapter to the existing opportunity/recovery ledger.
+- Add configurable initial/final HEP posteriors, missingness bounds, frozen
+  prediction evaluation, training/group leakage gates, proper scores, calibration,
+  optional group bootstrap and conditional zero-error planning.
+- Retain an attributed published clinical aggregate benchmark with successes and
+  failures, separate from adjudicated human HEP evidence. Preserve its unfavorable
+  exploratory temporal result and industrial transfer exclusion.
+- Document source/rights screening, collection and prospective validation in
+  English. No new natural industrial field HEP calibration is claimed.
+
 ## 0.4.0
 
 - Added attributed CC BY field/process metadata, pinned acquisition and readers
