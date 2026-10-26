@@ -38,6 +38,8 @@ def main():
         )
         print(name, "PASS" if completed.returncode == 0 else "FAIL", flush=True)
         (artifact / (name + ".log")).write_text(completed.stdout + completed.stderr, encoding="utf-8")
+        if completed.returncode:
+            print((completed.stdout + completed.stderr)[-16000:], flush=True)
         return completed.returncode == 0
 
     run("lint", [sys.executable, "-m", "ruff", "check", "src", "scripts", "tests", "examples"])

@@ -4,62 +4,62 @@
     {
       "name": "lint",
       "exit_code": 0,
-      "elapsed_s": 1.094
+      "elapsed_s": 0.422
     },
     {
       "name": "tests",
       "exit_code": 0,
-      "elapsed_s": 26.141
+      "elapsed_s": 25.016
     },
     {
       "name": "python_example",
       "exit_code": 0,
-      "elapsed_s": 4.078
+      "elapsed_s": 3.719
     },
     {
       "name": "evidence_example",
       "exit_code": 0,
-      "elapsed_s": 4.156
+      "elapsed_s": 3.547
     },
     {
       "name": "operational_example",
       "exit_code": 0,
-      "elapsed_s": 3.984
+      "elapsed_s": 3.781
     },
     {
       "name": "field_example",
       "exit_code": 0,
-      "elapsed_s": 5.844
+      "elapsed_s": 5.063
     },
     {
       "name": "collection_example",
       "exit_code": 0,
-      "elapsed_s": 3.797
+      "elapsed_s": 4.063
     },
     {
       "name": "opportunity_benchmarks_cli",
       "exit_code": 0,
-      "elapsed_s": 4.328
+      "elapsed_s": 3.719
     },
     {
       "name": "field_sources_cli",
       "exit_code": 0,
-      "elapsed_s": 3.75
+      "elapsed_s": 3.468
     },
     {
       "name": "field_empirical_record",
       "exit_code": 0,
-      "elapsed_s": 3.532
+      "elapsed_s": 4.282
     },
     {
       "name": "evidence_cli",
       "exit_code": 0,
-      "elapsed_s": 4.093
+      "elapsed_s": 3.656
     },
     {
       "name": "documentation",
       "exit_code": 0,
-      "elapsed_s": 4.032
+      "elapsed_s": 4.359
     },
     {
       "name": "collection_template_cli",
@@ -69,52 +69,52 @@
     {
       "name": "cli_template",
       "exit_code": 0,
-      "elapsed_s": 3.984
+      "elapsed_s": 3.922
     },
     {
       "name": "cli_run",
       "exit_code": 0,
-      "elapsed_s": 3.953
+      "elapsed_s": 3.641
     },
     {
       "name": "risk_template",
       "exit_code": 0,
-      "elapsed_s": 3.703
+      "elapsed_s": 3.812
     },
     {
       "name": "risk_cli",
       "exit_code": 0,
-      "elapsed_s": 3.656
+      "elapsed_s": 3.641
     },
     {
       "name": "coupled_template",
       "exit_code": 0,
-      "elapsed_s": 4.641
+      "elapsed_s": 3.594
     },
     {
       "name": "coupled_cli",
       "exit_code": 0,
-      "elapsed_s": 2.594
+      "elapsed_s": 3.75
     },
     {
       "name": "workflow_template",
       "exit_code": 0,
-      "elapsed_s": 2.547
+      "elapsed_s": 3.578
     },
     {
       "name": "workflow_cli",
       "exit_code": 0,
-      "elapsed_s": 2.297
+      "elapsed_s": 3.5
     },
     {
       "name": "risk_replay",
       "exit_code": 0,
-      "elapsed_s": 2.281
+      "elapsed_s": 3.562
     },
     {
       "name": "integration_objects",
       "exit_code": 0,
-      "elapsed_s": 5.297
+      "elapsed_s": 7.781
     }
   ],
   "pytest": {
@@ -133,7 +133,7 @@
     "docs/API.md": "5ae9916af68fff1118eda205c272b0250385b5043cce4b05b6290b412417aded",
     "docs/ARCHITECTURE.md": "a084e9e64d257e5c62d313971cc0f88c72fe6b33ce705a462588da04dcba4539",
     "docs/DATA.md": "26a1c1d0240594fc0bc935da47ea7dced7ccdb9dae77c4e9153e985c8cc0a363",
-    "docs/DENOMINATOR_VALIDATION.md": "7861d3d8f2279c54b5d671ea29d0d88be65aad1aa42e607cb24cfec45cf7088f",
+    "docs/DENOMINATOR_VALIDATION.md": "7a0e78a613a5e543fa09adb79313a591468784a393afa1bfed490df3f1f105f3",
     "docs/DEVELOPER_HANDBOOK.md": "0aefeeea279b080352793ddb6d640705c44b1aca0e4cb18cb7e520d3889f3522",
     "docs/DEVELOPMENT_LOG.md": "5fe7681d4d8cf4c6008102cb25adb031792a063db43ff584627865d3287fe6b6",
     "docs/EXTENSION_VALIDATION.md": "616c836fef0cab2358fbbb93d6e941cf1d19f4b19b18a9a11dbf734ad4d3c4d4",
@@ -185,7 +185,7 @@
     "scripts/run_denominator_study.py": "bfaf678848c408708f0235070cda07d3f264a372a5ef36b8ba9683a97cceab8b",
     "scripts/run_field_studies.py": "a3f097745f3b7ae1ca33376b568c4ac4dc80f4796823121832fcc6d68e3ea39d",
     "scripts/run_studies.py": "c494023a70f4f2f4283817ad6da24098cd4d14efcf0b63aed1d968c56f7ec9d4",
-    "scripts/run_verification.py": "dfc7b2c1a2b1b9fa1f693991d9c8a23faa54a2853c6c6f7fedbb27b230fd59f1",
+    "scripts/run_verification.py": "ce2de516517f2f49d2dcd5d5f8d66f410b8679acb176094ce7c5118d3f5f46f8",
     "scripts/smoke_install.py": "93940930ebd77a592135f5a0703b6a955f5e99047b1b12cdbf21c901dd6f203e",
     "scripts/verification_inputs.py": "b89528f6bd5c3e8bda8be7fdd963237fbfb0feff5527ddc3896e71cc4eecd3f5",
     "src/human_reliability/__init__.py": "293d86a5ebd41f0895aa8e11b28414aede9e894288e3116e3cd6baf9e58d2b65",
@@ -255,7 +255,7 @@
     "templates/field_collection/validation-plan.schema.json": "4da32d9c9e59952ac76b6f4731c2d28df0f233940665b1bc388862ffa3637069",
     "templates/field_collection/windows.csv": "9f7ddfad17e39c743a6b592db56c4c3d6eea9ba6f20c02499de9e9717d5e3e11",
     "tests/test_assessment_and_adapters.py": "c45f8e3b163d3a25b9d24bedeb67b816e7f679f7667ac7760670ca3ec82c2909",
-    "tests/test_collection.py": "79b704e163438fa07c313220cad7c9028c8bf1a5386084fb473de274af71de79",
+    "tests/test_collection.py": "f6e276d180df65db4b3f1b0f9f1705105795f7b5f68936689b83641a343dc50b",
     "tests/test_core.py": "dea7b428f5ecadfffa1f6aae740bb71642b2aeaf98bef6a8aaba88fe8cc5ad42",
     "tests/test_dynamic_workflows.py": "37cb7f6a0218fb045e647b9318a94fbcdac2a5134ef4d834ba0fb67106162465",
     "tests/test_dynamics.py": "24975b4014279df16d3176ffde979ede98642eee3d6927e41ff54d6ae799676b",

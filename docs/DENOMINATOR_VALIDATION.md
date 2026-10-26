@@ -119,6 +119,9 @@ contains the counts, prediction, monthly calibration, proper scores and normaliz
 implementation hashes. The regression test recomputes the complete result and
 compares it to the retained file, so a changed protocol/implementation requires a
 new recorded result. It does not overwrite the earlier six-study record.
+Counts, structure and normalized input hashes compare exactly. Floating results
+allow relative tolerance 1e-12 and absolute tolerance 1e-14 for Windows/Linux
+math-library rounding; this does not relax source identity or count checks.
 
 ## Next empirical milestone
 

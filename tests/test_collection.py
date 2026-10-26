@@ -222,6 +222,22 @@ def test_retained_denominator_study_matches_current_inputs():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     result = json.loads((ROOT / "research/denominator_validation_results.json").read_text())
-    assert result == module.compute()
+    def compare(expected, actual):
+        # Counts, source hashes and structure stay exact; libm results can differ
+        # in the last binary digits between the Windows and Linux builds.
+        if type(expected) is float:
+            assert actual == pytest.approx(expected, rel=1e-12, abs=1e-14)
+        elif isinstance(expected, dict):
+            assert set(expected) == set(actual)
+            for key in expected:
+                compare(expected[key], actual[key])
+        elif isinstance(expected, list):
+            assert len(expected) == len(actual)
+            for left, right in zip(expected, actual):
+                compare(left, right)
+        else:
+            assert type(expected) is type(actual) and expected == actual
+
+    compare(result, module.compute())
     assert result["evaluation"]["observed_rate"] < result["evaluation"]["predicted_rate"]
     assert not result["adjudicated_human_field_hep_validated"]
