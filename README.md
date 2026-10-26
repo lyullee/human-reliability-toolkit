@@ -2,7 +2,13 @@
 
 **Composable Python models for human error, task performance and process-risk analysis.**
 
-Version **0.3.0** adds twelve connected operational modeling capabilities:
+Version **0.4.0** adds licensed measurement/incident source metadata, three newly
+acquired source families and six executed retrospective studies. The
+[field validation record](docs/FIELD_VALIDATION.md) includes favorable, unfavorable
+and withheld results. Process prediction accuracy and incident-case composition
+remain separate from human error probability validation.
+
+The operational layer includes twelve connected modeling capabilities:
 executable actions, causal graphs, risk orchestration, communication/permits,
 observed opportunities, intervention comparison, coupled dynamics, progress/deadline
 checks, diagnostic information, sparse-data calibration, procedure/assurance
@@ -31,6 +37,7 @@ uses the optional SimPy extra.
 | Risk | Repeated-event-safe FTA, optional BDD, conditional ETA, small Bayesian networks, LOPA screening and frequency/risk accounting |
 | Dynamics | Closed-loop process interface, role-visible decisions, preemption, explicit retries, finite progress/deadline checks, optional SimPy and CoolProp |
 | Operational research | Message/readback and work-permit states, opportunity/recovery ledgers, interventions, finite-grid partial pooling, elicitation and assurance snapshots |
+| Empirical evaluation | Cross-year turbine estimates, rolling steel-energy forecasts, matched-condition distillation monitoring, CoolProp water checks, coded incident cases and simulator-context holdouts |
 | Integration | PRISM, DynaSense, station safety logic, monitoring, LH2DT, SAGA, QSafety and PSA trace boundaries |
 
 The catalog is **not 1,334 independent measurements or complete HEPs**:
@@ -72,6 +79,7 @@ python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dynami
 ```console
 human-reliability doctor
 human-reliability evidence summary
+human-reliability field-sources
 human-reliability evidence search --kind observed_count --function action --condition workload=2 --limit 3
 human-reliability evidence show sacada.action.r0003
 human-reliability template case.json

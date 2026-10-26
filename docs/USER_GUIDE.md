@@ -1,5 +1,15 @@
 # User guide
 
+## Measured evidence and empirical checks
+
+Run `human-reliability field-sources` to inspect the four process/incident source
+entries and their rights. Follow [Field validation](FIELD_VALIDATION.md) to acquire
+pinned assets, reproduce six retrospective studies and connect measured channels
+to existing APIs. Acquired observations, annotations, incident composition and
+model predictions retain separate meanings. The earlier probability catalog and
+risk templates remain available; process prediction accuracy supplies no missing
+HEP denominator or initiating exposure.
+
 ## Operational workflows in version 0.3
 
 Start with [Operational extensions](OPERATIONAL_EXTENSIONS.md) to run configurable

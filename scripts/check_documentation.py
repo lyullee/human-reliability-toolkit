@@ -30,16 +30,19 @@ def main():
     with redirect_stdout(io.StringIO()):
         for index, code in enumerate(examples):
             exec(compile(code, f"README example {index + 1}", "exec"), namespace)
-        guide = ROOT / "docs/OPERATIONAL_EXTENSIONS.md"
-        standalone = [
-            code
-            for code in re.findall(r"```python\n(.*?)```", guide.read_text(encoding="utf-8"), re.S)
-            if code.startswith("# executable\n")
-        ]
-        for index, code in enumerate(standalone):
-            exec(compile(code, f"Operational guide example {index + 1}", "exec"), {})
+        standalone = []
+        for name in ("OPERATIONAL_EXTENSIONS.md", "FIELD_VALIDATION.md"):
+            guide = ROOT / "docs" / name
+            codes = [
+                code
+                for code in re.findall(r"```python\n(.*?)```", guide.read_text(encoding="utf-8"), re.S)
+                if code.startswith("# executable\n")
+            ]
+            for index, code in enumerate(codes):
+                exec(compile(code, f"{name} example {index + 1}", "exec"), {})
+            standalone.extend(codes)
     print(
-        f"Checked {len(documents)} Markdown documents, {len(examples)} README and {len(standalone)} operational-guide Python example(s)."
+        f"Checked {len(documents)} Markdown documents, {len(examples)} README and {len(standalone)} guide Python example(s)."
     )
 
 

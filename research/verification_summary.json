@@ -4,91 +4,106 @@
     {
       "name": "lint",
       "exit_code": 0,
-      "elapsed_s": 0.766
+      "elapsed_s": 0.39
     },
     {
       "name": "tests",
       "exit_code": 0,
-      "elapsed_s": 15.859
+      "elapsed_s": 6.407
     },
     {
       "name": "python_example",
       "exit_code": 0,
-      "elapsed_s": 4.125
+      "elapsed_s": 1.593
     },
     {
       "name": "evidence_example",
       "exit_code": 0,
-      "elapsed_s": 4.485
+      "elapsed_s": 1.594
     },
     {
       "name": "operational_example",
       "exit_code": 0,
-      "elapsed_s": 4.922
+      "elapsed_s": 1.656
+    },
+    {
+      "name": "field_example",
+      "exit_code": 0,
+      "elapsed_s": 1.969
+    },
+    {
+      "name": "field_sources_cli",
+      "exit_code": 0,
+      "elapsed_s": 1.593
+    },
+    {
+      "name": "field_empirical_record",
+      "exit_code": 0,
+      "elapsed_s": 1.563
     },
     {
       "name": "evidence_cli",
       "exit_code": 0,
-      "elapsed_s": 5.656
+      "elapsed_s": 1.609
     },
     {
       "name": "documentation",
       "exit_code": 0,
-      "elapsed_s": 6.375
+      "elapsed_s": 1.61
     },
     {
       "name": "cli_template",
       "exit_code": 0,
-      "elapsed_s": 7.172
+      "elapsed_s": 1.89
     },
     {
       "name": "cli_run",
       "exit_code": 0,
-      "elapsed_s": 4.859
+      "elapsed_s": 1.719
     },
     {
       "name": "risk_template",
       "exit_code": 0,
-      "elapsed_s": 5.375
+      "elapsed_s": 1.688
     },
     {
       "name": "risk_cli",
       "exit_code": 0,
-      "elapsed_s": 6.828
+      "elapsed_s": 1.765
     },
     {
       "name": "coupled_template",
       "exit_code": 0,
-      "elapsed_s": 6.86
+      "elapsed_s": 1.828
     },
     {
       "name": "coupled_cli",
       "exit_code": 0,
-      "elapsed_s": 5.531
+      "elapsed_s": 1.797
     },
     {
       "name": "workflow_template",
       "exit_code": 0,
-      "elapsed_s": 6.391
+      "elapsed_s": 1.86
     },
     {
       "name": "workflow_cli",
       "exit_code": 0,
-      "elapsed_s": 6.39
+      "elapsed_s": 1.843
     },
     {
       "name": "risk_replay",
       "exit_code": 0,
-      "elapsed_s": 4.906
+      "elapsed_s": 1.86
     },
     {
       "name": "integration_objects",
       "exit_code": 0,
-      "elapsed_s": 11.188
+      "elapsed_s": 3.578
     }
   ],
   "pytest": {
-    "tests": 111,
+    "tests": 133,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -96,52 +111,61 @@
   "source_hashes": {
     ".github/workflows/verify.yml": "a8f78c6e1a0821729779db676489375a24511736553a261fc7f92c6c40154196",
     ".gitignore": "bd31c9ab5854abf6764c7e53f748811dc7fad323048303d39e08574c3261488b",
-    "CHANGELOG.md": "041ab02169d2ec4bb8e08a0e61a6081240cb4059a5bf92c353e9adbe0e5a93fa",
-    "CITATION.cff": "88ac927254c2418f3f3c5dc57f3cb6c677c5b1f52f5c0feeee6867a30c76a8af",
+    "CHANGELOG.md": "c6f0921d99ae2308896d4821789a4e1bac372e076f83ca6f8bdfb45b432e0338",
+    "CITATION.cff": "12e93923da22a4d041573cae71e93881e36625583ba837cc46c2572ec1033dd0",
     "CONTRIBUTING.md": "99e849733b62d5b46388f2b53c042f91330d4c7cff078816706ddf47630aa63f",
-    "DATA_LICENSES.md": "25e0396a3a1878b1c3fb09b48993d7e3185ec513690fcf1ba8513b4d9ac1eeee",
-    "docs/API.md": "d9a7a468c937d3dc6144f5f76d8a1d131033d656062b98037bd19d6ef36ca2d9",
-    "docs/ARCHITECTURE.md": "dbb24e5aa825f002ee7c8c8f638017cda5bc5b6e749b7d5492223549763c57c3",
-    "docs/DATA.md": "9d18780243cb59371fe564ee3f7730b85225e517d0b23d07f10130cce4d29da5",
-    "docs/DEVELOPER_HANDBOOK.md": "ba250b66c33bc8f35e070c8f86220c718e937082d4d9506a8a5861ed9ccc117c",
-    "docs/DEVELOPMENT_LOG.md": "064ed71bade2e09f32f49a5af397891298a58dae2e54cdf87b2d668610c9b2ab",
+    "DATA_LICENSES.md": "ecf3aca20c32ea31a044b270b24cd45c23b936e252c8f693f8537ad8d2236d5d",
+    "docs/API.md": "3879c9a5eaa36946631647de04d82ebfc00275e2b8a7227ecdb3e59027f22dde",
+    "docs/ARCHITECTURE.md": "a084e9e64d257e5c62d313971cc0f88c72fe6b33ce705a462588da04dcba4539",
+    "docs/DATA.md": "26a1c1d0240594fc0bc935da47ea7dced7ccdb9dae77c4e9153e985c8cc0a363",
+    "docs/DEVELOPER_HANDBOOK.md": "0aefeeea279b080352793ddb6d640705c44b1aca0e4cb18cb7e520d3889f3522",
+    "docs/DEVELOPMENT_LOG.md": "6fef983fdd86073227f7ffc69bea42863bb2c175268cdbd7d359187c528bcaa5",
     "docs/EXTENSION_VALIDATION.md": "616c836fef0cab2358fbbb93d6e941cf1d19f4b19b18a9a11dbf734ad4d3c4d4",
-    "docs/HUMAN_ERROR_DATA.md": "b3d1c5d6351af15388df52b3a84ce1cf3da8de8fa23b80666c87adf10a5175cb",
+    "docs/FIELD_VALIDATION.md": "bbd499fa5817d05f91642c71551ec886b8c06ccd20f38554a5fbd6833fb4fbc9",
+    "docs/HUMAN_ERROR_DATA.md": "9e455478caa4957e360006c44a8a4a96766dbee8598fb5ea20d8cb5d31d7b753",
     "docs/INTEGRATION.md": "3a15c332cdbdbc5a743e94974bf13eaa0348d221df80ffd5537b27a8d950624b",
     "docs/LICENSING.md": "08bbfb72f20350ec27379b15341875bd2f8c8819a938017ae3d49c850880ff84",
     "docs/METHODS.md": "e8b8922239265c307cd887f69e4f36b2cf2d1ff621d7085ec8405e0421010147",
     "docs/OPERATIONAL_EXTENSIONS.md": "799d7267f2e9610cce162ca42eca9215b8361faf13d6d99e7e17f8b0ad237312",
-    "docs/PLAN.md": "7dfdea300cfc00eb5bcadf9a1198e0209d531ae0c1b7c886d9399003faddefe6",
-    "docs/RESEARCH_HANDOFF.md": "faa4c443199c20a575aa7aa6adfc15697f14648fe0e4dea81e471303ccd83c0e",
+    "docs/PLAN.md": "f82e60407e0923ac1214517a9a20f17c46561817cc207d5f70efe0100806a659",
+    "docs/RESEARCH_HANDOFF.md": "d1c888f578b4ce343a405acc337f8fd70effd1fc8b26f734d4551d67c0252384",
     "docs/SOURCES.md": "059afd6afc1a289b86998e5c5674fd04b1bf4619d314335c16415392ab89e79b",
-    "docs/USER_GUIDE.md": "936ba1ff0ddec6d687b5dca8178ca88601d04178359a358dd17095e4564df3dc",
+    "docs/USER_GUIDE.md": "00b6fb10afc2cfef38bc7c35834ee7fdb8a8fdb187132df9df3db40f825aa780",
     "docs/USER_MANUAL_KO.md": "3ea9f600c1511c3fa45eb2b550c02c8e0cb825b90371eff2485413d7f2c554fe",
-    "docs/VALIDATION.md": "1018824c13f7e7da6a898e1303af3f77deaf620a0695b07a93639d4504e6b8a8",
+    "docs/VALIDATION.md": "b370835e6a71912ae3cc71e61b87869c2ccd1af64ac306fca258d751fca33ea5",
     "examples/evidence_to_risk.py": "0ac4fdba2760831d12edf66548174148c9ed77c17e3d08bec41a1e3a18e2109b",
+    "examples/field_evidence.py": "5742e86f64fb9682b504c382224364602cd5c6fe5f9bca60ebe383c57d9b05a1",
     "examples/operational_research.py": "62a0f833631890cc7bf94cf776101a3a8c9fac8473a83790fd25e0413222c19d",
     "examples/process_context.py": "d28804679e2fe12bc36dc9361faad1cdd60619944ba226601fdbaea7c68b0788",
     "examples/python_api.py": "36f6a70de731d22ad0ae9a3f6673f9e4407b3fad3a4b300bcd50c16d28171f6c",
-    "MANIFEST.in": "901f1bdbc17d01e004e8c487e132c89a8de83417f38e60263ce92413c4ef9bad",
-    "pyproject.toml": "fc8efa0eca6dba2dcfdc4d6336ea6ff5710fd243a052fea310c32e0d18283b66",
-    "README.md": "20e322b868ac3c9ee0bf8bba0b3536ba218e982dc9b031bae1466b4414047dc3",
-    "README_KO.md": "292ff7fb1bd3da108cbd19d00bcde3d3fd7cc463ef7ae770bee47e7e2e396099",
+    "MANIFEST.in": "0b422f872c653ca9f1ed3b54e88d03a7644bf6ff0502a117d7f6de64ca6244d4",
+    "pyproject.toml": "169b69de9397daf26aeb752a8d42cddf8c0896f3d1a8a24ef8c35f3bb444cf29",
+    "README.md": "213fb9fd600185bb9a4b474a4f2eb3a06ec7307464b9010429359a315017ed0f",
+    "README_KO.md": "97dcc7c10a5516eefd4cde395b9501b28312f7d6ba2711142e9dc191920bfadc",
+    "research/field_assets.json": "b995406c29fdb070697271cb0e0042ce4aa852582a8dab2aac8ec99cd540c77d",
+    "research/field_protocol.json": "06574597227bdd49cf4f59ddd4bd0fba483be98b2caf8cceea6b2e79a1a085c3",
+    "research/field_protocol_deviations.json": "2ce6fb727ae072b02ede3a45558611871ea58e0305046a322b81add8554b3a92",
     "research/human_evidence_assets.json": "c22b546a5ae09b54be6daecdfd8b7cbbe2846678cd1602e17e21f3a83ca943f1",
     "research/human_method_profiles.json": "38a583ed0d4c2923a321a4720293f8ac836ee58b422eec06b45595172b74d1da",
     "scripts/acquire_data.py": "6ce3a1d6b17a8c74d495e00daff84179564a1210802386dcf90411da18dc787f",
+    "scripts/acquire_field_data.py": "9a269bef5bb1b25151a968d882b8270707a4f00b7d9d9907fb000e0f41ea66c2",
     "scripts/acquire_human_evidence.py": "61c55f1b70fe729a60d01586ea526be9b140986cb29a2325cdeb61d4b4bcbef9",
     "scripts/audit_data.py": "916024b703598df5436dcae4944aacb675a9ba3177bba3e4cb10c611351676b5",
-    "scripts/build_release.py": "3170a6a29b47d946a6c42f21aafe5ed00f8df4cd341ea5d86d4f2282205a8a78",
-    "scripts/check_documentation.py": "1d7c99dd713f865a8b8b5da013436cb947666b740713d5c0fc671379830a1928",
+    "scripts/build_release.py": "5b66b17617fd2500ee6aab8b37cb2cbb961cdb64bb2badb3788149a14de3a69f",
+    "scripts/check_documentation.py": "0a91f82964abb69813dfc0727c7f37b05cbb03e607a244ac8e3ebd5af7b4ba74",
+    "scripts/check_field_record.py": "5822fa77a62db801fc808c66c130e48ec65ec3bf005a02b997c6d93cbb2f54c4",
     "scripts/check_integrations.py": "8652444d7f539e6a79b8d75a7cfa5c47f09b82826b656be9908ae4559e16c66b",
     "scripts/curate_human_evidence.py": "28890fca854f048365ef1863b7f97ddce7a2bdf6e84971b258d0a4726308fbd7",
+    "scripts/field_verification_inputs.py": "bc3116d80c1865c046956187395192f19771c1935cd611fa60311b74b1d8da91",
     "scripts/inventory_environment.py": "badaa474457e7d1c15bf3b8b8afad8787d07e7b5ee026e5edc5ff21a4613a614",
-    "scripts/record_extension_validation.py": "08a7fe52d64cfbcd299c1fbf8615e33e09c07cf2a36eb2348f52475738c4af96",
+    "scripts/record_extension_validation.py": "c031858984667aaa849dab023d12bd9d21c4a4384b938655488ac43c49590414",
     "scripts/release_audit.py": "9a52792cd6d833801c58b3f0acc359864f0874061615c03fa7387e5f7540077d",
+    "scripts/run_field_studies.py": "a3f097745f3b7ae1ca33376b568c4ac4dc80f4796823121832fcc6d68e3ea39d",
     "scripts/run_studies.py": "c494023a70f4f2f4283817ad6da24098cd4d14efcf0b63aed1d968c56f7ec9d4",
-    "scripts/run_verification.py": "c348f06caba5c7bf485c3085a9d8269d640e9d8b9710241b1a429a4578916743",
-    "scripts/smoke_install.py": "6d13c0af0b66aea9a80f639bbbbc16e8b11251eb6f002307388fb34c0abd01d9",
-    "scripts/verification_inputs.py": "f24fa7a4592260a9163122e49dec04874e4f53a697bc47409e6b8f68963deaed",
-    "src/human_reliability/__init__.py": "bd8e27c3bb3ae9f9f6782fd0df3edec3973f67e089e119db2d8a056b9fb2d993",
+    "scripts/run_verification.py": "be4596e318db1ca114817a64eede31c20f822c2461a638131c5f904878ec1ad0",
+    "scripts/smoke_install.py": "3a46c0fb97874a13ca7ba924948a40f6c6a3cda727b6a12cfb6f58e90c264c90",
+    "scripts/verification_inputs.py": "6f0db977a4c5a7394fe254e609be3d53880569ae3089b59ce2a54aff13c59000",
+    "src/human_reliability/__init__.py": "6d00fa193390c641ec2445164bf30286473d9af40d13b126e8941c2e139bd331",
     "src/human_reliability/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
     "src/human_reliability/actions.py": "27059d33f981e96d9ea0f3d22f97c4b007d55b6a817bc11543de612ffcddd448",
     "src/human_reliability/adapters.py": "c694bbf484cfab7b928b4c3cbc17a3fcbf110071cbb7fb32dc51812647f76d64",
@@ -152,7 +176,7 @@
     "src/human_reliability/bayes.py": "c8de98e43e378426bce79f061118486f6c6b56866d5a4a75752339e959635245",
     "src/human_reliability/calibration.py": "678f92c308fbf08236cfa7fe3887bbeae60f9f8c00d9e97457470350ebb6ec53",
     "src/human_reliability/causal.py": "3650bc106b5a59a81d52cea5542901d51ebf4cf829fd6e1918f02889bfa70c0c",
-    "src/human_reliability/cli.py": "64d05942e2b99e627f1ed9efbe243a492e8c167e9cbdc330daf80a6503161d74",
+    "src/human_reliability/cli.py": "97575fac2044f1e75bea905164c569bc8a2b632b87f868c2e6edbce5f9d30ebc",
     "src/human_reliability/cognition.py": "9f139e6600d1d1cc1832f08595f81e9e55a441096476fd9984835889db7cf284",
     "src/human_reliability/communication.py": "5d3962298445e941cb773556eabb5fb6334133bc27cce8e78be739ce6e4576c5",
     "src/human_reliability/contracts.py": "b1d80221d420b93ad98a0e8405d0dfad6c0ee8f612c6a265d18b75b184856704",
@@ -160,6 +184,7 @@
     "src/human_reliability/data/coupled_case.json": "41a2fc29a33cd5662061a34c42af705868e3933d42e9299241c191e1004155b3",
     "src/human_reliability/data/deviations.json": "4245a4cdd4e5f78a17b6d018cece488792456c1868a1be3ff1de0347c7ba2882",
     "src/human_reliability/data/example_case.json": "562cfc4732c3e5c4b3077cb97d366fc69e66966168de8cb7df3a03febd49db37",
+    "src/human_reliability/data/field_sources.json": "cda2f57703f3f289d9ee3e1f4699fa061f0edbd0fc16763bfde6fb227f260361",
     "src/human_reliability/data/human_error_records.json": "c6bc92774584637a9ed94e5ed016732ffe8e9b251a6a93273bdc1572160c46a0",
     "src/human_reliability/data/human_evidence_sources.json": "44e84583a580cce30de54c8ac98d5c34bca202962d5e53836753da1cb0885a06",
     "src/human_reliability/data/method_workflow.json": "c121336c5892b87667dceb1e0824be9651fb6a5b7a52fcd4187b7e3ed55018b7",
@@ -171,6 +196,9 @@
     "src/human_reliability/event_tree.py": "ac6aced8c1f9e341473842a5de8046dabc3deac328a056a2e5e062114786d89b",
     "src/human_reliability/evidence_catalog.py": "39c5b07539605407d9446ac1707aee44365157a6c6b87854d85aa64a2efc5d87",
     "src/human_reliability/fault_tree.py": "8829cda21e91a295efaf1cc3867df268b14f6c2c12f94ff0caae1140e218b03d",
+    "src/human_reliability/field_data.py": "9a51f624efefa91ad4232ab7926e9a60203b3456a2e93e9b4886ab3bdd273550",
+    "src/human_reliability/field_studies.py": "7611aea2afd9d2b369b68c7243acbce42f8c52b82ce4d445744f87111846f0cb",
+    "src/human_reliability/field_validation.py": "3a2574900b0d8d9996db3a02557c11713fb3518390e07ba0a7c0189b4623f1d1",
     "src/human_reliability/interventions.py": "2fd3b3a61c4960eb9119d28ada76845a6e9a3465834e073f39bfb805f366cae9",
     "src/human_reliability/method_workflows.py": "2ba7ae5e6e8a4385d039899bff16e14bb813126d30a76cc18f754c297adbf7c9",
     "src/human_reliability/methods.py": "c8efa87d7cfecae993f7989d70f367bfa7a9d814ce0bf13ab57db39a467e24ec",
@@ -195,6 +223,7 @@
     "tests/test_dynamics.py": "24975b4014279df16d3176ffde979ede98642eee3d6927e41ff54d6ae799676b",
     "tests/test_evidence_catalog.py": "94444f0cd62165bfc7b1de3244a6351a1642d150b2e592d7cdb32c2707c96f8e",
     "tests/test_execution_risk.py": "71dbf89faffd38dd8e133439bb76498aaec98ffcd143ed5bb1cddf23697d2f57",
+    "tests/test_field_validation.py": "a3932a27009f61578b8073228d5419b09d77c9e4d93defca616d23a0172a7e59",
     "tests/test_operational_extensions.py": "95535ee9a818e01d1bc67ab9e15736c49cb54569a4576ef0f6a33a6029d04847",
     "tests/test_risk.py": "79853e8c42cf0789df3027bc7ebe7ca167c60db7837078e840fa138d95a10dc2",
     "THIRD_PARTY_NOTICES.md": "5824f9e20a0f99579e6f2c6fd17d862a789e09fdc24df6095debc6b906d404c0"

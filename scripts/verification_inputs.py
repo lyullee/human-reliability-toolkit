@@ -15,6 +15,12 @@ def input_files(root: Path):
     paths.add(root / "CITATION.cff")
     paths.add(root / ".gitignore")
     paths.update((root / ".github").rglob("*.yml"))
-    for name in ("human_evidence_assets.json", "human_method_profiles.json"):
+    for name in (
+        "human_evidence_assets.json",
+        "human_method_profiles.json",
+        "field_assets.json",
+        "field_protocol.json",
+        "field_protocol_deviations.json",
+    ):
         paths.add(root / "research" / name)
     return sorted(paths)

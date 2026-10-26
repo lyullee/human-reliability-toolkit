@@ -1,0 +1,63 @@
+{
+  "version": "0.4.0",
+  "assets": [
+    {
+      "source_id": "tum_continuous_distillation",
+      "path": "data/raw/continuous_distillation/source.zip",
+      "url": "https://zenodo.org/api/records/17628963/files/ContinuousDistillationData.zip/content",
+      "bytes": 3563071,
+      "sha256": "8076e5cec0c1137ab0902c305a2603a4c4ec672308db563ff9749a9b9a7a34ec",
+      "supplier_checksum": "md5:9d57e894374486e130ff9885cd741f7e",
+      "license": "CC-BY-4.0",
+      "origin": "measured_process",
+      "verified": true
+    },
+    {
+      "source_id": "uci_steel_energy",
+      "path": "data/raw/steel_energy/source.zip",
+      "url": "https://archive.ics.uci.edu/static/public/851/steel+industry+energy+consumption.zip",
+      "bytes": 481973,
+      "sha256": "d82d28b33780ff1582507fcf08ae764ff648af459d58234370c551e62aadeaef",
+      "supplier_checksum": null,
+      "license": "CC-BY-4.0",
+      "origin": "measured_process",
+      "verified": true
+    },
+    {
+      "source_id": "korea_rail_incidents",
+      "path": "data/raw/rail_incidents/data_105cases_human_factors.csv",
+      "url": "https://zenodo.org/api/records/18310486/files/data_105cases_human_factors.csv/content",
+      "bytes": 3758,
+      "sha256": "9ac194941388593deb7b4e34f3648cde18b386af700191cae21fb283cb72eaef",
+      "supplier_checksum": "md5:81d3d5b93f945241526de9355047b0ea",
+      "license": "CC-BY-4.0",
+      "origin": "observed_incident_codes",
+      "verified": true
+    },
+    {
+      "source_id": "korea_rail_incidents",
+      "path": "data/raw/rail_incidents/readme.txt",
+      "url": "https://zenodo.org/api/records/18310486/files/read%20me.txt/content",
+      "bytes": 660,
+      "sha256": "c9c62455c2d0d0d34029919c0da8c4420edf2f141ff1466a12234b991689475f",
+      "supplier_checksum": "md5:def177c28fd09085f864b0061bd3c8c1",
+      "license": "CC-BY-4.0",
+      "origin": "observed_incident_codes",
+      "verified": true
+    },
+    {
+      "source_id": "uci_gas_turbine",
+      "path": "data/raw/gas_turbine/source.zip",
+      "url": "https://archive.ics.uci.edu/static/public/551/gas+turbine+co+and+nox+emission+data+set.zip",
+      "bytes": 1090294,
+      "sha256": "55fdb1acc25f05bd9c77aac285c424e9154ffb0dbf1bbadb56b69a1142231295",
+      "supplier_checksum": "sha256:55fdb1acc25f05bd9c77aac285c424e9154ffb0dbf1bbadb56b69a1142231295",
+      "license": "CC-BY-4.0",
+      "origin": "measured_process",
+      "verified": true
+    }
+  ],
+  "all_verified": true,
+  "raw_assets_in_source_release": false,
+  "license_terms": "DATA_LICENSES.md"
+}

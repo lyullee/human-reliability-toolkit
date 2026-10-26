@@ -189,6 +189,7 @@ def main():
     )
     matrix_path = ROOT / "research/extension_implementation.json"
     matrix = json.loads(matrix_path.read_text(encoding="utf-8"))
+    matrix["version"] = version
     matrix["status"] = "complete_at_documented_implemented_scopes"
     for item in matrix["items"]:
         item.update(requirements[item["id"]])

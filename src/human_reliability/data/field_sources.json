@@ -1,0 +1,95 @@
+{
+  "schema_version": "1",
+  "version": "0.4.0",
+  "sources": [
+    {
+      "id": "tum_continuous_distillation",
+      "title": "Continuous distillation mini-plant measurements",
+      "doi": "10.5281/zenodo.17628963",
+      "url": "https://zenodo.org/records/17628963",
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://zenodo.org/api/records/17628963",
+      "attribution": "Muraleedharan, A., Ferre, A., Arweiler, J., Jungjohann, I., Jirasek, F., Hasse, H., and Burger, J. (2025). Time series data from a continuous distillation plant with and without anomalies. Zenodo, version 1.",
+      "origin": "measured_process",
+      "domain": "experimental_continuous_distillation",
+      "human_opportunity_counts": false,
+      "conditions": [
+        "Physical mini-plant measurements; three chemical-system scenarios",
+        "Fixed operating points; source includes introduced and naturally occurring anomalies",
+        "Pinned version 1: retain original per-file clocks and common/advanced label fields"
+      ],
+      "limitations": [
+        "A labelled anomaly is not an observed human failure-on-demand",
+        "No operator opportunity denominator or independent operator cohort",
+        "Version 1 time formats and totals differ from the later article narrative; source bytes govern this study",
+        "No inferred facility annual frequency; no startup/shutdown model qualification"
+      ]
+    },
+    {
+      "id": "uci_steel_energy",
+      "title": "Steel Industry Energy Consumption",
+      "doi": "10.24432/C52G8C",
+      "url": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+      "attribution": "V E, S., Shin, C., and Cho, Y. (2021). Steel Industry Energy Consumption. UCI Machine Learning Repository.",
+      "origin": "measured_process",
+      "domain": "steel_production_energy",
+      "human_opportunity_counts": false,
+      "conditions": [
+        "Measurements from one South Korean steel facility",
+        "Quarter-hour source intervals; use previous measurements only for a rolling next-interval forecast"
+      ],
+      "limitations": [
+        "No human action, error or recovery outcome",
+        "Same-interval power factors and load labels are excluded from forecasting",
+        "The CO2 column has inconsistent source unit labels and is not used",
+        "Day-ending midnight labels require explicit clock interpretation; raw dates remain preserved and timing claims are conditional on this assumption."
+      ]
+    },
+    {
+      "id": "korea_rail_incidents",
+      "title": "Coded Korean railway accident investigations",
+      "doi": "10.5281/zenodo.18310486",
+      "url": "https://zenodo.org/records/18310486",
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://zenodo.org/api/records/18310486",
+      "attribution": "Kim, C. (2026). Reproducible data and code for: Assessing Human Error Contributions to Railway Accident Causation. Zenodo.",
+      "origin": "observed_incident_codes",
+      "domain": "korean_rail_accident_investigations",
+      "human_opportunity_counts": false,
+      "conditions": [
+        "105 released anonymized investigated accident cases",
+        "C1-C8 are investigator-derived binary codes and may overlap",
+        "Use only the released derivative CSV; original investigation reports have a different redistribution boundary"
+      ],
+      "limitations": [
+        "Case selection is conditioned on a recorded accident",
+        "No successful tasks, fleet exposure, or task-opportunity denominator",
+        "A code proportion is a case composition, not a human error probability",
+        "The CSV does not label a monetary unit; costs are excluded from currency-specific risk integration"
+      ]
+    },
+    {
+      "id": "uci_gas_turbine",
+      "title": "Gas Turbine CO and NOx Emission Data Set",
+      "doi": "10.24432/C5WC95",
+      "url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "license": "CC-BY-4.0",
+      "license_evidence": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "attribution": "Gas Turbine CO and NOx Emission Data Set (2019). UCI Machine Learning Repository.",
+      "origin": "measured_process",
+      "domain": "gas_turbine_power_plant",
+      "human_opportunity_counts": false,
+      "conditions": [
+        "One Turkish power plant, source-year files 2011-2015",
+        "Ambient-only contemporaneous energy-yield estimation; train/calibrate/evaluate on distinct years"
+      ],
+      "limitations": [
+        "No human task response or error outcomes",
+        "Hourly aggregates are not independent operator opportunities",
+        "Cross-year accuracy is within one plant, not evidence for transfer to another plant"
+      ]
+    }
+  ]
+}

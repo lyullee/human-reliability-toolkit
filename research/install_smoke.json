@@ -1,8 +1,8 @@
 {
-  "wheel": "human_reliability_toolkit-0.3.0-py3-none-any.whl",
-  "wheel_sha256": "713abb310ae98fa661d75e69fefea2335db80a997d795e045b57f6758341f4e1",
+  "wheel": "human_reliability_toolkit-0.4.0-py3-none-any.whl",
+  "wheel_sha256": "4d74c61a370470570d2c6bdcf5ecaa01195b0ef687169a4d20f413a7c82d332f",
   "installed": {
-    "version": "0.3.0",
+    "version": "0.4.0",
     "installed_under_environment": true
   },
   "optional_libraries": {
@@ -34,6 +34,10 @@
     },
     {
       "name": "evidence",
+      "exit_code": 0
+    },
+    {
+      "name": "field_sources",
       "exit_code": 0
     },
     {

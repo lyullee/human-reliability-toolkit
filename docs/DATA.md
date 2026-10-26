@@ -1,5 +1,11 @@
 # Dataset acquisition and eligibility
 
+Version 0.4 adds three newly acquired source families and reuses the turbine
+archive in a separate empirical protocol. See [Field validation](FIELD_VALIDATION.md),
+`research/field_assets.json` and `research/field_acquisition.json`. The original
+nine-family collection below is retained as its own historical audit; the newer
+process/incident studies have independent source-quality and eligibility records.
+
 This page describes the original process/context collection. Version 0.2.0 adds a
 separate packaged human-performance catalog; see [Human-error evidence](HUMAN_ERROR_DATA.md)
 and its acquisition/audit manifests. The new SACADA acquisition supersedes this

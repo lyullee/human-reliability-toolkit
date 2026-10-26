@@ -1,5 +1,19 @@
 # Developer handbook
 
+## Maintaining empirical records
+
+Read [Field validation](FIELD_VALIDATION.md) before modifying measurement readers,
+context predictors or validation metrics. `scripts/check_field_record.py` compares
+retained results with canonical protocol meaning and portable source fingerprints.
+Changing those inputs requires a documented research deviation/new protocol and a
+new evaluation, not only a passing unit test. Preserve failed and withheld results.
+
+Use `--require-assets` to check local raw bytes. Offline software CI verifies the
+stored record and original test fixtures; reacquisition/reproduction is a separate
+explicit command. Never repair a categorical annotation by averaging/rounding, turn
+a physical measurement's boolean contamination into 0/1, or sort source-clock
+reversals away without an explicit reviewed interpretation.
+
 ## Extending operational models
 
 Read [Operational extensions](OPERATIONAL_EXTENSIONS.md) and

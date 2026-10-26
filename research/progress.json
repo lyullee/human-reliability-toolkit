@@ -1,7 +1,7 @@
 {
   "schema_version": "1",
   "date": "2026-10-26",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "phases": {
     "P0": {
       "status": "complete",
@@ -61,13 +61,13 @@
     }
   },
   "software_tests": {
-    "passed": 111,
+    "passed": 133,
     "failed": 0,
     "skipped": 0,
     "warnings_policy": "error"
   },
   "dataset_families_reviewed": 15,
-  "dataset_families_acquired_and_audited": 9,
+  "dataset_families_acquired_and_audited": 12,
   "human_field_validation": "not_claimed",
   "official_method_system_reproduction": "not_claimed",
   "github_publication": {
@@ -76,13 +76,14 @@
     "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
     "visibility": "public",
     "raw_source_assets_uploaded": false,
-    "release_status": "published_and_asset_hashes_verified",
+    "release_status": "verified_v0.4.0_prepared_for_publication",
     "version": "0.3.0",
     "release_tag": "v0.3.0",
     "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
     "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
     "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851",
-    "ci_conclusion": "success"
+    "ci_conclusion": "success",
+    "pending_release": "v0.4.0"
   },
   "git_boundary": "this project folder only",
   "remaining_research": [
@@ -107,7 +108,7 @@
       "docs/HUMAN_ERROR_DATA.md",
       "DATA_LICENSES.md"
     ],
-    "software_checks": "111 tests, executable README/guide examples, three new CLI families, risk replay and actual integration objects passed; see current verification and clean-install reports"
+    "software_checks": "133 tests, executable documentation, CLI families, examples, retained field record and actual integration checks passed; see current verification and clean-install reports"
   },
   "operational_extensions": {
     "status": "complete_at_documented_implemented_scopes",
@@ -119,9 +120,31 @@
       "docs/EXTENSION_VALIDATION.md"
     ],
     "field_calibration_claim": false,
-    "passing_tests": 111,
+    "passing_tests": 133,
     "isolated_core_install_passed": true,
     "package_audit": "research/release_audit.json",
     "publication_record": "research/github_publication.json"
-  }
+  },
+  "field_evaluation": {
+    "status": "complete_at_documented_evaluation_scopes",
+    "new_source_families": 3,
+    "process_incident_source_metadata": 4,
+    "studies": 6,
+    "evidence": [
+      "research/field_protocol.json",
+      "research/field_protocol_deviations.json",
+      "research/field_source_review.json",
+      "research/field_assets.json",
+      "research/field_acquisition.json",
+      "research/field_validation_results.json",
+      "docs/FIELD_VALIDATION.md"
+    ],
+    "human_field_hep_validated": false,
+    "software_tests_passed": 133,
+    "verification_checks": 20,
+    "new_candidate_reviews": 10,
+    "isolated_core_install_passed": true,
+    "raw_assets_excluded_from_publication": true
+  },
+  "dataset_family_counter_scope": "15 reviewed families describes the original collection; acquired/audited total includes its nine families plus three new field/process source families. Additional source decisions are recorded separately."
 }

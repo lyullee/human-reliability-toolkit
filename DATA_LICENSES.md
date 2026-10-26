@@ -82,3 +82,35 @@ state demonstrations. These are authored software examples, not additional
 external observations or field-calibrated parameters. The seven-source numeric
 catalog is unchanged. New user-owned operational records need their own rights,
 provenance and privacy review before redistribution.
+
+## Version 0.4 process and incident evidence
+
+The metadata and aggregate empirical evaluations reference four CC BY 4.0 datasets:
+
+- Muraleedharan, A., Ferre, A., Arweiler, J., Jungjohann, I., Jirasek, F., Hasse, H.,
+  and Burger, J. (2025). Continuous distillation measurements, pinned version 1.
+  [Zenodo 17628963](https://zenodo.org/records/17628963).
+- V E, S., Shin, C., and Cho, Y. (2021). Steel Industry Energy Consumption.
+  [UCI dataset](https://doi.org/10.24432/C52G8C).
+- Kim, C. (2026). Released coded accident data for human-error contributions in
+  Korean railway investigations. [Zenodo 18310486](https://zenodo.org/records/18310486).
+- Gas Turbine CO and NOx Emission Data Set (2019).
+  [UCI dataset](https://doi.org/10.24432/C5WC95).
+
+Source license evidence, original attribution, conditions and limits are in
+`src/human_reliability/data/field_sources.json`. Exact acquired versions are pinned
+in `research/field_assets.json`. Raw datasets, readmes, source publications and
+third-party notebooks are excluded from Git and distribution archives.
+
+Published aggregates are newly computed research results. They include reader
+qualification and a declared steel-clock interpretation, while raw measured values
+remain unchanged. Reuse of source-derived numerical results should retain these
+attributions, the [CC BY 4.0 terms](https://creativecommons.org/licenses/by/4.0/),
+source versions and the documented modifications/limitations. MIT applies to the
+original software and does not replace underlying data terms.
+
+The rail source explicitly distinguishes its released derivative from primary
+investigation reports whose redistribution is restricted. Only the derivative CSV
+and readme were acquired locally. Newly reviewed production welding judgments carry
+CC BY-NC-ND 4.0 and are not incorporated into adapted public data or probabilities.
+An article license does not override its dataset's license.

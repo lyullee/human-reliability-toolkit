@@ -1,5 +1,26 @@
 # Development record
 
+## Version 0.4.0 public-data evaluation
+
+Three additional reusable source families were acquired: measured continuous
+chemical distillation, measured steel energy, and released coded rail accident
+cases. The earlier turbine archive and simulator count catalog support additional
+held-out evaluations. New files remain outside the source publication boundary;
+original source metadata, checksums and aggregate results are retained.
+
+The protocol fixed predictors, splits, estimators and metrics before fitting.
+Strict ingestion exposed day-ending midnight labels, a fractional phase label and
+boolean text in a mass-flow field. The explicit clock interpretation, numerical
+missingness view and annotation audit preserve original values. Repairs and partial
+runs are retained, including a warnings-as-errors constructor correction.
+
+The steel forecast improves on persistence, while the ambient-only turbine model
+is worse than its mean baseline. Monitoring performance and four of five context
+models also fail to support an accuracy improvement. Parameters were not tuned on
+these outcomes. None of the process/incident datasets establishes chemical-plant
+HEP accuracy or an annual human-error frequency. The English field manual records
+the full scope and reproduction steps.
+
 ## Version 0.3.0 operational extension
 
 Twelve composable modeling areas were implemented with parameterized contracts,

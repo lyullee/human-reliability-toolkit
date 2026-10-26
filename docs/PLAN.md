@@ -1,5 +1,16 @@
 # Development plan
 
+## Public-data evaluation milestone, version 0.4
+
+Acquire additional rights-cleared observations, freeze eligible study designs,
+keep measured and estimated quantities distinct, execute held-out checks, retain
+poor and unavailable results, bind measured context to existing APIs, and publish
+English evidence and source-only packages. The six-study protocol and deviations
+are `research/field_protocol.json` and `research/field_protocol_deviations.json`.
+The executed results and remaining qualification gates are documented in
+[Field validation](FIELD_VALIDATION.md). This milestone does not manufacture new
+prospective task opportunities or a field HEP calibration from process sensors.
+
 ## Operational extension milestone
 
 The version 0.3 requirement set covers G01-G12. Build executable action and causal

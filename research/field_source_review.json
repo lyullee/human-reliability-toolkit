@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-26",
+  "newly_acquired_sources": 3,
+  "existing_process_source_reused": 1,
+  "raw_publication": false,
+  "candidates": [
+    {
+      "id": "tum_continuous_distillation",
+      "url": "https://zenodo.org/records/17628963",
+      "decision": "acquired_for_scoped_evaluation",
+      "origin": "measured_process",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "uci_steel_energy",
+      "url": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+      "decision": "acquired_for_scoped_evaluation",
+      "origin": "measured_process",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "korea_rail_incidents",
+      "url": "https://zenodo.org/records/18310486",
+      "decision": "acquired_for_scoped_evaluation",
+      "origin": "observed_incident_codes",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "uci_gas_turbine",
+      "url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "decision": "acquired_for_scoped_evaluation",
+      "origin": "measured_process",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "steel_welding_human_ai_2026",
+      "url": "https://zenodo.org/records/20428512",
+      "license": "CC-BY-NC-ND-4.0",
+      "decision": "metadata_only_not_acquired",
+      "reason": "Relevant production human-assessment data, but restrictive reuse terms do not suit the broad public adapted-data boundary."
+    },
+    {
+      "id": "phmsa_flagged_incidents",
+      "url": "https://catalog.data.gov/dataset/pipeline-incident-flagged-files",
+      "license": "No explicit data license verified in the reviewed catalog metadata",
+      "decision": "metadata_only_access_failed",
+      "reason": "Official download returned HTTP 403. No raw dataset acquired and no bypass attempted. Incident reports alone are not task-opportunity HEP data."
+    },
+    {
+      "id": "pronto",
+      "url": "https://zenodo.org/records/1341583",
+      "license": "CC-BY-4.0",
+      "decision": "metadata_only_this_study",
+      "reason": "Industrial-scale experimental multiphase-flow data with deliberately introduced faults; the 1.7 GB multimodal archive is not needed for the frozen studies and does not supply natural human error denominators."
+    },
+    {
+      "id": "matb_competition_2021",
+      "url": "https://zenodo.org/records/5055046",
+      "license": "CC-BY-SA-4.0",
+      "decision": "metadata_only_no_independence_claim",
+      "reason": "Shares lineage with the already acquired cognitive dataset; no new independent industrial HEP population established."
+    },
+    {
+      "id": "preinitiator_chinese_npp_2026",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7193850",
+      "license": "Raw-data redistribution rights not verified",
+      "decision": "metadata_only",
+      "reason": "Reported operational experience is relevant, but reference-plant-scaled operations are not a verified directly measured task denominator. No raw records or probability values imported."
+    },
+    {
+      "id": "hurex_embrace_2026",
+      "url": "https://doi.org/10.1016/j.net.2026.104300",
+      "license": "Raw reuse not verified",
+      "decision": "metadata_only",
+      "reason": "No open auditable denominator-bearing raw database acquired; retains the earlier evidence review boundary."
+    }
+  ]
+}

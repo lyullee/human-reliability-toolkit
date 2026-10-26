@@ -74,6 +74,12 @@
       "source": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.betaln.html",
       "decision": "Use explicit finite beta-binomial hyperprior mixtures with marginal likelihood weights and posterior-predictive checks; disclose grid sensitivity instead of implying an unrestricted fitted hierarchy.",
       "implementation": "calibration"
+    },
+    {
+      "method": "Public-process predictive validation",
+      "source": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html",
+      "decision": "Use a fixed maintained histogram regressor with explicit chronological partitions, a strong prespecified baseline and calibration diagnostics. Retain the failed ambient-only turbine model and do not tune on its test set.",
+      "implementation": "field_studies, field_validation"
     }
   ],
   "further_research": [
@@ -83,5 +89,5 @@
     "Broader official method workflows only with qualified data, interpretation and appropriate rights"
   ],
   "absolute_accuracy_superiority_claim": false,
-  "version": "0.3.0"
+  "version": "0.4.0"
 }

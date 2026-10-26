@@ -69,6 +69,10 @@ print(json.dumps({"version": human_reliability.__version__, "installed_under_env
     )
     run("schema", ["-m", "human_reliability", "schema"])
     run("evidence", ["-m", "human_reliability", "evidence", "summary"])
+    source_metadata = json.loads(run("field_sources", ["-m", "human_reliability", "field-sources"]))
+    assert len(source_metadata) == 4 and not any(
+        source["human_opportunity_counts"] for source in source_metadata.values()
+    )
     run("template", ["-m", "human_reliability", "template", "case.json"])
     run("case", ["-m", "human_reliability", "run", "case.json", "--out", "result.json"])
     result = json.loads((target / "result.json").read_text(encoding="utf-8"))

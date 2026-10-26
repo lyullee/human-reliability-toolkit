@@ -27,6 +27,12 @@ include research/human_evidence_review.json
 include research/human_method_profiles.json
 include research/extension_implementation.json
 include research/extension_validation.json
+include research/field_assets.json
+include research/field_acquisition.json
+include research/field_protocol.json
+include research/field_protocol_deviations.json
+include research/field_source_review.json
+include research/field_validation_results.json
 recursive-include research/retained_experiments *.json
 prune research/source_cache
 prune data

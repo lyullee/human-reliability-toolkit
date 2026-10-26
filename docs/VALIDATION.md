@@ -1,5 +1,20 @@
 # Verification and empirical evaluation
 
+## Version 0.4 public measurement evaluation
+
+[Field validation](FIELD_VALIDATION.md) records six executed retrospective studies
+with a frozen protocol, source byte hashes and retained unfavorable results. Three
+additional source families were acquired under reviewed CC BY terms. Steel energy
+prediction improves its prespecified baseline; ambient-only turbine prediction,
+the frozen monitoring baseline and simulator context models do not establish a
+broad accuracy improvement. Physical property comparisons remain diagnostics.
+
+The new record is `research/field_validation_results.json`. Source-clock and
+annotation deviations remain in `research/field_protocol_deviations.json` and
+partial stopped runs in `research/retained_experiments/`. A current software test
+record alone is not a field HEP validation claim. Offline CI checks authored
+counterexamples and empirical-record freshness; it does not reacquire raw data.
+
 ## Version 0.3 operational acceptance
 
 [Extension validation](EXTENSION_VALIDATION.md) maps all twelve implemented scopes

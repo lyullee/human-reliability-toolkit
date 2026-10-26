@@ -1,5 +1,20 @@
 # Python API and extension guide
 
+## Measured evidence and validation in version 0.4
+
+`field_data.FieldSource` and `field_sources()` provide offline origin, conditions,
+attribution and reuse terms. `continuous_distillation`, `steel_energy` and
+`rail_incident_cases` preserve source identity and reject or flag unsupported
+semantics. Distillation observations bind to existing `ProcessState`, `Context`
+and `SignalSeries` contracts without exposing evaluation labels.
+
+`field_validation` contains paired numerical metrics, finite calibration order
+statistics, block resampling, robust reference scores and sample/event alarm
+checks. `field_studies` exposes configurable regression holdouts and the six
+source-specific evaluation runners. Read [Field validation](FIELD_VALIDATION.md)
+for all parameters, actual results, provenance, unavailable outputs and examples.
+Process observations and incident fractions do not become human HEPs.
+
 ## Operational API in version 0.3
 
 Use `risk.RiskCase` and `risk.RiskEngine` for a validated, serializable risk study.

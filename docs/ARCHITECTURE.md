@@ -1,5 +1,18 @@
 # Architecture and model boundaries
 
+## Measured-data boundary in version 0.4
+
+`field_data` separates physical measurements, investigator-coded incidents and
+human task-opportunity observations. Original timestamps and raw malformed cells
+remain available; numeric views carry an audit and unknowns. Measured state/context
+bindings exclude evaluation labels. Assumed clocks have a separate identity.
+
+`field_validation` owns metric arithmetic and causal sample-alarm replay.
+`field_studies` owns an explicit prediction design and keeps fitted values labeled
+as model estimates. Source conditions and rights travel with the field metadata.
+These components do not insert a process anomaly or accident-case proportion into
+a human failure event. See [Field validation](FIELD_VALIDATION.md).
+
 ## Operational composition in version 0.3
 
 The existing typed assessment and numerical modules remain the foundation. The

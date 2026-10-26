@@ -22,6 +22,9 @@ def main():
     run.add_argument("--out", type=Path, required=True)
     actions.add_parser("schema", help="Print the versioned case JSON schema")
     actions.add_parser("doctor", help="Report installed optional calculation libraries")
+    actions.add_parser(
+        "field-sources", help="Print source conditions, observed-data types and rights for the field studies"
+    )
     for name in ("risk-run", "coupled-run", "workflow-run"):
         command = actions.add_parser(name, help="Evaluate a validated configurable extension case")
         command.add_argument("case", type=Path)
@@ -39,6 +42,15 @@ def main():
     evidence.add_argument("--limit", type=int, default=10)
     evidence.add_argument("--out", type=Path)
     args = parser.parse_args()
+    if args.action == "field-sources":
+        from .field_data import field_sources
+
+        print(
+            json.dumps(
+                {key: source.model_dump(mode="json") for key, source in field_sources().items()}, indent=2
+            )
+        )
+        return
     if args.action in {
         "risk-run",
         "coupled-run",

@@ -1,0 +1,148 @@
+{
+  "schema_version": "1",
+  "protocol_id": "field-evaluation-20261026-v2",
+  "software_version": "0.4.0",
+  "date": "2026-10-26",
+  "source_schemas_inspected_before_protocol": true,
+  "prediction_models_fitted_before_protocol": false,
+  "design": "Retrospective public-data evaluation; no new prospective plant experiment",
+  "seed": 20261026,
+  "test_set_policy": "Report every prespecified result. Do not select parameters using evaluation outcomes. Corrections to readers or metrics require a recorded deviation and rerun, not silent replacement.",
+  "studies": {
+    "gas_turbine": {
+      "source_id": "uci_gas_turbine",
+      "target": "TEY",
+      "unit": "MWh",
+      "features": [
+        "AT",
+        "AP",
+        "AH"
+      ],
+      "train_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "calibration_years": [
+        2014
+      ],
+      "test_years": [
+        2015
+      ],
+      "baseline": "training-target mean",
+      "model": "HistGradientBoostingRegressor",
+      "parameters": {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      },
+      "scope": "Contemporaneous energy-yield estimation from ambient measurements at one power plant; not a causal plant model or human failure probability"
+    },
+    "steel_energy": {
+      "source_id": "uci_steel_energy",
+      "target": "Usage_kWh",
+      "unit": "kWh",
+      "features": [
+        "hour_sin",
+        "hour_cos",
+        "weekday",
+        "lag_1",
+        "lag_96"
+      ],
+      "train_before": "2018-07-01",
+      "calibration_before": "2018-10-01",
+      "test_before": "2019-01-01",
+      "baseline": "previous measured interval consumption",
+      "model": "HistGradientBoostingRegressor",
+      "parameters": {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      },
+      "scope": "Rolling one-interval forecast with genuinely available earlier measurements; not a whole-quarter open-loop forecast. Same-interval reactive power, carbon quantity, power factors and load type are excluded.",
+      "midnight_policy": "end_of_recorded_day",
+      "clock_assumption": "A 00:00 row following same-date 23:45 is assigned the next-day interval boundary only when source neighbors confirm the pattern. Preserve source_time_raw and record changed rows. This is a declared interpretation, not new measured timing."
+    },
+    "continuous_distillation": {
+      "source_id": "tum_continuous_distillation",
+      "label": "Label (common/all)",
+      "features": [
+        "T101",
+        "T102",
+        "T104",
+        "T106",
+        "T108",
+        "T110",
+        "T112",
+        "T114",
+        "PDIC101",
+        "PDIC102",
+        "PIC101",
+        "M103"
+      ],
+      "reference": "Source-named normal files at exactly the same scenario and operating point; no transfer to a different operating point",
+      "train_fraction_of_reference": 0.75,
+      "gap_rows": 10,
+      "calibration_quantile": 0.99,
+      "score": "Maximum absolute robust standardized deviation; scale=max(1.4826*MAD, explicit unit-specific floor)",
+      "scale_floors": {
+        "temperature_degC": 0.1,
+        "differential_pressure_mbar": 0.05,
+        "pressure_mbar": 0.5,
+        "mass_flow_kg_per_h": 0.1
+      },
+      "alarm_persistence_samples": 3,
+      "alarm_reset_samples": 2,
+      "event_matching": "One alarm activation per contiguous positive-label event; activation must lie inside the event. No point adjustment. Missing sensor values break alarm timers.",
+      "scope": "Retrospective run-disjoint monitoring replay; some reference runs occur after evaluated runs. Experimental anomaly enrichment is not natural incidence or HEP. Missing matched reference withholds evaluation."
+    },
+    "water_thermodynamic_consistency": {
+      "source_id": "tum_continuous_distillation",
+      "population": "All source-named normal Scenario A runs, without selecting on prediction residuals",
+      "observation": "T102 in degC",
+      "prediction": "CoolProp HEOS Water saturation temperature at PIC101*100 Pa, Q=0",
+      "scope": "Unfitted property consistency check. Head pressure approximates the temperature measurement's local pressure; pressure gradients, heat losses and sensor uncertainty are not fully characterized. This is not complete simulator validation."
+    },
+    "rail_incidents": {
+      "source_id": "korea_rail_incidents",
+      "population": "105 publicly released coded investigation cases",
+      "outcome": "Presence of each C1-C8 investigation code among recorded accidents",
+      "denominator": "recorded accidents, never successful task opportunities",
+      "analysis": "Descriptive counts, overlaps, missingness and explicit incompatibility with failure-on-demand estimation",
+      "scope": "Reported field incidents and investigator coding; not prospective behavior, a causal intervention effect or plant HEP calibration"
+    },
+    "sacada_context_validation": {
+      "source_id": "sacada_2019",
+      "population": "Each source action/function separately",
+      "split": "Per-function sorted context IDs shuffled once with the frozen seed; last ceil(0.3*n) contexts held out",
+      "models": [
+        "training pooled probability with explicit Beta(0.5,0.5) prior",
+        "C=1 logistic regression on all numeric released context fields using aggregate success/failure weights"
+      ],
+      "metrics": [
+        "opportunity-weighted Brier score",
+        "opportunity-weighted log loss",
+        "observed and predicted unsatisfactory rate"
+      ],
+      "scope": "Held-out aggregate context prediction in the existing simulator population. Crew identities and overlap are unavailable; no independent-crew, field-transfer or causal claim."
+    }
+  },
+  "regression_evaluation": {
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "bias",
+      "R2",
+      "RMSE relative to prespecified baseline"
+    ],
+    "interval": "Symmetric absolute-residual split-calibration interval at nominal 90%; use the finite-calibration order statistic",
+    "coverage_claim": "Descriptive held-out coverage only: serial dependence and drift prevent an exchangeability guarantee",
+    "bootstrap": "1000 paired contiguous-block resamples; 24 rows for turbine hourly samples and 96 rows for steel quarter-hour samples. Report descriptive RMSE-difference interval, not an IID confidence claim."
+  },
+  "clock_policy": "Preserve original timestamps. Parse mixed date/time formats and unwrap only unambiguous midnight changes. Duplicates, ambiguous backwards motion or large gaps withhold physical-time delay metrics. Sample-index delays remain available. Do not silently create dates, resample or interpolate measurements.",
+  "publication": "Original code, metadata, checksums, source conditions, rights, aggregate metrics and retained limitations. Raw archives, participant rows, source publications and third-party notebooks stay outside Git and distributions.",
+  "base_protocol_id": "field-evaluation-20261026-v1",
+  "amendment": "Clock interpretation only, before steel model fitting; no change to predictors, split boundaries, estimator parameters or metrics."
+}

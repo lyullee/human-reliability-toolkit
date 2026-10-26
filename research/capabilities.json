@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "review_date": "2026-10-26",
   "official_named_system_reproduction_claim": false,
   "capabilities": [
@@ -304,6 +304,13 @@
       "status": "implemented_bounded",
       "behavior": "Selected SPAR-H/HEART workflows, IDHEAS single-function kernel and CREAM range selection",
       "qualification": "No full official IDHEAS-ECA or extended CREAM system claim; source rights retained"
+    },
+    {
+      "id": "public_measured_evidence_evaluation",
+      "module": "field_data,field_validation,field_studies",
+      "status": "implemented_with_retained_empirical_limits",
+      "behavior": "Four source metadata entries, three new acquired datasets, native measured observations and six frozen-protocol retrospective evaluations",
+      "qualification": "Poor or unmatched results retained; process/incident sources have no human task denominators; no chemical-plant field HEP or safety-function qualification"
     }
   ]
 }

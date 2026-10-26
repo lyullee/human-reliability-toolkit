@@ -1,10 +1,10 @@
 {
   "schema_version": "1",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "all_passed": true,
-  "verification_sha256": "65cefccccb375bb2ecfecb0a98fde53876bfa140d8fdff0187294b60c3815e7f",
+  "verification_sha256": "07a98414219ad3f65f49bfa2638ec7e684aa9321d1210ac90f7619371f785e42",
   "pytest": {
-    "tests": 111,
+    "tests": 133,
     "failures": 0,
     "errors": 0,
     "skipped": 0

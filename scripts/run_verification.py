@@ -45,6 +45,9 @@ def main():
     run("python_example", [sys.executable, "examples/python_api.py"])
     run("evidence_example", [sys.executable, "examples/evidence_to_risk.py"])
     run("operational_example", [sys.executable, "examples/operational_research.py"])
+    run("field_example", [sys.executable, "examples/field_evidence.py"])
+    run("field_sources_cli", [sys.executable, "-m", "human_reliability", "field-sources"])
+    run("field_empirical_record", [sys.executable, "scripts/check_field_record.py"])
     run("evidence_cli", [sys.executable, "-m", "human_reliability", "evidence", "summary"])
     run("documentation", [sys.executable, "scripts/check_documentation.py"])
     with tempfile.TemporaryDirectory(dir=artifact) as directory:

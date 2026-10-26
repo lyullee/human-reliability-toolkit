@@ -1,0 +1,43 @@
+{
+  "schema_version": "1",
+  "deviations": [
+    {
+      "id": "F001",
+      "phase": "source_ingestion_before_steel_fitting",
+      "source_id": "uci_steel_energy",
+      "original_protocol_sha256": "38cbe24d9bde61920f03297e2fbcefe862f3d7c56a2b5df570ebb03d93529bc2",
+      "amended_protocol_sha256": "06574597227bdd49cf4f59ddd4bd0fba483be98b2caf8cceea6b2e79a1a085c3",
+      "finding": "All 365 source day-ending rows use 00:00 with the preceding recorded day, after that day 23:45. Source order is not strictly increasing under literal timestamps.",
+      "original_clock_reversals": 365,
+      "raw_values_modified": false,
+      "reader_default": "reject",
+      "explicit_opt_in": "end_of_recorded_day",
+      "decision": "Retain raw timestamps and condition time-based forecasts on a declared, neighbor-checked day-end interpretation. Do not sort or overwrite measurements.",
+      "model_tuning_using_test_results": false,
+      "retained_initial_attempt": "The initial run completed the turbine calculation then stopped at the strict steel-clock guard; no steel model had been fitted. The original gas parameters remain unchanged."
+    },
+    {
+      "id": "F002",
+      "phase": "source_ingestion_before_steel_fitting",
+      "finding": "The installed pandas/NumPy combination warned on a generic-unit Timedelta constructor. Warnings-as-errors stopped the run before steel fitting.",
+      "decision": "Use integer seconds with an explicit unit in the declared midnight interpretation. Preserve the partial completed turbine evaluation in retained_experiments.",
+      "model_parameters_changed": false
+    },
+    {
+      "id": "F003",
+      "phase": "annotation_schema_before_distillation_fitting",
+      "finding": "One pinned Scenario B advanced-phase column contains a fractional value 0.5, despite the documented integer phase vocabulary. The strict schema guard stopped the run.",
+      "decision": "Preserve the unrecognized phase verbatim and flag it as unsuitable for phase truth; applications can request strict rejection. The frozen benchmark uses the separate valid binary common label and does not round or reinterpret phases.",
+      "model_parameters_changed": false,
+      "truth_label_changed": false
+    },
+    {
+      "id": "F004",
+      "phase": "measurement_schema_before_scoring_affected_run",
+      "finding": "The Scenario A operating-point 007 second evaluation CSV contains TRUE/FALSE tokens in the M103 mass-flow field. These are not physical numeric flow measurements.",
+      "decision": "Keep raw cells unchanged. The numeric view explicitly flags malformed cells and represents them as unknown; no boolean-to-zero conversion, interpolation or row deletion. Unknown positive-label samples and measurement coverage are reported separately.",
+      "model_parameters_changed": false,
+      "truth_label_changed": false
+    }
+  ]
+}

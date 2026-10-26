@@ -1,6 +1,6 @@
 # Human-error evidence: provenance, selection and API guide
 
-Numeric catalog revision 0.2.0, shipped with software 0.3.0, packages **1,334 records from seven numeric sources**. The records
+Numeric catalog revision 0.2.0, shipped with software 0.4.0, packages **1,334 records from seven numeric sources**. The records
 are available offline after a core installation. Eighteen candidate sources were
 reviewed; selection/exclusion decisions are retained in
 [`human_evidence_review.json`](../research/human_evidence_review.json).
@@ -393,3 +393,11 @@ external records are unchanged. See [Operational extensions](OPERATIONAL_EXTENSI
 for complete-case versus eligible-demand denominators, unknown observations and
 source-qualified summary binding. A rounded reported HEP must not supply invented
 counts, and an elicited distribution must not become observed evidence.
+
+## Process measurements and incident evidence
+
+Version 0.4 adds a separate source catalog and six retrospective evaluations.
+See [Field validation](FIELD_VALIDATION.md). Physical process rows and incident
+C-code fractions are not added to the 1,334-record HEP/method catalog. They lack
+human task-opportunity denominators. The simulator holdout study also retains its
+source population, crew-overlap and calibration limitations.

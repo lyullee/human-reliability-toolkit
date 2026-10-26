@@ -38,9 +38,12 @@ from .causal import CausalGraph, CausalLeaf, CausalGate, evaluate_causal_graph
 from .risk import RiskCase, RiskEngine
 from .dynamics import CoupledCase, RuntimeJob, StateProcess, run_coupled_case, run_coupled_episode
 from .method_workflows import MethodWorkflowCase, run_method_workflow
+from .field_data import FieldSource, field_sources
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 __all__ = [
+    "FieldSource",
+    "field_sources",
     "Context",
     "ContextValue",
     "Estimate",

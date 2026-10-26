@@ -1,33 +1,31 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "artifacts": [
     {
-      "file": "human_reliability_toolkit-0.3.0-py3-none-any.whl",
-      "bytes": 150112,
-      "sha256": "713abb310ae98fa661d75e69fefea2335db80a997d795e045b57f6758341f4e1"
+      "file": "human_reliability_toolkit-0.4.0-py3-none-any.whl",
+      "bytes": 168260,
+      "sha256": "4d74c61a370470570d2c6bdcf5ecaa01195b0ef687169a4d20f413a7c82d332f"
     },
     {
-      "file": "human_reliability_toolkit-0.3.0.tar.gz",
-      "bytes": 344048,
-      "sha256": "353984238c77ad4ca32d6e87059f582dbbc7586bc40e6198362ccdcd320e5f57"
+      "file": "human_reliability_toolkit-0.4.0.tar.gz",
+      "bytes": 401455,
+      "sha256": "aa89bb0d0beb73ee514d9f4f0a4ddb4f6fb247023fc6cf0f3a20e99d510858ec"
     }
   ],
   "checks": {
-    "tests_passed": 111,
+    "tests_passed": 133,
     "tests_skipped": 0,
-    "verification_checks": 17,
-    "operational_requirements_passed": 12,
-    "data_families_audited": 9,
-    "human_evidence_sources": 7,
-    "human_evidence_records": 1334,
-    "observed_count_records": 578,
+    "verification_checks": 20,
+    "isolated_core_install_checks": 16,
+    "empirical_studies_executed": 6,
+    "new_source_families_acquired": 3,
+    "process_incident_source_entries": 4,
     "source_boundary_passed": true,
-    "isolated_core_wheel_install_passed": true
+    "isolated_core_wheel_install_passed": true,
+    "retained_empirical_record_current": true,
+    "human_field_hep_validated": false
   },
-  "published_to_github": true,
+  "published_to_github": false,
   "repository": "https://github.com/lyullee/human-reliability-toolkit",
-  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
-  "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
-  "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851",
-  "github_asset_hashes_verified": true
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.4.0"
 }

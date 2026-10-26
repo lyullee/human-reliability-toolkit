@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.4.0
+
+- Added attributed CC BY field/process metadata, pinned acquisition and readers
+  for continuous distillation, steel energy and coded railway incidents; reused
+  the measured gas-turbine archive for a new temporal evaluation.
+- Added reusable regression/calibration/block-resampling, sample-persistence and
+  event-detection metrics, source-clock audits and native observation bindings.
+- Executed six frozen-protocol studies and retained poor results, data-quality
+  issues, unavailable matched-condition cases and explicit non-HEP boundaries.
+- Recorded the steel midnight interpretation, fractional advanced annotations,
+  nonnumeric flow measurements and warnings-as-errors repairs without tuning on
+  held-out outcomes.
+- Added an English field-validation manual, portable empirical-record freshness
+  checks, offline examples and independent counterexample tests.
+
 ## 0.3.0 — 2026-10-26
 
 - Added executable unit-checked actions, physically supported error variants,

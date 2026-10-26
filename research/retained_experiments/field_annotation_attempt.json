@@ -1,0 +1,236 @@
+{
+  "version": "0.4.0",
+  "protocol_id": "field-evaluation-20261026-v2",
+  "protocol_digest": "b2e4db3f30119fcf3832350d40838e7a6f866e3a849501fa2c0b16b25be83f42",
+  "protocol_file_sha256": "06574597227bdd49cf4f59ddd4bd0fba483be98b2caf8cceea6b2e79a1a085c3",
+  "asset_manifest_digest": "73eeeb76e642b10cf814cc5b1743d24d6b6c840a68d38ad3c95f94431a8671f0",
+  "source_assets_verified": true,
+  "human_field_hep_validated": false,
+  "study_design": "Retrospective public-data evaluation; no new prospective plant experiment",
+  "studies": {
+    "gas_turbine": {
+      "status": "retrospective_evaluation_completed",
+      "unit": "MWh",
+      "features": [
+        "AT",
+        "AP",
+        "AH"
+      ],
+      "model": "HistGradientBoostingRegressor",
+      "parameters": {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      },
+      "seed": 20261026,
+      "rows": {
+        "train": 22191,
+        "calibration": 7158,
+        "test": 7384,
+        "excluded": 0
+      },
+      "model_metrics": {
+        "observations": 7384,
+        "mae": 14.901891475227192,
+        "rmse": 18.066845815440935,
+        "bias": 3.6249668626047336,
+        "r2": -0.2471220510998715,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "baseline_metrics": {
+        "observations": 7384,
+        "mae": 12.956948536108728,
+        "rmse": 16.1845376214382,
+        "bias": -0.45598719440248653,
+        "r2": -0.0007944189124056145,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "rmse_ratio_to_baseline": 1.1163028711743617,
+      "model_interval": {
+        "coverage": 0.8446641386782232,
+        "width": 49.485689204742556,
+        "exchangeability_guarantee": false
+      },
+      "baseline_interval": {
+        "coverage": 0.8047128927410617,
+        "width": 47.63478617457531,
+        "exchangeability_guarantee": false
+      },
+      "nominal_interval_coverage": 0.9,
+      "calibration_half_width": 24.742844602371278,
+      "test_fraction_outside_training_feature_range": {
+        "AT": 0.011240520043336946,
+        "AP": 0.003927410617551462,
+        "AH": 0.00027085590465872155
+      },
+      "paired_block_comparison": {
+        "model_minus_baseline_rmse": 1.8823081940027357,
+        "descriptive_block_95_interval": [
+          1.066235016652436,
+          2.6206034211195073
+        ],
+        "block_rows": 24,
+        "repeats": 1000,
+        "interpretation": "Paired moving-block resampling; no IID or field-transfer coverage guarantee"
+      },
+      "test_truth_sha256": "b659bf554a77607c43f301fb0d69d871c69b51660aa57923776e87c793389524",
+      "test_predictions_sha256": "e0cf4e31d4e0144a4aa943680690215464131a81fd6fcd350512c5fab111cf30",
+      "predictions_origin": "model_estimate",
+      "measurements_origin": "observed_process",
+      "accuracy_improves_prespecified_baseline": false,
+      "field_human_reliability_qualification": "not_established",
+      "source_id": "uci_gas_turbine",
+      "source_origin": "measured_process",
+      "source_doi": "10.24432/C5WC95",
+      "license": "CC-BY-4.0",
+      "conditions": [
+        "One Turkish power plant, source-year files 2011-2015",
+        "Ambient-only contemporaneous energy-yield estimation; train/calibrate/evaluate on distinct years"
+      ],
+      "limitations": [
+        "No human task response or error outcomes",
+        "Hourly aggregates are not independent operator opportunities",
+        "Cross-year accuracy is within one plant, not evidence for transfer to another plant"
+      ],
+      "human_field_validation": false,
+      "human_failure_probability_inferred": false,
+      "prospective_validation": false,
+      "source_rows": 36733,
+      "partition_years": {
+        "train_years": [
+          2011,
+          2012,
+          2013
+        ],
+        "calibration_years": [
+          2014
+        ],
+        "test_years": [
+          2015
+        ]
+      },
+      "baseline": "training-target mean",
+      "interpretation": "Contemporaneous energy-yield estimation from ambient measurements at one power plant; not a causal plant model or human failure probability"
+    },
+    "steel_energy": {
+      "status": "retrospective_evaluation_completed",
+      "unit": "kWh",
+      "features": [
+        "hour_sin",
+        "hour_cos",
+        "weekday",
+        "lag_1",
+        "lag_96"
+      ],
+      "model": "HistGradientBoostingRegressor",
+      "parameters": {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      },
+      "seed": 20261026,
+      "rows": {
+        "train": 17279,
+        "calibration": 8832,
+        "test": 8832,
+        "excluded": 97
+      },
+      "model_metrics": {
+        "observations": 8832,
+        "mae": 4.586994711245955,
+        "rmse": 9.312378023514418,
+        "bias": 0.5610016964913831,
+        "r2": 0.9150627896028771,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "baseline_metrics": {
+        "observations": 8832,
+        "mae": 5.799559556159421,
+        "rmse": 12.790482397352127,
+        "bias": -0.00013473731884058992,
+        "r2": 0.8397674857126203,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "rmse_ratio_to_baseline": 0.728070899455853,
+      "model_interval": {
+        "coverage": 0.8953804347826086,
+        "width": 28.733808193036783,
+        "exchangeability_guarantee": false
+      },
+      "baseline_interval": {
+        "coverage": 0.8889266304347826,
+        "width": 37.660000000000004,
+        "exchangeability_guarantee": false
+      },
+      "nominal_interval_coverage": 0.9,
+      "calibration_half_width": 14.366904096518391,
+      "test_fraction_outside_training_feature_range": {
+        "hour_sin": 0.0,
+        "hour_cos": 0.0,
+        "weekday": 0.0,
+        "lag_1": 0.00033967391304347825,
+        "lag_96": 0.00033967391304347825
+      },
+      "paired_block_comparison": {
+        "model_minus_baseline_rmse": -3.4781043738377093,
+        "descriptive_block_95_interval": [
+          -3.9051029353379008,
+          -3.0590403947730347
+        ],
+        "block_rows": 96,
+        "repeats": 1000,
+        "interpretation": "Paired moving-block resampling; no IID or field-transfer coverage guarantee"
+      },
+      "test_truth_sha256": "3ab67b59fff857f10c1f29bac5aea9ca266e9a8535c1c28c05141156086f2926",
+      "test_predictions_sha256": "e516f7fe53bed028fe1885a3c6ce4f913af840cef69e562ad02c98d3fd8a9bfa",
+      "predictions_origin": "model_estimate",
+      "measurements_origin": "observed_process",
+      "accuracy_improves_prespecified_baseline": true,
+      "field_human_reliability_qualification": "not_established",
+      "source_id": "uci_steel_energy",
+      "source_origin": "measured_process",
+      "source_doi": "10.24432/C52G8C",
+      "license": "CC-BY-4.0",
+      "conditions": [
+        "Measurements from one South Korean steel facility",
+        "Quarter-hour source intervals; use previous measurements only for a rolling next-interval forecast"
+      ],
+      "limitations": [
+        "No human action, error or recovery outcome",
+        "Same-interval power factors and load labels are excluded from forecasting",
+        "The CO2 column has inconsistent source unit labels and is not used",
+        "Day-ending midnight labels require explicit clock interpretation; raw dates remain preserved and timing claims are conditional on this assumption."
+      ],
+      "human_field_validation": false,
+      "human_failure_probability_inferred": false,
+      "prospective_validation": false,
+      "source_rows": 35040,
+      "forecast_horizon_s": 900,
+      "clock_interpretation": {
+        "policy": "end_of_recorded_day",
+        "changed_rows": 365,
+        "raw_clock_preserved": true,
+        "origin": "declared_interpretation"
+      },
+      "timing_results_conditional_on_declared_clock_interpretation": true,
+      "partition_boundaries": {
+        "train_before": "2018-07-01",
+        "calibration_before": "2018-10-01",
+        "test_before": "2019-01-01"
+      },
+      "excluded_initial_unavailable_lags": 96,
+      "baseline": "previous measured interval consumption",
+      "interpretation": "Rolling one-interval forecast with genuinely available earlier measurements; not a whole-quarter open-loop forecast. Same-interval reactive power, carbon quantity, power factors and load type are excluded.",
+      "source_timezone": "unspecified source civil time; not assumed UTC"
+    }
+  },
+  "all_prespecified_studies_executed": false,
+  "failed_study": "continuous_distillation",
+  "exception_type": "ValueError"
+}

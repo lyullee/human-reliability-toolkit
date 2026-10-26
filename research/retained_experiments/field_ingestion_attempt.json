@@ -1,0 +1,122 @@
+{
+  "version": "0.4.0",
+  "protocol_id": "field-evaluation-20261026-v2",
+  "protocol_digest": "b2e4db3f30119fcf3832350d40838e7a6f866e3a849501fa2c0b16b25be83f42",
+  "protocol_file_sha256": "06574597227bdd49cf4f59ddd4bd0fba483be98b2caf8cceea6b2e79a1a085c3",
+  "asset_manifest_digest": "73eeeb76e642b10cf814cc5b1743d24d6b6c840a68d38ad3c95f94431a8671f0",
+  "source_assets_verified": true,
+  "human_field_hep_validated": false,
+  "study_design": "Retrospective public-data evaluation; no new prospective plant experiment",
+  "studies": {
+    "gas_turbine": {
+      "status": "retrospective_evaluation_completed",
+      "unit": "MWh",
+      "features": [
+        "AT",
+        "AP",
+        "AH"
+      ],
+      "model": "HistGradientBoostingRegressor",
+      "parameters": {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0,
+        "early_stopping": false
+      },
+      "seed": 20261026,
+      "rows": {
+        "train": 22191,
+        "calibration": 7158,
+        "test": 7384,
+        "excluded": 0
+      },
+      "model_metrics": {
+        "observations": 7384,
+        "mae": 14.901891475227192,
+        "rmse": 18.066845815440935,
+        "bias": 3.6249668626047336,
+        "r2": -0.2471220510998715,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "baseline_metrics": {
+        "observations": 7384,
+        "mae": 12.956948536108728,
+        "rmse": 16.1845376214382,
+        "bias": -0.45598719440248653,
+        "r2": -0.0007944189124056145,
+        "observation_kind": "observed_measurement",
+        "prediction_kind": "model_estimate"
+      },
+      "rmse_ratio_to_baseline": 1.1163028711743617,
+      "model_interval": {
+        "coverage": 0.8446641386782232,
+        "width": 49.485689204742556,
+        "exchangeability_guarantee": false
+      },
+      "baseline_interval": {
+        "coverage": 0.8047128927410617,
+        "width": 47.63478617457531,
+        "exchangeability_guarantee": false
+      },
+      "nominal_interval_coverage": 0.9,
+      "calibration_half_width": 24.742844602371278,
+      "test_fraction_outside_training_feature_range": {
+        "AT": 0.011240520043336946,
+        "AP": 0.003927410617551462,
+        "AH": 0.00027085590465872155
+      },
+      "paired_block_comparison": {
+        "model_minus_baseline_rmse": 1.8823081940027357,
+        "descriptive_block_95_interval": [
+          1.066235016652436,
+          2.6206034211195073
+        ],
+        "block_rows": 24,
+        "repeats": 1000,
+        "interpretation": "Paired moving-block resampling; no IID or field-transfer coverage guarantee"
+      },
+      "test_truth_sha256": "b659bf554a77607c43f301fb0d69d871c69b51660aa57923776e87c793389524",
+      "test_predictions_sha256": "e0cf4e31d4e0144a4aa943680690215464131a81fd6fcd350512c5fab111cf30",
+      "predictions_origin": "model_estimate",
+      "measurements_origin": "observed_process",
+      "accuracy_improves_prespecified_baseline": false,
+      "field_human_reliability_qualification": "not_established",
+      "source_id": "uci_gas_turbine",
+      "source_origin": "measured_process",
+      "source_doi": "10.24432/C5WC95",
+      "license": "CC-BY-4.0",
+      "conditions": [
+        "One Turkish power plant, source-year files 2011-2015",
+        "Ambient-only contemporaneous energy-yield estimation; train/calibrate/evaluate on distinct years"
+      ],
+      "limitations": [
+        "No human task response or error outcomes",
+        "Hourly aggregates are not independent operator opportunities",
+        "Cross-year accuracy is within one plant, not evidence for transfer to another plant"
+      ],
+      "human_field_validation": false,
+      "human_failure_probability_inferred": false,
+      "prospective_validation": false,
+      "source_rows": 36733,
+      "partition_years": {
+        "train_years": [
+          2011,
+          2012,
+          2013
+        ],
+        "calibration_years": [
+          2014
+        ],
+        "test_years": [
+          2015
+        ]
+      },
+      "baseline": "training-target mean",
+      "interpretation": "Contemporaneous energy-yield estimation from ambient measurements at one power plant; not a causal plant model or human failure probability"
+    }
+  },
+  "all_prespecified_studies_executed": false,
+  "failed_study": "steel_energy",
+  "exception_type": "DeprecationWarning"
+}

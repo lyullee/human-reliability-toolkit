@@ -1,13 +1,13 @@
 # Research handoff
 
-This repository is the complete public-source research boundary for version 0.3.0.
+This repository is the complete public-source research boundary for version 0.4.0.
 It contains implementation, tests, examples, provenance and development records.
 External data, downloaded external source, environments and build logs are ignored.
 No private session history is needed to reproduce the documented steps.
 
 ## Orientation
 
-Start with `README.md`, `docs/USER_GUIDE.md`, `docs/OPERATIONAL_EXTENSIONS.md` and `docs/HUMAN_ERROR_DATA.md`.
+Start with `docs/FIELD_VALIDATION.md`, `README.md`, `docs/USER_GUIDE.md`, `docs/OPERATIONAL_EXTENSIONS.md` and `docs/HUMAN_ERROR_DATA.md`.
 The Korean documents retain the initial implementation walkthrough. Follow `docs/API.md` for
 composition and estimator registration, `docs/ARCHITECTURE.md` for contracts and
 `research/capabilities.json` for exact scope. `docs/PLAN.md` defines milestones;
@@ -28,12 +28,16 @@ human-reliability doctor
 python examples/python_api.py
 python examples/evidence_to_risk.py
 python examples/operational_research.py
+python examples/field_evidence.py
 python scripts/acquire_human_evidence.py
 python scripts/curate_human_evidence.py
 python scripts/acquire_data.py
 python scripts/audit_data.py
 python scripts/run_studies.py
 python examples/process_context.py
+python scripts/acquire_field_data.py
+python -W error scripts/run_field_studies.py
+python scripts/check_field_record.py --require-assets
 python scripts/inventory_environment.py
 python scripts/run_verification.py
 python scripts/record_extension_validation.py
@@ -87,6 +91,10 @@ and monitoring-response quantile coverage. Rejected PVT diagnostics remain in
 `research/retained_experiments/`, with the exclusion decision recorded in
 `research/protocol_deviations.json`. Preserve these even if a later analysis is
 more favorable. Never tune repeatedly on this holdout and call it independent.
+
+The version 0.4 protocol adds measured-process evaluation and coded incident
+evidence. It retains weak predictions, source-quality issues and unavailable
+matched-condition cases. It does not resolve the field task-opportunity gate below.
 
 ## Next research gates
 
