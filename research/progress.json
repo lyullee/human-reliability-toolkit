@@ -71,13 +71,18 @@
   "human_field_validation": "not_claimed",
   "official_method_system_reproduction": "not_claimed",
   "github_publication": {
-    "status": "source_published",
+    "status": "source_and_release_published",
     "repository": "https://github.com/lyullee/human-reliability-toolkit",
     "initial_source_commit": "cfba3bf8f74bc3e94a3c925bf6bc8ae79ab39f0d",
     "visibility": "public",
     "raw_source_assets_uploaded": false,
-    "pending_release": "v0.3.0",
-    "release_status": "verified_release_prepared_for_publication"
+    "release_status": "published_and_asset_hashes_verified",
+    "version": "0.3.0",
+    "release_tag": "v0.3.0",
+    "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
+    "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
+    "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851",
+    "ci_conclusion": "success"
   },
   "git_boundary": "this project folder only",
   "remaining_research": [
@@ -116,6 +121,7 @@
     "field_calibration_claim": false,
     "passing_tests": 111,
     "isolated_core_install_passed": true,
-    "package_audit": "research/release_audit.json"
+    "package_audit": "research/release_audit.json",
+    "publication_record": "research/github_publication.json"
   }
 }

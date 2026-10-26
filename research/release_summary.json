@@ -24,7 +24,10 @@
     "source_boundary_passed": true,
     "isolated_core_wheel_install_passed": true
   },
-  "published_to_github": false,
+  "published_to_github": true,
   "repository": "https://github.com/lyullee/human-reliability-toolkit",
-  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0"
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0",
+  "implementation_commit": "8cee01871170d136a16a56b9d54867441101d6e1",
+  "ci_url": "https://github.com/lyullee/human-reliability-toolkit/actions/runs/40271353851",
+  "github_asset_hashes_verified": true
 }
