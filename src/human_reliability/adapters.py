@@ -179,3 +179,48 @@ def psa_trace(path, *, channel: str, unit: str, clock_id: str, time_column="time
         unit=unit,
         origin="process_simulation",
     )
+
+
+def risk_scenario_branches(risk_result, scenario_id, *, evidence, factory=None):
+    """Deliver a complete scenario partition to the existing PRISM EventBranch contract."""
+    import json
+
+    if risk_result.get("status") != "evaluated":
+        raise ValueError("withheld risk results cannot be exported as a complete branch partition")
+    rows = [row for row in risk_result["ledger"] if row["scenario_id"] == scenario_id]
+    if not rows:
+        raise ValueError("unknown risk scenario")
+    return prism_branches(
+        {json.dumps(row["path"], separators=(",", ":")): row["probability_given_initiation"] for row in rows},
+        evidence=evidence,
+        factory=factory,
+    )
+
+
+def dynasense_consequence_provider(baseline, simulate, *, evidence):
+    """Bind the real local solver to RiskEngine; no remote call or new physical model.
+
+    None is non-isolation during the baseline horizon. Occupancy is applied by the
+    risk engine once, outside the solver's conditional harm calculation.
+    """
+    if not evidence.strip() or not callable(simulate):
+        raise ValueError("solver callable and model/domain evidence required")
+    baseline_digest = canonical_digest(baseline)
+
+    def calculate(parameters, context):
+        from .risk import ConsequenceMetrics
+
+        if set(parameters) != {"physical_completion_time_s", "occupancy", "baseline_digest"}:
+            raise ValueError("completion time, occupancy and baseline fingerprint required")
+        if parameters["baseline_digest"] != baseline_digest:
+            raise ValueError("physical baseline changed since this risk case was configured")
+        scenario = dynasense_scenario(baseline, parameters["physical_completion_time_s"])
+        outputs = simulate(scenario).outputs
+        return ConsequenceMetrics(
+            harm_probability=probability(outputs["conditional_harm_probability"]),
+            harm_scope="conditional_on_presence",
+            occupancy=probability(parameters["occupancy"]),
+            evidence=evidence + ":" + baseline_digest,
+        )
+
+    return calculate

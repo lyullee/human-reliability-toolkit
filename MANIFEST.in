@@ -25,6 +25,8 @@ include research/human_evidence_acquisition.json
 include research/human_evidence_audit.json
 include research/human_evidence_review.json
 include research/human_method_profiles.json
+include research/extension_implementation.json
+include research/extension_validation.json
 recursive-include research/retained_experiments *.json
 prune research/source_cache
 prune data

@@ -1,6 +1,6 @@
 # Human-error evidence: provenance, selection and API guide
 
-Version 0.2.0 packages **1,334 records from seven numeric sources**. The records
+Numeric catalog revision 0.2.0, shipped with software 0.3.0, packages **1,334 records from seven numeric sources**. The records
 are available offline after a core installation. Eighteen candidate sources were
 reviewed; selection/exclusion decisions are retained in
 [`human_evidence_review.json`](../research/human_evidence_review.json).
@@ -383,3 +383,13 @@ core-only environment. See [Validation](VALIDATION.md).
 Open research gaps remain: matching task-level field exposure, event-level timing
 and recovery, crew dependence, prospective validation and safe domain transfer.
 Preserve exclusions and do not convert a missing denominator into a method success.
+
+
+## Operational evidence extension
+
+Version 0.3 adds observation/recovery ledgers, reviewed annualized demand exposure
+and a `reported_observed_probability` schema for user-owned catalogs. The bundled
+external records are unchanged. See [Operational extensions](OPERATIONAL_EXTENSIONS.md)
+for complete-case versus eligible-demand denominators, unknown observations and
+source-qualified summary binding. A rounded reported HEP must not supply invented
+counts, and an elicited distribution must not become observed evidence.

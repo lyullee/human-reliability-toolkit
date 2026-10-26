@@ -64,12 +64,28 @@ print(json.dumps({"version": human_reliability.__version__, "installed_under_env
 """
     installed = json.loads(run("api", ["-c", probe]))
     optional = json.loads(run("doctor", ["-m", "human_reliability", "doctor"]))
+    assert not any(optional["optional_libraries"].values()), (
+        "core install unexpectedly acquired optional libraries"
+    )
     run("schema", ["-m", "human_reliability", "schema"])
     run("evidence", ["-m", "human_reliability", "evidence", "summary"])
     run("template", ["-m", "human_reliability", "template", "case.json"])
     run("case", ["-m", "human_reliability", "run", "case.json", "--out", "result.json"])
     result = json.loads((target / "result.json").read_text(encoding="utf-8"))
     assert result["estimates"] and not result["empirical_plant_validation_claim"]
+    for family in ("risk", "workflow"):
+        run(family + "_schema", ["-m", "human_reliability", family + "-schema"])
+        run(family + "_template", ["-m", "human_reliability", family + "-template", family + ".json"])
+        run(
+            family + "_case",
+            ["-m", "human_reliability", family + "-run", family + ".json", "--out", family + "-result.json"],
+        )
+    risk = json.loads((target / "risk-result.json").read_text(encoding="utf-8"))
+    assert abs(risk["individual_risk_rate_per_year"] - 0.01) < 1e-12
+    workflow = json.loads((target / "workflow-result.json").read_text(encoding="utf-8"))
+    assert abs(workflow["estimate"]["probability"] - 0.001) < 1e-12
+    run("coupled_schema", ["-m", "human_reliability", "coupled-schema"])
+    run("coupled_template", ["-m", "human_reliability", "coupled-template", "coupled.json"])
     report = {
         "wheel": wheel.name,
         "wheel_sha256": hashlib.sha256(wheel.read_bytes()).hexdigest(),

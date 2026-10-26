@@ -1,0 +1,144 @@
+{
+  "schema_version": "1",
+  "version": "0.3.0",
+  "all_passed": true,
+  "verification_sha256": "65cefccccb375bb2ecfecb0a98fde53876bfa140d8fdff0187294b60c3815e7f",
+  "pytest": {
+    "tests": 111,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "requirements": {
+    "G01": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/actions.py",
+      "scope": "Atomic unit-checked commands and bounded reviewed variants",
+      "passing_acceptance_tests": [
+        "test_actual_wrong_target_and_unsafe_command",
+        "test_three_valued_preconditions",
+        "test_variant_bounds_and_reviewed_reordering",
+        "test_native_task_binding_rejects_unresolved_text_conditions"
+      ]
+    },
+    "G02": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/causal.py",
+      "scope": "Explicit same-population causal logic, shared events and declared joint models",
+      "passing_acceptance_tests": [
+        "test_shared_event_graph_exact_boolean_identity",
+        "test_independence_and_joint_marginal_qualification",
+        "test_graph_scope_and_cycles",
+        "test_causal_conditioning_and_expansion_budget"
+      ]
+    },
+    "G03": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/risk.py",
+      "scope": "Serializable conditional risk with explicit exposure and registered consequences",
+      "passing_acceptance_tests": [
+        "test_configurable_risk_frequency_harm_loss_and_fn",
+        "test_unknown_exposure_never_becomes_zero_frequency",
+        "test_unknown_provider_preserves_known_frequency_and_withholds_harm"
+      ]
+    },
+    "G04": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/dynamics.py",
+      "scope": "Supplied process feedback, role-visible policies, bounded attempts and preemption",
+      "passing_acceptance_tests": [
+        "test_closed_loop_updates_before_next_decision_without_hidden_truth",
+        "test_preemption_resumption_and_completion_at_horizon",
+        "test_retry_policy_cannot_read_injected_truth_or_another_roles_history",
+        "test_process_advance_partition_consistency"
+      ]
+    },
+    "G05": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/communication.py",
+      "scope": "Modeled message/readback, handover and personal work-control records",
+      "passing_acceptance_tests": [
+        "test_message_receipt_understanding_confirmation_and_expiry",
+        "test_handover_uses_content_version_and_freshness",
+        "test_personal_locks_restoration_and_permit_lifecycle",
+        "test_conflicting_work_unknown_state_and_renewal"
+      ]
+    },
+    "G06": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/observations.py",
+      "scope": "Observation-qualified counts, recovery, reported summaries and reviewed annualization",
+      "passing_acceptance_tests": [
+        "test_initial_recovered_final_and_missing_counts_are_distinct",
+        "test_duplicate_exposure_overlap_and_late_recovery_rejected",
+        "test_annualized_demands_include_missing_outcomes_and_require_context_time",
+        "test_reported_observed_probability_preserves_missing_denominator"
+      ]
+    },
+    "G07": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/interventions.py",
+      "scope": "Assumed model contrasts and static independent-event importance",
+      "passing_acceptance_tests": [
+        "test_intervention_changes_parameters_not_baseline",
+        "test_intervention_never_retains_an_empirical_label_or_stale_posterior",
+        "test_paired_inputs_and_analytical_importance"
+      ]
+    },
+    "G08": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/verification.py",
+      "scope": "Finite net progress and serial atomic integer-grid deadline checks",
+      "passing_acceptance_tests": [
+        "test_possible_completion_is_not_inevitable_progress",
+        "test_timed_deadline_quantifier_and_exact_boundary",
+        "test_zero_time_cycle_is_not_a_deadline_proof",
+        "test_compiler_preserves_dag_fanout_and_injects_errors"
+      ]
+    },
+    "G09": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/cognition.py",
+      "scope": "Declared cue visibility, finite diagnostic beliefs and bounded polling",
+      "passing_acceptance_tests": [
+        "test_role_visible_delayed_cues_and_bayesian_diagnosis",
+        "test_monitoring_dwell_capacity_and_budget"
+      ]
+    },
+    "G10": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/calibration.py",
+      "scope": "Finite hyperprior mixtures, held-out scores and explicitly elicited distributions",
+      "passing_acceptance_tests": [
+        "test_finite_hyperprior_matches_conjugate_limit",
+        "test_partial_pooling_grid_and_group_boundaries",
+        "test_heldout_aggregate_brier_and_leakage",
+        "test_elicitation_fitting_calibration_and_mixture"
+      ]
+    },
+    "G11": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/assurance.py",
+      "scope": "Observed procedure conformance and explicit artifact/assumption lifecycle review",
+      "passing_acceptance_tests": [
+        "test_conformance_missingness_order_versions_and_restoration",
+        "test_lifecycle_assumptions_hashes_claims_and_incident_lessons"
+      ]
+    },
+    "G12": {
+      "status": "passed_implemented_scope",
+      "module": "src/human_reliability/method_workflows.py",
+      "scope": "Selected SPAR-H/HEART calculations plus limited source-linked function/range workflows",
+      "passing_acceptance_tests": [
+        "test_spar_workflow_stage_union_recovery_and_assessment_integration",
+        "test_heart_workflow_and_dependency_is_conditional",
+        "test_idheas_source_selection_floor_and_placeholders",
+        "test_cream_interval_requires_explicit_selection"
+      ]
+    }
+  },
+  "operational_example_risk_digest": "82212891ff2ccc1f845cc48f024c0ee4f65666fb2bfa68e4351d476c079f0d99",
+  "field_calibration_claim": false,
+  "full_official_method_system_claim": false,
+  "source_publications_or_private_records_included": false
+}

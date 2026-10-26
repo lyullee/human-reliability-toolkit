@@ -8,12 +8,18 @@ project code. Installing an optional library does not change the dataset license
 
 Core dependencies are NumPy (BSD), SciPy (BSD) and Pydantic (MIT). Optional libraries
 include pandas (BSD), scikit-learn (BSD), CoolProp (MIT), lifelines (MIT), SALib (MIT),
-dd (BSD), openpyxl (MIT), xlrd (BSD) and rdata (MIT). Optional curation uses
+dd (BSD), openpyxl (MIT), xlrd (BSD), rdata (MIT) and SimPy (MIT). Optional curation uses
 pdfplumber/pdfminer.six (MIT) and keeps their dependencies' own notices. The selected RData reader is a pure-Python
 implementation with permissive licensing and no bundled R runtime.
 Exact installed metadata and dependency licenses are recorded by
 `scripts/inventory_environment.py`. Native optional backends can have additional
 terms and are not bundled.
+
+SimPy 4.1.2 supplies event scheduling, shared resources and preemption through the
+optional `dynamics` extra. Its [official overview and MIT notice](https://simpy.readthedocs.io/en/stable/)
+identify the upstream project. Original process adapters, task policies and models
+are separate project code. The finite-hyperprior calibration uses existing
+NumPy/SciPy dependencies; no additional MCMC implementation is bundled.
 
 Dataset titles, creators, license evidence, immutable record identifiers and
 acquisition checks are in `research/datasets.json` and `research/acquisition.json`.

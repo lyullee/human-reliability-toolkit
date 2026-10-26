@@ -1,5 +1,21 @@
 # Integration with existing engineering projects
 
+## Risk and process interfaces in version 0.3
+
+`RiskEngine` registers local consequence providers with version/evidence metadata.
+`adapters.dynasense_consequence_provider` wraps the actual DynaSense simulator,
+checks the declared baseline fingerprint and separates conditional harm from
+annual frequency and occupancy. `adapters.risk_scenario_branches` constructs the
+existing PRISM `EventBranch` objects from a complete scenario partition. The
+integration script exercises both new paths with the pinned real objects.
+
+A continuous process can implement `dynamics.ProcessBackend`: advance to a common
+clock, expose observations by role, provide an analyst snapshot and apply completed
+commands. Keep the receiving solver's domain and physical invariants. The included
+held/linear-state JSON backend is an authored contract example. It is not a
+replacement for the station solver or a newly qualified high-pressure/LH2 model.
+The older receiving PRISM task-initiator schema limitation still applies.
+
 Adapters produce payloads or application-owned Python objects. They perform no
 HTTP requests and do not execute equipment commands. External model code is not
 copied into the distribution.

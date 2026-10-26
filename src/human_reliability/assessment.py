@@ -103,6 +103,19 @@ class AssessmentEngine:
 
     def _builtin(self, request, spec):
         p = spec.parameters
+        if spec.method == "method_workflow":
+            from .method_workflows import MethodWorkflowCase, run_method_workflow
+            import json
+
+            if set(p) != {"workflow"}:
+                raise ValueError("method workflow requires a workflow specification")
+            workflow = MethodWorkflowCase.model_validate_json(json.dumps(p["workflow"]))
+            if workflow.event != request.event:
+                raise ValueError("workflow and assessment event definitions differ")
+            binding = run_method_workflow(workflow, catalog=self._evidence_catalog)
+            if set(binding.estimate.evidence_ids) != set(spec.evidence_ids):
+                raise ValueError("model must cite the exact workflow evidence identities")
+            return binding.estimate
         if spec.method == "evidence_catalog":
             from .evidence_catalog import ApplicabilityReview, builtin_evidence_catalog
             import json

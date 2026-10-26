@@ -7,13 +7,13 @@
       "method": "IDHEAS-ECA",
       "source": "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-staff/sr2256",
       "decision": "Include independently labeled numeric Appendix B references and a limited single-function kernel; preserve placeholder and elicitation limits; no complete official system claim.",
-      "implementation": "methods.cognitive_chain, reference_methods.idheas_cfm_probability, evidence_catalog"
+      "implementation": "methods.cognitive_chain, reference_methods.idheas_cfm_probability, evidence_catalog, method_workflows"
     },
     {
       "method": "Dynamic HRA / HUNTER",
       "source": "https://lwrs.inl.gov/risa-reports/",
-      "decision": "Expose human timeline and plant-simulator boundaries; do not claim HUNTER reproduction.",
-      "implementation": "simulation and adapters"
+      "decision": "Implement a supplied-process, common-clock runtime using optional SimPy with role-visible policy inputs, bounded retries and preemption; no HUNTER reproduction or field-calibration claim.",
+      "implementation": "dynamics, actions, cognition and adapters"
     },
     {
       "method": "Censor-aware context models",
@@ -62,12 +62,26 @@
       "source": "https://doi.org/10.1371/journal.pone.0253827",
       "decision": "Bundle permitted numeric method references and case outputs separately from observed counts; do not claim superior accuracy or universal calibration.",
       "implementation": "evidence_catalog, reference_methods.heart_profile_probability"
+    },
+    {
+      "method": "Discrete-event runtime",
+      "source": "https://simpy.readthedocs.io/en/4.1.2/",
+      "decision": "Use optional MIT SimPy 4.1.2 for scheduling; retain application-owned physics and explicit observation boundaries.",
+      "implementation": "dynamics"
+    },
+    {
+      "method": "Sparse grouped calibration",
+      "source": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.betaln.html",
+      "decision": "Use explicit finite beta-binomial hyperprior mixtures with marginal likelihood weights and posterior-predictive checks; disclose grid sensitivity instead of implying an unrestricted fitted hierarchy.",
+      "implementation": "calibration"
     }
   ],
   "further_research": [
-    "Hierarchical operator/task models when sufficient task-level outcomes are available",
-    "Closed-loop human/plant coupling with prospective validation",
-    "Dependent-input sensitivity when a justified joint model is available"
+    "Prospective task/operator calibration and exchangeability review for finite-grid hierarchical models",
+    "Physical and role-policy calibration of the supplied closed-loop runtime",
+    "Dependent-input sensitivity under justified joint laws",
+    "Broader official method workflows only with qualified data, interpretation and appropriate rights"
   ],
-  "absolute_accuracy_superiority_claim": false
+  "absolute_accuracy_superiority_claim": false,
+  "version": "0.3.0"
 }

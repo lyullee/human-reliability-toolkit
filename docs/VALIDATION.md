@@ -1,5 +1,18 @@
 # Verification and empirical evaluation
 
+## Version 0.3 operational acceptance
+
+[Extension validation](EXTENSION_VALIDATION.md) maps all twelve implemented scopes
+to independent limiting cases, failure counterexamples, state-machine tests and
+end-to-end execution. `research/extension_validation.json` is generated only from
+passing named tests and the current verified source/data/documentation hash set.
+It complements the original software, empirical-study and object-contract checks.
+
+The integration check now also exercises RiskEngine with the real pinned
+DynaSense consequence provider and exports its partition as real PRISM objects.
+Core-wheel checks exercise risk and reference workflows without optional libraries;
+coupled scheduling is verified in the full `[dynamics]` environment.
+
 Software invariants, model reproduction, source-contract compatibility, experimental
 prediction and actual plant/operator effectiveness are separate evidence levels.
 This release records the first four at specified scopes. It does not claim field

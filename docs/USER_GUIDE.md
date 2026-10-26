@@ -1,5 +1,19 @@
 # User guide
 
+## Operational workflows in version 0.3
+
+Start with [Operational extensions](OPERATIONAL_EXTENSIONS.md) to run configurable
+risk, reference-method and coupled-process JSON templates. It explains twelve
+composable capabilities, parameter definitions, failure states and Python APIs.
+[Extension validation](EXTENSION_VALIDATION.md) maps their implemented scopes to
+executable acceptance evidence. Original assessment cases remain supported.
+
+The operational example writes an input case and detailed result to
+`artifacts/operational_research/`; replay that case with `risk-run`. It combines
+source-qualified count evidence with explicit illustrative exposure, consequences
+and design changes. Authored observations and physical examples remain distinct
+from the external numeric catalog and from validated plant data.
+
 This guide explains how to build a traceable human-reliability assessment and
 connect it to process-risk calculations. Version 0.2.0 supports Python use, JSON
 cases and a command-line interface. No hosted service is required.
@@ -22,7 +36,7 @@ application, PDF reader or network connection for querying evidence.
 | `dev` | Tests, formatting and package builds |
 
 ```console
-python -m pip install -e ".[data,curation,learning,survival,thermo,sensitivity,bdd,dev]"
+python -m pip install -e ".[data,curation,learning,survival,thermo,sensitivity,bdd,dynamics,dev]"
 human-reliability doctor
 ```
 

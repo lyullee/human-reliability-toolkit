@@ -1,20 +1,22 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "artifacts": [
     {
-      "file": "human_reliability_toolkit-0.2.0-py3-none-any.whl",
-      "bytes": 104849,
-      "sha256": "2c81571ca8a5f8d80ceb04d9bfe91c2d9961c098a1681afcd55a7480f2b1cb69"
+      "file": "human_reliability_toolkit-0.3.0-py3-none-any.whl",
+      "bytes": 150112,
+      "sha256": "713abb310ae98fa661d75e69fefea2335db80a997d795e045b57f6758341f4e1"
     },
     {
-      "file": "human_reliability_toolkit-0.2.0.tar.gz",
-      "bytes": 258099,
-      "sha256": "b6ebea00d72d14fc55e197e629d2d75dba758df0f95f313ca761f882f4fcc9db"
+      "file": "human_reliability_toolkit-0.3.0.tar.gz",
+      "bytes": 344048,
+      "sha256": "353984238c77ad4ca32d6e87059f582dbbc7586bc40e6198362ccdcd320e5f57"
     }
   ],
   "checks": {
-    "tests_passed": 63,
+    "tests_passed": 111,
     "tests_skipped": 0,
+    "verification_checks": 17,
+    "operational_requirements_passed": 12,
     "data_families_audited": 9,
     "human_evidence_sources": 7,
     "human_evidence_records": 1334,
@@ -22,6 +24,7 @@
     "source_boundary_passed": true,
     "isolated_core_wheel_install_passed": true
   },
-  "published_to_github": true,
-  "repository": "https://github.com/lyullee/human-reliability-toolkit"
+  "published_to_github": false,
+  "repository": "https://github.com/lyullee/human-reliability-toolkit",
+  "release_url": "https://github.com/lyullee/human-reliability-toolkit/releases/tag/v0.3.0"
 }

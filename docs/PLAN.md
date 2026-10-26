@@ -1,5 +1,20 @@
 # Development plan
 
+## Operational extension milestone
+
+The version 0.3 requirement set covers G01-G12. Build executable action and causal
+semantics first, then risk orchestration, communication/work control, operational
+evidence and intervention comparison. Add process feedback, progress/deadline
+checks, information/diagnosis, sparse inference, procedure/assurance lifecycle and
+selected reference workflows on those contracts.
+
+The completed implementation scope and acceptance cases are maintained in
+`research/extension_implementation.json` and `research/extension_validation.json`.
+[Operational extensions](OPERATIONAL_EXTENSIONS.md) documents the public parameters;
+[Extension validation](EXTENSION_VALIDATION.md) records verification. Field
+qualification, unavailable source data and receiving-system changes remain explicit
+research/integration conditions rather than fabricated software evidence.
+
 The objective is a reusable human-reliability library with explicit assumptions,
 customizable data and coefficients, reproducible examples and typed integration
 boundaries. Public process signals establish context and software integration;

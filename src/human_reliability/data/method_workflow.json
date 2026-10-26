@@ -1,0 +1,47 @@
+{
+  "method": "spar_h_profile",
+  "event": {
+    "id": "response_failure",
+    "task_id": "authored_task",
+    "step_ids": [
+      "act"
+    ],
+    "role": "response",
+    "failure_definition": "Declared illustrative response failure",
+    "opportunity_definition": "One illustrative demand",
+    "conditioning": "One illustrative demand",
+    "deadline_s": null,
+    "includes_recovery": false,
+    "includes_timing": false,
+    "dependency_group": null
+  },
+  "review": {
+    "analyst": "Example analyst",
+    "target_domain": "illustrative",
+    "rationale": "Authored numerical example; no field transfer qualification",
+    "scope_rationale": "Available-time selection includes timing; no separate deadline correction",
+    "included_effects": [
+      "timing"
+    ]
+  },
+  "parameters": {
+    "stages": [
+      {
+        "stage": "action",
+        "levels": {
+          "available_time": "reference",
+          "complexity": "reference",
+          "ergonomics": "reference",
+          "experience_training": "reference",
+          "fitness": "reference",
+          "procedures": "reference",
+          "stress": "reference",
+          "work_processes": "reference"
+        },
+        "conditioning": "One illustrative demand"
+      }
+    ]
+  },
+  "recovery": null,
+  "dependency": null
+}

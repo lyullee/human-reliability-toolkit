@@ -15,11 +15,19 @@ def main():
     actions = parser.add_subparsers(dest="action", required=True)
     template = actions.add_parser("template", help="Write an original illustrative input case")
     template.add_argument("path", type=Path)
+    for name in ("risk-template", "coupled-template", "workflow-template"):
+        actions.add_parser(name, help="Write an authored extension example").add_argument("path", type=Path)
     run = actions.add_parser("run", help="Evaluate a JSON case")
     run.add_argument("case", type=Path)
     run.add_argument("--out", type=Path, required=True)
     actions.add_parser("schema", help="Print the versioned case JSON schema")
     actions.add_parser("doctor", help="Report installed optional calculation libraries")
+    for name in ("risk-run", "coupled-run", "workflow-run"):
+        command = actions.add_parser(name, help="Evaluate a validated configurable extension case")
+        command.add_argument("case", type=Path)
+        command.add_argument("--out", type=Path, required=True)
+    for name in ("risk-schema", "coupled-schema", "workflow-schema"):
+        actions.add_parser(name, help="Print the extension JSON schema")
     evidence = actions.add_parser(
         "evidence", help="Inspect or search the packaged human-performance evidence"
     )
@@ -31,7 +39,44 @@ def main():
     evidence.add_argument("--limit", type=int, default=10)
     evidence.add_argument("--out", type=Path)
     args = parser.parse_args()
-    if args.action == "evidence":
+    if args.action in {
+        "risk-run",
+        "coupled-run",
+        "workflow-run",
+        "risk-schema",
+        "coupled-schema",
+        "workflow-schema",
+    }:
+        from .risk import RiskCase, RiskEngine
+        from .dynamics import CoupledCase, run_coupled_case
+        from .method_workflows import MethodWorkflowCase, method_workflow_schema, run_method_workflow
+
+        model = {"risk": RiskCase, "coupled": CoupledCase, "workflow": MethodWorkflowCase}[
+            args.action.split("-")[0]
+        ]
+        if args.action.endswith("schema"):
+            schema = (
+                method_workflow_schema() if args.action == "workflow-schema" else model.model_json_schema()
+            )
+            print(json.dumps(schema, indent=2))
+            return
+        case = model.model_validate_json(args.case.read_text(encoding="utf-8"))
+        if args.action == "risk-run":
+            result = RiskEngine().assess(case)
+        elif args.action == "coupled-run":
+            result = run_coupled_case(case)
+        else:
+            binding = run_method_workflow(case)
+            result = {
+                "estimate": binding.estimate.model_dump(mode="json"),
+                "evidence": [e.model_dump(mode="json") for e in binding.evidence],
+            }
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(
+            json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8"
+        )
+        print("Evaluated " + args.action + "; output " + str(args.out))
+    elif args.action == "evidence":
         from collections import Counter
         from .evidence_catalog import builtin_evidence_catalog, sacada_context_labels
 
@@ -97,7 +142,16 @@ def main():
                     "version": __version__,
                     "optional_libraries": {
                         name: importlib.util.find_spec(name) is not None
-                        for name in ("pandas", "sklearn", "lifelines", "CoolProp", "SALib", "dd", "rdata")
+                        for name in (
+                            "pandas",
+                            "sklearn",
+                            "lifelines",
+                            "CoolProp",
+                            "SALib",
+                            "dd",
+                            "rdata",
+                            "simpy",
+                        )
                     },
                 },
                 indent=2,
@@ -105,12 +159,21 @@ def main():
         )
     elif args.action == "schema":
         print(json.dumps(AssessmentCase.model_json_schema(), indent=2))
-    elif args.action == "template":
+    elif args.action in {"template", "risk-template", "coupled-template", "workflow-template"}:
         if args.path.exists():
             parser.error("template destination already exists")
         args.path.parent.mkdir(parents=True, exist_ok=True)
         args.path.write_text(
-            files("human_reliability.data").joinpath("example_case.json").read_text(encoding="utf-8"),
+            files("human_reliability.data")
+            .joinpath(
+                {
+                    "template": "example_case.json",
+                    "risk-template": "risk_case.json",
+                    "coupled-template": "coupled_case.json",
+                    "workflow-template": "method_workflow.json",
+                }[args.action]
+            )
+            .read_text(encoding="utf-8"),
             encoding="utf-8",
         )
     else:

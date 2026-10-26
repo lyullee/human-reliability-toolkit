@@ -397,6 +397,14 @@
       "license_classifiers": []
     },
     {
+      "name": "simpy",
+      "version": "4.1.2",
+      "declared_license": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ]
+    },
+    {
       "name": "six",
       "version": "1.17.0",
       "declared_license": "MIT",

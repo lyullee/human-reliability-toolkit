@@ -196,6 +196,69 @@ def main():
         )
     masses = [row["outputs"]["released_mass_kg"] for row in rows]
     assert masses == sorted(masses)
+    from human_reliability.adapters import dynasense_consequence_provider, risk_scenario_branches
+    from human_reliability.risk import ConsequenceRegistry, RiskCase, RiskEngine
+
+    registry = ConsequenceRegistry()
+    registry.register(
+        "dynasense",
+        dynasense_consequence_provider(
+            baseline,
+            simulate,
+            evidence="Pinned bounded warm-gas scenario; source model applicability limits apply",
+        ),
+        version=PINS["prism-dynasense"][0],
+        evidence="Pinned solver and scenario fingerprint",
+    )
+    risk_case = RiskCase.model_validate_json(
+        json.dumps(
+            {
+                "id": "pinned_dynamic_consequence",
+                "partition_evidence": "One authored scenario",
+                "scenarios": [
+                    {
+                        "id": "bounded",
+                        "evidence": "Authored exposure",
+                        "initiating": {
+                            "mode": "annual_rate",
+                            "annual_rate": 0.01,
+                            "evidence": "Assumed frequency for API test",
+                        },
+                        "branches": [
+                            {
+                                "id": "isolated",
+                                "probability": 1.0,
+                                "evidence": "Declared outcome",
+                                "consequence_id": "physical",
+                            }
+                        ],
+                    }
+                ],
+                "consequences": [
+                    {
+                        "id": "physical",
+                        "provider": "dynasense",
+                        "parameters": {
+                            "physical_completion_time_s": 5.0,
+                            "occupancy": 1.0,
+                            "baseline_digest": canonical_digest(baseline),
+                        },
+                    }
+                ],
+            }
+        )
+    )
+    risk_result = RiskEngine(consequence_registry=registry).assess(risk_case)
+    assert np.isclose(
+        risk_result["individual_risk_rate_per_year"],
+        0.01 * rows[0]["outputs"]["conditional_harm_probability"],
+        rtol=1e-12,
+        atol=0,
+    )
+    projected = risk_scenario_branches(
+        risk_result, "bounded", evidence="Risk ledger partition", factory=EventBranch
+    )
+    assert len(projected) == 1
     report = {
         "schema_version": "1",
         "sources": sources,
@@ -211,6 +274,12 @@ def main():
             "hydrogen-station-sim SafetyPLC isolated module",
         ],
         "dynasense_response_cases": rows,
+        "extension_risk_engine_with_real_dynasense_and_prism": {
+            "passed": True,
+            "input_digest": risk_result["input_digest"],
+            "annual_individual_risk_rate": risk_result["individual_risk_rate_per_year"],
+            "scenario_is_authored_not_field_calibrated": True,
+        },
         "source_only_protocols": [
             "PSA cycle trace",
         ],

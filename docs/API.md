@@ -1,5 +1,28 @@
 # Python API and extension guide
 
+## Operational API in version 0.3
+
+Use `risk.RiskCase` and `risk.RiskEngine` for a validated, serializable risk study.
+Use `actions` for commands/predicates, `causal` for source-qualified event logic and
+`dynamics` for the process feedback protocol. Communication, observations,
+interventions, cognition, calibration, verification and assurance remain separate
+composable modules. The complete parameter guide and runnable templates are in
+[Operational extensions](OPERATIONAL_EXTENSIONS.md).
+
+Top-level exports include core action, causal, risk and dynamic entry points.
+Specialized contracts are imported from their named modules. `workflow-run` and
+`method_workflows.run_method_workflow` share the same strict method parameter
+validation; `workflow-schema` includes conditional parameter schemas. A native
+`ModelSpec(method="method_workflow", parameters={"workflow": ...}, evidence_ids=...)`
+uses the same workflow binding and provenance guard as Python.
+
+`ConsequenceRegistry.register(name, callable, version=..., evidence=...)` requires
+a stable local provider pin. Providers return `ConsequenceMetrics`. Registering a
+provider is a calculation extension, not permission to contact a service or operate
+hardware. `ProcessBackend` implementations keep the physical truth separate from
+role-visible observations. Policy callbacks receive `PolicyTask` and
+`ProcessObservation`, not injected failure labels.
+
 Python imports use `human_reliability`. The distribution name is
 `human-reliability-toolkit`. Objects are ordinary Python/Pydantic objects and arrays;
 no web service or UI is required.

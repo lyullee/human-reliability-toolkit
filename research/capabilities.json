@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "review_date": "2026-10-26",
   "official_named_system_reproduction_claim": false,
   "capabilities": [
@@ -41,14 +41,14 @@
     },
     {
       "id": "spar_h",
-      "module": "methods,reference_methods",
+      "module": "methods,reference_methods,method_workflows",
       "status": "numeric_profile_adapter",
       "behavior": "Diagnosis/action arithmetic and independently labeled at-power reference levels",
       "qualification": "All eight factor selections and task/domain qualification remain explicit; no full official system claim"
     },
     {
       "id": "heart",
-      "module": "methods,reference_methods",
+      "module": "methods,reference_methods,method_workflows",
       "status": "numeric_profile_adapter",
       "behavior": "Numeric generic-task/EPC profiles and caller-assessed effects",
       "qualification": "One secondary-source interval is withheld as inconsistent; effect proportions and transfer review remain caller-owned"
@@ -121,7 +121,7 @@
       "module": "simulation",
       "status": "research_extension",
       "behavior": "Resource-constrained task DAG and causal completion timeline",
-      "qualification": "Open-loop episodes; no closed-loop human/plant feedback model"
+      "qualification": "This legacy scheduler is open-loop; use dynamics for synchronized supplied-process feedback"
     },
     {
       "id": "workflow_formal_checks",
@@ -190,7 +190,7 @@
       "id": "existing_projects",
       "module": "adapters",
       "status": "implemented_bounded",
-      "behavior": "PRISM, DynaSense, station, monitoring, LH2, SAGA, QSafety and PSA protocols",
+      "behavior": "PRISM, DynaSense, station, monitoring, LH2, SAGA, QSafety and PSA protocols; RiskEngine with real pinned DynaSense solver and PRISM branch objects",
       "qualification": "Actual tested objects listed separately; full receiving workflows not all tested"
     },
     {
@@ -209,7 +209,7 @@
     },
     {
       "id": "idheas_function_kernel",
-      "module": "reference_methods",
+      "module": "reference_methods,method_workflows",
       "status": "limited_numeric_kernel",
       "behavior": "Three-base union, function floor, additive modifier increments and declared recovery divisor",
       "qualification": "Not full IDHEAS-ECA HFE analysis; placeholders cannot be used as calibrated modifiers"
@@ -220,6 +220,90 @@
       "status": "implemented",
       "behavior": "Explicit-prior count binding, qualified method-value binding and target-exposure annual conversion",
       "qualification": "Method coefficients are rejected as HEPs; intervals need explicit point selection; no automatic independent pooling"
+    },
+    {
+      "id": "executable_actions",
+      "module": "actions",
+      "status": "implemented_bounded",
+      "behavior": "Unit-checked actual commands, three-valued safety conditions, permissives and bounded error variants",
+      "qualification": "Atomic state updates; native Task text conditions need explicit safe-state predicate bindings"
+    },
+    {
+      "id": "causal_graph",
+      "module": "causal",
+      "status": "implemented_bounded",
+      "behavior": "Typed shared-identity cause/action/barrier logic with explicit joint-state option",
+      "qualification": "Matched conditioning, event/effect scope and dependence evidence required"
+    },
+    {
+      "id": "risk_cases",
+      "module": "risk",
+      "status": "implemented_bounded",
+      "behavior": "JSON scenario orchestration, frequency, harm, individual risk, F-N, loss and provider registry",
+      "qualification": "Exposure and consequences must be supplied; unavailable quantities remain unavailable"
+    },
+    {
+      "id": "coupled_runtime",
+      "module": "dynamics",
+      "status": "implemented_bounded",
+      "behavior": "Common-clock process feedback, actor-visible policies, preemption and explicit retries",
+      "qualification": "Optional SimPy; supplied process and policy need calibration; atomic completion semantics"
+    },
+    {
+      "id": "operational_protocols",
+      "module": "communication",
+      "status": "implemented_bounded",
+      "behavior": "Message/readback, versioned handover, work permits, personal locks and restoration",
+      "qualification": "Modeled records, not a physical access-control or safety interlock service"
+    },
+    {
+      "id": "observation_ledger",
+      "module": "observations",
+      "status": "implemented_bounded",
+      "behavior": "Initial/final/recovery counts, missing outcomes and reviewed annual demand exposure",
+      "qualification": "Observed demands and reviewed coverage/stationarity required; no new field data acquired"
+    },
+    {
+      "id": "intervention_analysis",
+      "module": "interventions",
+      "status": "implemented_bounded",
+      "behavior": "Cloned parameter interventions, assumed contrasts, paired samples and static importance",
+      "qualification": "Model changes do not identify observed causal treatment effects"
+    },
+    {
+      "id": "progress_deadlines",
+      "module": "verification",
+      "status": "implemented_bounded",
+      "behavior": "Task-net compilation, finite progress checks and integer-grid deadline quantifiers",
+      "qualification": "Serial atomic timed firings; finite bounds and cycle assumptions remain explicit"
+    },
+    {
+      "id": "visible_diagnosis",
+      "module": "cognition",
+      "status": "implemented_bounded",
+      "behavior": "Visible fresh cues, finite diagnostic Bayes updates and bounded monitoring",
+      "qualification": "Declared likelihoods and sampling policies, not universally calibrated cognition"
+    },
+    {
+      "id": "sparse_calibration",
+      "module": "calibration",
+      "status": "implemented_bounded",
+      "behavior": "Finite beta-binomial hyperprior mixtures, held-out scoring and elicited distributions",
+      "qualification": "Explicit finite prior grid, group exchangeability and transfer review; no continuous MCMC claim"
+    },
+    {
+      "id": "assurance_lifecycle",
+      "module": "assurance",
+      "status": "implemented_bounded",
+      "behavior": "Procedure trace conformance, reviewed CSV tasks, assumptions and artifact/claim impact",
+      "qualification": "Incomplete observation is distinct from omission; affected claims still need human review"
+    },
+    {
+      "id": "method_workflows",
+      "module": "method_workflows",
+      "status": "implemented_bounded",
+      "behavior": "Selected SPAR-H/HEART workflows, IDHEAS single-function kernel and CREAM range selection",
+      "qualification": "No full official IDHEAS-ECA or extended CREAM system claim; source rights retained"
     }
   ]
 }

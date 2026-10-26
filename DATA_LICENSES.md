@@ -73,3 +73,12 @@ unresolved reuse conditions. A link in that file grants no license to the linked
 work. Restricted source numbers are not silently added to the usable catalog.
 Local research downloads and source-page caches remain excluded from Git and
 distribution archives.
+
+
+## Original operational examples
+
+Version 0.3 adds original typed templates, synthetic count fixtures and process
+state demonstrations. These are authored software examples, not additional
+external observations or field-calibrated parameters. The seven-source numeric
+catalog is unchanged. New user-owned operational records need their own rights,
+provenance and privacy review before redistribution.

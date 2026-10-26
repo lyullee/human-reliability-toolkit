@@ -1,13 +1,13 @@
 # Research handoff
 
-This repository is the complete public-source research boundary for version 0.2.0.
+This repository is the complete public-source research boundary for version 0.3.0.
 It contains implementation, tests, examples, provenance and development records.
 External data, downloaded external source, environments and build logs are ignored.
 No private session history is needed to reproduce the documented steps.
 
 ## Orientation
 
-Start with `README.md`, `docs/USER_GUIDE.md` and `docs/HUMAN_ERROR_DATA.md`.
+Start with `README.md`, `docs/USER_GUIDE.md`, `docs/OPERATIONAL_EXTENSIONS.md` and `docs/HUMAN_ERROR_DATA.md`.
 The Korean documents retain the initial implementation walkthrough. Follow `docs/API.md` for
 composition and estimator registration, `docs/ARCHITECTURE.md` for contracts and
 `research/capabilities.json` for exact scope. `docs/PLAN.md` defines milestones;
@@ -23,10 +23,11 @@ record a new environment rather than silently replacing the validation record.
 ```console
 python -m venv .venv
 # Activate .venv with your platform's shell command.
-python -m pip install -e ".[data,curation,learning,survival,thermo,sensitivity,bdd,dev]"
+python -m pip install -e ".[data,curation,learning,survival,thermo,sensitivity,bdd,dynamics,dev]"
 human-reliability doctor
 python examples/python_api.py
 python examples/evidence_to_risk.py
+python examples/operational_research.py
 python scripts/acquire_human_evidence.py
 python scripts/curate_human_evidence.py
 python scripts/acquire_data.py
@@ -35,6 +36,7 @@ python scripts/run_studies.py
 python examples/process_context.py
 python scripts/inventory_environment.py
 python scripts/run_verification.py
+python scripts/record_extension_validation.py
 python scripts/build_release.py
 ```
 
@@ -98,8 +100,9 @@ more favorable. Never tune repeatedly on this holdout and call it independent.
    cues, operators, actuators and power in coupled plant scenarios.
 5. Extend PRISM's receiving contract for task-origin initiators. Keep equipment
    and task exposure units distinct and audit cause overlap.
-6. Build a closed-loop cognitive/process co-simulation if feedback changes human
-   decisions. The current task episode model is an open-loop scheduler.
+6. Calibrate and prospectively validate the supplied closed-loop process and
+   role-visible decision policies. `dynamics.run_coupled_episode` supplies feedback;
+   the older `simulate_task` remains an open-loop episode scheduler.
 7. Qualify physical consequence backends separately in compatible environments.
    The station SafetyPLC check does not validate the complete native plant loop.
 

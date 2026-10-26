@@ -1,5 +1,34 @@
 # Development record
 
+## Version 0.3.0 operational extension
+
+Twelve composable modeling areas were implemented with parameterized contracts,
+Python APIs, JSON runners, original scenarios and explicit computational scopes.
+The numerical catalog was retained rather than expanded with unreviewed field
+values. A reported-observation schema preserves evidence whose exact denominator
+is unavailable. The only new optional runtime dependency is MIT-licensed SimPy.
+Finite-hyperprior inference uses the existing NumPy/SciPy backend.
+
+Execution review retained the distinction between nominal task structure and
+actual command effects. False/unknown enabled permissives block execution, while
+a reviewed unsafe attempt remains distinct. Causal graph conditioning and shared
+failure scopes are checked. Missing exposure cannot become zero annual frequency.
+Missing consequence providers do not erase otherwise identified frequency.
+
+Dynamic review separated analyst truth from observable state. Public task views
+exclude injected error parameters. Perceived command history is stored separately
+from actual deviations. Bounded repetitions and observed retry policies replace
+retries based on hidden success. Preempted work retains its remaining duration.
+
+Intervention review corrected retention of an empirical label/old posterior after
+an assumed probability override. Calibration tests preserve different review text
+when comparing identical numerical results. Formal checks distinguish possible
+completion from all-path progress and reject zero-time-cycle deadline proofs.
+Assurance snapshots preserve claim/evidence structure for later sessions.
+
+The detailed acceptance record and execution history are in
+[Extension validation](EXTENSION_VALIDATION.md) and generated research reports.
+
 ## Version 0.2.0: evidence catalog and English handoff
 
 Eighteen additional human-reliability evidence candidates were reviewed. Seven

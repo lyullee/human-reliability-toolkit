@@ -1,8 +1,8 @@
 {
-  "wheel": "human_reliability_toolkit-0.2.0-py3-none-any.whl",
-  "wheel_sha256": "2c81571ca8a5f8d80ceb04d9bfe91c2d9961c098a1681afcd55a7480f2b1cb69",
+  "wheel": "human_reliability_toolkit-0.3.0-py3-none-any.whl",
+  "wheel_sha256": "713abb310ae98fa661d75e69fefea2335db80a997d795e045b57f6758341f4e1",
   "installed": {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "installed_under_environment": true
   },
   "optional_libraries": {
@@ -12,7 +12,8 @@
     "CoolProp": false,
     "SALib": false,
     "dd": false,
-    "rdata": false
+    "rdata": false,
+    "simpy": false
   },
   "checks": [
     {
@@ -41,6 +42,38 @@
     },
     {
       "name": "case",
+      "exit_code": 0
+    },
+    {
+      "name": "risk_schema",
+      "exit_code": 0
+    },
+    {
+      "name": "risk_template",
+      "exit_code": 0
+    },
+    {
+      "name": "risk_case",
+      "exit_code": 0
+    },
+    {
+      "name": "workflow_schema",
+      "exit_code": 0
+    },
+    {
+      "name": "workflow_template",
+      "exit_code": 0
+    },
+    {
+      "name": "workflow_case",
+      "exit_code": 0
+    },
+    {
+      "name": "coupled_schema",
+      "exit_code": 0
+    },
+    {
+      "name": "coupled_template",
       "exit_code": 0
     }
   ],

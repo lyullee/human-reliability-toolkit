@@ -1,0 +1,77 @@
+{
+  "schema_version": "1",
+  "id": "authored_risk_template",
+  "assessment": null,
+  "estimates": [
+    {
+      "event_id": "response_failure",
+      "method": "declared",
+      "probability": 0.02,
+      "conditioning": "One illustrative demand",
+      "evidence_ids": [
+        "authored_assumption"
+      ],
+      "uncertainty": {},
+      "includes": [],
+      "status": "assumed",
+      "trace": {}
+    }
+  ],
+  "evidence": [
+    {
+      "id": "authored_assumption",
+      "reference": "Authored illustrative numerical input",
+      "origin": "assumed",
+      "applicability": "Software demonstration; no plant calibration",
+      "version": "1",
+      "locator": "",
+      "limitations": []
+    }
+  ],
+  "graphs": [],
+  "opportunity_definitions": {
+    "response_failure": "One illustrative demand"
+  },
+  "scenario_mode": "exclusive_contexts",
+  "partition_evidence": "One authored demand population; inputs are assumptions",
+  "scenarios": [
+    {
+      "id": "operation",
+      "context_weight": 1.0,
+      "evidence": "Authored example",
+      "initiating": {
+        "mode": "demands",
+        "evidence": "Assumed annual demands",
+        "annual_rate": null,
+        "demands_per_year": 10.0,
+        "event_ref": "response_failure",
+        "opportunity_definition": "One illustrative demand"
+      },
+      "branches": [
+        {
+          "id": "harm",
+          "evidence": "Authored example",
+          "probability": 1.0,
+          "event_ref": null,
+          "conditioning": null,
+          "complement": false,
+          "children": [],
+          "consequence_id": "harm"
+        }
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "harm",
+      "provider": "fixed",
+      "parameters": {
+        "harm_probability": 0.1,
+        "harm_scope": "conditional_on_presence",
+        "occupancy": 0.5,
+        "evidence": "Assumed conditional harm and presence"
+      }
+    }
+  ],
+  "fn_thresholds": []
+}

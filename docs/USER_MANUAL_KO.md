@@ -1,6 +1,6 @@
 # 인적신뢰도 평가 사용 설명서
 
-> Version 0.2: the current English documentation is README.md, docs/USER_GUIDE.md and docs/HUMAN_ERROR_DATA.md. This Korean walkthrough retains the initial implementation scope.
+> Version 0.3: the current English documentation is README.md, docs/USER_GUIDE.md and docs/HUMAN_ERROR_DATA.md. This Korean walkthrough retains the initial implementation scope.
 
 
 Human Reliability Toolkit은 작업 절차를 분석하고, 특정 작업 요구에서 정의한 인적실패사건의 확률·복구·시간·종속성을 계산하는 Python 연구 라이브러리다. 결과는 작업과 조건에 관한 값이다. 개인의 일반적인 신뢰도를 나타내는 점수로 사용하지 않는다.
@@ -11,7 +11,7 @@ Python 3.12 이상을 사용한다. 저장소 폴더에서 독립 환경을 만�
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dev]"
+.venv\Scripts\python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dynamics,dev]"
 .venv\Scripts\python examples/python_api.py
 .venv\Scripts\python -m human_reliability template input.json
 .venv\Scripts\python -m human_reliability run input.json --out result.json

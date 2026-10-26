@@ -1,5 +1,26 @@
 # Architecture and model boundaries
 
+## Operational composition in version 0.3
+
+The existing typed assessment and numerical modules remain the foundation. The
+new execution layer binds a command to a capability/state update. The causal
+layer references existing estimates and compiles explicit logic into the shared-
+event FTA engine. `RiskEngine` resolves an assessment, causal graphs, exposure,
+conditional branches and registered consequence metrics into one ledger.
+
+`ProcessBackend.snapshot()` belongs to analyst/physical evaluation;
+`observe(role, time)` belongs to the decision policy. The scheduler advances
+physics before decisions and completed commands, preserves remaining work after
+preemption, and supplies role-visible history. Retry rules are explicit rather
+than driven by hidden success. Interventions preserve original evidence and
+construct an assumed alternative. Operational observations preserve missingness
+and recovery before any count update.
+
+Finite progress/deadline verification, declared diagnostic models, finite-grid
+statistical inference and assurance lifecycle checks consume the same IDs and
+provenance. None automatically validates the physical or cognitive meaning of a
+user-supplied model. See [Operational extensions](OPERATIONAL_EXTENSIONS.md).
+
 Version 0.2.0 adds typed source/rights records, numeric records linked by source ID
 and a SACADA categorical codebook. Bundled JSON uses core dependencies; optional
 source readers do not execute during ordinary catalog queries. Numeric profiles
@@ -61,8 +82,9 @@ weights summing to one. A Bayesian network can model shared causes explicitly.
 only outcomes completed before the current start time. Callback consequence replay
 is ordered by completion after the episode has been scheduled. It is an open-loop
 event generator, not a synchronized closed-loop cognitive/plant co-simulator.
-External feedback that changes future human decisions requires an application
-scheduler or a future coupled runtime.
+For feedback that changes later human decisions, use the separate
+`dynamics.run_coupled_episode` runtime with an explicit process backend and
+role-visible policy inputs. The two schedulers retain their distinct semantics.
 
 Deadlines are absolute episode seconds. Completion-time distributions apply only
 under their declared failure conditioning. A terminal wrong action cannot be made

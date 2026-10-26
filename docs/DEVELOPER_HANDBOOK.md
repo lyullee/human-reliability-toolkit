@@ -1,5 +1,25 @@
 # Developer handbook
 
+## Extending operational models
+
+Read [Operational extensions](OPERATIONAL_EXTENSIONS.md) and
+[Extension validation](EXTENSION_VALIDATION.md) before changing execution semantics.
+Keep unknown, blocked, omitted, attempted and physically completed states distinct.
+A predicate name is not an executable precondition. Keep alternative causes
+separate from within-mechanism modifiers and preserve shared-event IDs.
+
+A process backend owns continuous physics; the scheduler owns time/resource order.
+Policy inputs must contain visible information and public task data only. Preserve
+perceived versus injected commands, and require an explicit observed retry rule.
+A deterministic replay proves the configured model's behavior, not operator
+performance. New inference needs a defensible population/denominator and independent
+validation. An assumed intervention cannot inherit an empirical label or fitted
+posterior from its baseline.
+
+Update the requirement acceptance map in `scripts/record_extension_validation.py`
+when a scope changes. Its source-hash guard and named JUnit cases prevent a stale
+implementation matrix from serving as current acceptance evidence.
+
 ## Code map and extension rules
 
 The import package is `human_reliability` under `src/`. Contracts and estimation
@@ -41,7 +61,7 @@ invalid input handling when it could create a plausible but wrong risk result.
 ## Local development sequence
 
 ```console
-python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dev]"
+python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dynamics,dev]"
 python -m ruff format src scripts tests examples
 python scripts/run_verification.py
 python scripts/inventory_environment.py

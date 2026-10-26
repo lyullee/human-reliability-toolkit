@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.3.0 — 2026-10-26
+
+- Added executable unit-checked actions, physically supported error variants,
+  permissives and typed same-population causal/barrier graphs.
+- Added serializable risk cases, evidence checks, conditional scenario ledgers,
+  versioned consequence providers and actual DynaSense/PRISM risk-path checks.
+- Added message/readback, handover and individual work-control state models;
+  operational opportunity/recovery ledgers and reviewed annual demand exposure.
+- Added intervention comparisons with preserved baselines and explicit assumed
+  overrides, paired uncertainty samples and static FV/RAW/RRW importance.
+- Added optional SimPy process feedback, role-visible policy inputs, remaining-work
+  preemption and explicit bounded repeat/observed retry policies.
+- Added finite progress checking, serial integer-grid deadlines, task-net
+  compilation, cue visibility, diagnostic beliefs and bounded monitoring.
+- Added finite-hyperprior partial pooling, held-out/predictive scores, quantified
+  elicitation, procedure conformance and serializable assurance lifecycle review.
+- Added source-linked numerical workflows, conditional parameter schemas,
+  operational templates, English manuals and requirement-to-test acceptance records.
+- Preserved the seven-source numeric catalog; added a separate user-catalog type
+  for reported observational probabilities without invented denominators.
+
 ## 0.2.0 — 2026-10-26
 
 - Added a source-qualified 1,334-record numeric catalog from seven selected

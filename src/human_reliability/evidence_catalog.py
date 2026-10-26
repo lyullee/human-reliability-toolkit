@@ -37,6 +37,7 @@ class HumanEvidenceSource(Contract):
 
 EvidenceKind = Literal[
     "observed_count",
+    "reported_observed_probability",
     "method_probability",
     "method_interval",
     "method_multiplier",
@@ -107,6 +108,7 @@ class HumanErrorRecord(Contract):
                 if value is not None:
                     probability(value)
         required_quantity = {
+            "reported_observed_probability": "probability",
             "method_probability": "probability",
             "method_interval": "probability",
             "method_multiplier": "multiplier",
@@ -121,6 +123,18 @@ class HumanErrorRecord(Contract):
             raise ValueError("numerical method records require a value")
         if self.kind == "method_multiplier" and self.value <= 0:
             raise ValueError("a multiplier must be positive")
+        if self.kind == "reported_observed_probability":
+            if self.basis not in {
+                "simulator_observation",
+                "field_observation",
+                "laboratory_observation",
+                "operational_record",
+            }:
+                raise ValueError("reported observed probabilities need an observational origin")
+            if self.lower is not None and not self.lower <= self.value <= self.upper:
+                raise ValueError("reported observational bounds must contain the reported value")
+            if not self.limitations:
+                raise ValueError("reported observations without counts need explicit limitations")
         return self
 
     @property
@@ -187,7 +201,12 @@ class HumanEvidenceCatalog:
         ):
             if value is not None:
                 # Catch misspelled filters instead of quietly returning a different population.
-                if value not in {getattr(row, field) for row in self.records.values()}:
+                allowed = (
+                    set(EvidenceKind.__args__)
+                    if field == "kind"
+                    else {getattr(row, field) for row in self.records.values()}
+                )
+                if value not in allowed:
                     raise ValueError("unknown " + field + ": " + str(value))
                 candidates = tuple(row for row in candidates if getattr(row, field) == value)
         available = {name for row in candidates for name in row.conditions}
@@ -218,7 +237,9 @@ class HumanEvidenceCatalog:
         return Evidence(
             id="human_data:" + row.id,
             reference=source.url,
-            origin="observed" if row.kind == "observed_count" else "literature",
+            origin="observed"
+            if row.kind in {"observed_count", "reported_observed_probability"}
+            else "literature",
             applicability=f"{row.domain}; {source.setting}; conditions={json.dumps(row.conditions, sort_keys=True)}",
             version=source.version,
             locator=row.locator,
@@ -238,7 +259,12 @@ class HumanEvidenceCatalog:
         source = self.sources[row.source_id]
         if source.rights.numeric_reuse == "not_cleared":
             raise ValueError("numerical reuse is not cleared")
-        if row.kind not in {"observed_count", "method_probability", "method_interval"}:
+        if row.kind not in {
+            "observed_count",
+            "reported_observed_probability",
+            "method_probability",
+            "method_interval",
+        }:
             raise ValueError("a component, multiplier or terminal rule is not a stand-alone HEP")
         if event.includes_timing and "timing" not in review.included_effects:
             raise ValueError("event timing scope is not covered by the review")
@@ -288,6 +314,17 @@ class HumanEvidenceCatalog:
                 evidence_ids=(evidence.id,),
                 status="method_estimate",
             )
+            if row.kind == "reported_observed_probability":
+                estimate = estimate.model_copy(
+                    update={
+                        "status": "research",
+                        "trace": {
+                            "denominator_available": False,
+                            "reported_bounds": [row.lower, row.upper],
+                            "reported_bounds_are_not_a_fitted_distribution": True,
+                        },
+                    }
+                )
         trace = estimate.trace | {
             "catalog_record": row.id,
             "catalog_kind": row.kind,

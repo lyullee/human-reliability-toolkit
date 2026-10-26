@@ -23,6 +23,7 @@ def main():
     for name, digest in report["source_hashes"].items():
         if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != digest:
             raise ValueError("source changed since verification: " + name)
+    subprocess.run([sys.executable, "scripts/record_extension_validation.py"], cwd=ROOT, check=True)
     subprocess.run([sys.executable, "-m", "build"], cwd=ROOT, check=True)
     subprocess.run([sys.executable, "scripts/release_audit.py"], cwd=ROOT, check=True)
     subprocess.run([sys.executable, "scripts/smoke_install.py"], cwd=ROOT, check=True)

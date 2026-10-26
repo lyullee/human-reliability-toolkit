@@ -44,6 +44,7 @@ def main():
     run("tests", [sys.executable, "-m", "pytest", "-q", "-W", "error", "--junitxml=artifacts/tests.xml"])
     run("python_example", [sys.executable, "examples/python_api.py"])
     run("evidence_example", [sys.executable, "examples/evidence_to_risk.py"])
+    run("operational_example", [sys.executable, "examples/operational_research.py"])
     run("evidence_cli", [sys.executable, "-m", "human_reliability", "evidence", "summary"])
     run("documentation", [sys.executable, "scripts/check_documentation.py"])
     with tempfile.TemporaryDirectory(dir=artifact) as directory:
@@ -62,6 +63,36 @@ def main():
                 str(destination / "case.json"),
                 "--out",
                 str(destination / "result.json"),
+            ],
+        )
+        for family in ("risk", "coupled", "workflow"):
+            case_path, result_path = destination / (family + ".json"), destination / (family + "-result.json")
+            run(
+                family + "_template",
+                [sys.executable, "-m", "human_reliability", family + "-template", str(case_path)],
+            )
+            run(
+                family + "_cli",
+                [
+                    sys.executable,
+                    "-m",
+                    "human_reliability",
+                    family + "-run",
+                    str(case_path),
+                    "--out",
+                    str(result_path),
+                ],
+            )
+        run(
+            "risk_replay",
+            [
+                sys.executable,
+                "-m",
+                "human_reliability",
+                "risk-run",
+                "artifacts/operational_research/risk_case.json",
+                "--out",
+                str(destination / "risk-replay.json"),
             ],
         )
     if options.integrations:

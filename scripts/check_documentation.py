@@ -30,7 +30,17 @@ def main():
     with redirect_stdout(io.StringIO()):
         for index, code in enumerate(examples):
             exec(compile(code, f"README example {index + 1}", "exec"), namespace)
-    print(f"Checked {len(documents)} Markdown documents and {len(examples)} README Python example(s).")
+        guide = ROOT / "docs/OPERATIONAL_EXTENSIONS.md"
+        standalone = [
+            code
+            for code in re.findall(r"```python\n(.*?)```", guide.read_text(encoding="utf-8"), re.S)
+            if code.startswith("# executable\n")
+        ]
+        for index, code in enumerate(standalone):
+            exec(compile(code, f"Operational guide example {index + 1}", "exec"), {})
+    print(
+        f"Checked {len(documents)} Markdown documents, {len(examples)} README and {len(standalone)} operational-guide Python example(s)."
+    )
 
 
 if __name__ == "__main__":

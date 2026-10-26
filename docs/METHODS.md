@@ -1,5 +1,20 @@
 # Methods and applicability
 
+## Operational methods in version 0.3
+
+[Operational extensions](OPERATIONAL_EXTENSIONS.md) specifies the new action and
+causal semantics, conditional risk execution, finite progress/deadline properties,
+observation estimands and uncertainty/elicitation procedures. The finite-grid
+beta-binomial model uses an explicit discrete hyperprior and independently checks
+its conjugate limit. It does not infer unavailable crew identities or a universal
+transfer coefficient. Declared sampling/diagnostic policies do not claim cognitive
+calibration.
+
+Source-linked SPAR-H/HEART workflows now include explicit stage and optional
+recovery/dependence handling. IDHEAS remains a single-function numerical kernel
+and CREAM range selection remains explicit. These scopes are intentionally
+separate from implementing a complete official named system.
+
 The library implements reusable mathematical components. A method name does not
 establish that its coefficients describe a particular process, workforce or site.
 

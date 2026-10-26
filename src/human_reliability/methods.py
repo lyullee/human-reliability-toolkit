@@ -173,8 +173,9 @@ def spar_h_probability(
 def heart_probability(nominal: float, effects: tuple[tuple[float, float], ...]) -> tuple[float, dict]:
     """HEART-style effect arithmetic using externally justified nominal/effect inputs.
 
-    No generic task or error-producing-condition table is bundled. Values above
-    one are capped and the original product remains in the calculation trace.
+    This kernel accepts supplied coefficients; source-linked profiles live in
+    reference_methods and method_workflows. Values above one are capped and the
+    original product remains in the calculation trace.
     """
     p0 = probability(nominal)
     if any(

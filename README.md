@@ -2,10 +2,19 @@
 
 **Composable Python models for human error, task performance and process-risk analysis.**
 
-Version **0.2.0** adds a packaged, searchable human-performance evidence catalog.
+Version **0.3.0** adds twelve connected operational modeling capabilities:
+executable actions, causal graphs, risk orchestration, communication/permits,
+observed opportunities, intervention comparison, coupled dynamics, progress/deadline
+checks, diagnostic information, sparse-data calibration, procedure/assurance
+lifecycle and reviewed reference workflows. See the
+[operational guide](docs/OPERATIONAL_EXTENSIONS.md) and
+[acceptance evidence](docs/EXTENSION_VALIDATION.md).
+
+The packaged, searchable human-performance evidence catalog remains available.
 Inspect observed counts, select method references, document applicability, estimate
 probabilities and connect results to FTA, ETA or existing process models. The core
-works offline and needs only NumPy, SciPy and Pydantic.
+works offline and needs only NumPy, SciPy and Pydantic. Coupled event scheduling
+uses the optional SimPy extra.
 
 **Software: MIT. External numeric evidence: source-specific terms.** Read
 [DATA_LICENSES.md](DATA_LICENSES.md) before redistributing the catalog.
@@ -14,13 +23,14 @@ works offline and needs only NumPy, SciPy and Pydantic.
 
 | Capability | Included behavior |
 |---|---|
-| Task analysis | Task DAGs, roles, deadlines, configurable deviation prompts, latent hazards and organizational/procedure reviews |
+| Task analysis | Task DAGs, executable unit-checked actions, error variants, permissives, roles and reviews |
 | Evidence | **1,334 records from 7 numeric sources**, exact context filters, source locators, rights and explicit applicability reviews |
 | Estimation | Observed-count Bayesian updates, supplied estimates, cognitive-stage decomposition and custom Python estimators |
 | Method references | SPAR-H profiles; HEART task/EPC references; CREAM nominals/ranges; IDHEAS-ECA components, modifiers and arithmetic |
 | Time and recovery | Censored response models, optional AFT/Cox regression, deadlines, recovery and conditional dependency |
 | Risk | Repeated-event-safe FTA, optional BDD, conditional ETA, small Bayesian networks, LOPA screening and frequency/risk accounting |
-| Dynamics | Resource-constrained task episodes, bounded Petri nets, alarm context, joint sampling, optional Sobol sensitivity and CoolProp |
+| Dynamics | Closed-loop process interface, role-visible decisions, preemption, explicit retries, finite progress/deadline checks, optional SimPy and CoolProp |
+| Operational research | Message/readback and work-permit states, opportunity/recovery ledgers, interventions, finite-grid partial pooling, elicitation and assurance snapshots |
 | Integration | PRISM, DynaSense, station safety logic, monitoring, LH2DT, SAGA, QSafety and PSA trace boundaries |
 
 The catalog is **not 1,334 independent measurements or complete HEPs**:
@@ -56,7 +66,7 @@ Activate with `.venv\Scripts\Activate.ps1` on Windows PowerShell or
 python -m pip install -e .
 
 # All optional research and development capabilities.
-python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,curation,dev]"
+python -m pip install -e ".[data,learning,survival,thermo,sensitivity,bdd,dynamics,curation,dev]"
 ```
 
 ```console
@@ -136,6 +146,28 @@ exposure consistent with its ETA. The [integration guide](docs/INTEGRATION.md)
 distinguishes actual tested objects from receiving application work, including
 PRISM's task-origin initiating-event extension.
 
+## Operational cases
+
+For a ready-to-edit operational case:
+
+```console
+human-reliability risk-template risk.json
+human-reliability risk-run risk.json --out risk-result.json
+human-reliability workflow-template method.json
+human-reliability workflow-run method.json --out method-result.json
+human-reliability coupled-template operations.json
+human-reliability coupled-run operations.json --out operations-result.json
+python examples/operational_research.py
+```
+
+The coupled runner requires `[dynamics]`. Templates use authored assumptions.
+The Python example combines real released count evidence with an explicitly
+illustrative causal/risk model, then demonstrates the twelve extensions.
+Intervention assumptions remain assumptions; hidden simulation outcomes are not
+exposed as operator observations. Timed verification uses an explicit finite serial
+time grid. Complete IDHEAS/extended CREAM systems and plant field calibration are
+outside those numerical workflow claims. Details are in the operational guide.
+
 ## Evidence limits
 
 SACADA concerns licensed operators in **nuclear training simulators**. Its released
@@ -180,6 +212,8 @@ distribution boundary and installed behavior.
 | Document | Purpose |
 |---|---|
 | [User guide](docs/USER_GUIDE.md) | Installation, task/event design and risk workflow |
+| [Operational extensions](docs/OPERATIONAL_EXTENSIONS.md) | Twelve capabilities, parameters, Python/CLI workflows and limits |
+| [Extension validation](docs/EXTENSION_VALIDATION.md) | Acceptance cases, regression evidence and retained design decisions |
 | [Human-error data](docs/HUMAN_ERROR_DATA.md) | Provenance, codebook, selection, APIs and reproduction |
 | [API](docs/API.md) | Contracts, custom estimators and composition |
 | [Methods](docs/METHODS.md) | Mathematics, assumptions and method scope |

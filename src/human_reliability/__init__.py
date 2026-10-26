@@ -25,8 +25,21 @@ from .evidence_catalog import (
     load_evidence_catalog,
     sacada_context_labels,
 )
+from .actions import (
+    Command,
+    EquipmentCapability,
+    ExecutableAction,
+    ProcessState,
+    StatePredicate,
+    StateValue,
+    execute_action,
+)
+from .causal import CausalGraph, CausalLeaf, CausalGate, evaluate_causal_graph
+from .risk import RiskCase, RiskEngine
+from .dynamics import CoupledCase, RuntimeJob, StateProcess, run_coupled_case, run_coupled_episode
+from .method_workflows import MethodWorkflowCase, run_method_workflow
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __all__ = [
     "Context",
     "ContextValue",
@@ -53,4 +66,24 @@ __all__ = [
     "builtin_evidence_catalog",
     "load_evidence_catalog",
     "sacada_context_labels",
+    "Command",
+    "EquipmentCapability",
+    "ExecutableAction",
+    "ProcessState",
+    "StatePredicate",
+    "StateValue",
+    "execute_action",
+    "CausalGraph",
+    "CausalLeaf",
+    "CausalGate",
+    "evaluate_causal_graph",
+    "RiskCase",
+    "RiskEngine",
+    "CoupledCase",
+    "RuntimeJob",
+    "StateProcess",
+    "run_coupled_case",
+    "run_coupled_episode",
+    "MethodWorkflowCase",
+    "run_method_workflow",
 ]

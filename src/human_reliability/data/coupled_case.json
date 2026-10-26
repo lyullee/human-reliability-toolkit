@@ -1,0 +1,147 @@
+{
+  "schema_version": "1",
+  "initial": {
+    "revision": "authored_1",
+    "values": {
+      "feed.position": {
+        "value": 1.0,
+        "unit": "1"
+      },
+      "vent.position": {
+        "value": 0.0,
+        "unit": "1"
+      },
+      "pressure": {
+        "value": 4.0,
+        "unit": "bar"
+      }
+    }
+  },
+  "actions": [
+    {
+      "id": "isolate",
+      "command": {
+        "target": "feed",
+        "verb": "position",
+        "value": 0.0,
+        "unit": "1"
+      },
+      "safety_conditions": [],
+      "permissives": [],
+      "unknown_policy": "withhold",
+      "evidence": "Authored command"
+    },
+    {
+      "id": "open_vent",
+      "command": {
+        "target": "vent",
+        "verb": "position",
+        "value": 1.0,
+        "unit": "1"
+      },
+      "safety_conditions": [
+        {
+          "key": "pressure",
+          "operator": "le",
+          "value": 2.0,
+          "unit": "bar"
+        }
+      ],
+      "permissives": [
+        {
+          "id": "pressure_permissive",
+          "condition": {
+            "key": "pressure",
+            "operator": "le",
+            "value": 2.0,
+            "unit": "bar"
+          },
+          "enabled": true,
+          "evidence": "Authored permissive"
+        }
+      ],
+      "unknown_policy": "withhold",
+      "evidence": "Authored command"
+    }
+  ],
+  "capabilities": [
+    {
+      "target": "feed",
+      "verb": "position",
+      "state_key": "feed.position",
+      "unit": "1",
+      "operation": "set",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "allowed_values": []
+    },
+    {
+      "target": "vent",
+      "verb": "position",
+      "state_key": "vent.position",
+      "unit": "1",
+      "operation": "set",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "allowed_values": []
+    }
+  ],
+  "jobs": [
+    {
+      "id": "isolate",
+      "action_id": "isolate",
+      "candidate_actors": [
+        "operator"
+      ],
+      "predecessors": [],
+      "requires_success": false,
+      "release_s": 0.0,
+      "duration_s": 1.0,
+      "priority": 0,
+      "preempt": true,
+      "reconsider_on_resume": false,
+      "deadline_s": null,
+      "maximum_attempts": 1,
+      "retry_delay_s": 0.0,
+      "error_probability": 0.0,
+      "error_command": null
+    },
+    {
+      "id": "vent",
+      "action_id": "open_vent",
+      "candidate_actors": [
+        "operator"
+      ],
+      "predecessors": [
+        "isolate"
+      ],
+      "requires_success": false,
+      "release_s": 4.0,
+      "duration_s": 1.0,
+      "priority": 0,
+      "preempt": true,
+      "reconsider_on_resume": false,
+      "deadline_s": null,
+      "maximum_attempts": 1,
+      "retry_delay_s": 0.0,
+      "error_probability": 0.0,
+      "error_command": null
+    }
+  ],
+  "horizon_s": 6.0,
+  "seed": 42,
+  "visibility": {
+    "operator": [
+      "pressure",
+      "feed.position"
+    ]
+  },
+  "resource_capacity": {},
+  "rates": {
+    "pressure": {
+      "rate": -0.5,
+      "unit": "bar/s"
+    }
+  },
+  "maximum_events": 100000
+}
